@@ -1,0 +1,1 @@
+sh ifocnfig -s
