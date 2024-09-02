@@ -6,4 +6,4 @@ This directory contains source code for lab 03 on [worksheet on Mininet](https:/
 
 # Lab date
 
-Thursday, 05th September 2024
+Tuesday, 20th August 2024
