@@ -1,0 +1,10 @@
+    1 0.000000000 10.240.60.121 → 224.0.0.251  MDNS 130 Standard query response 0x0000 PTR, cache flush proxmox-225189.local A, cache flush 10.240.60.121
+    2 0.045539679 10.230.3.155 → 10.240.60.113 TCP 66 45008 → 22 [ACK] Seq=1 Ack=1 Win=296 Len=0 TSval=3609894110 TSecr=3381344388
+    3 0.086333528 ExtremeNetwo_cc:fd:6d → Spanning-tree-(for-bridges)_00 STP 119 MST. Root = 32768/0/00:04:96:cc:fd:6d  Cost = 0  Port = 0x8009
+    4 0.215643319 10.240.60.122 → 224.0.0.251  MDNS 130 Standard query response 0x0000 PTR, cache flush proxmox-226289.local A, cache flush 10.240.60.122
+    5 0.299084583  10.240.60.1 → 224.0.0.5    OSPF 110 Hello Packet
+    6 0.479133555 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
+    7 0.557579281 10.230.3.155 → 10.240.60.113 TCP 66 45008 → 22 [ACK] Seq=1 Ack=45 Win=296 Len=0 TSval=3609894622 TSecr=3381344917
+    8 0.730603425      0.0.0.0 → 255.255.255.255 DHCP 342 DHCP Discover - Transaction ID 0xaa91c071
+    9 0.734944880 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
+   10 0.761874249 10.230.3.155 → 10.240.60.113 TCP 66 45008 → 22 [ACK] Seq=1 Ack=89 Win=296 Len=0 TSval=3609894826 TSecr=3381345173
