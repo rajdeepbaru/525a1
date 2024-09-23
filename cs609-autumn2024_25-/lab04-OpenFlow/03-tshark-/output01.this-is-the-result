@@ -8,3 +8,13 @@
     8 0.730603425      0.0.0.0 → 255.255.255.255 DHCP 342 DHCP Discover - Transaction ID 0xaa91c071
     9 0.734944880 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
    10 0.761874249 10.230.3.155 → 10.240.60.113 TCP 66 45008 → 22 [ACK] Seq=1 Ack=89 Win=296 Len=0 TSval=3609894826 TSecr=3381345173
+    1 0.000000000 ExtremeNetwo_cc:fd:6d → Spanning-tree-(for-bridges)_00 STP 119 MST. Root = 32768/0/00:04:96:cc:fd:6d  Cost = 0  Port = 0x8009
+    2 0.281878703 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
+    3 0.339818219 10.230.3.155 → 10.240.60.113 TCP 66 60500 → 22 [ACK] Seq=1 Ack=45 Win=720 Len=0 TSval=3427720923 TSecr=3636338056
+    4 0.537812976 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
+    5 0.647200186 10.230.3.155 → 10.240.60.113 TCP 66 60500 → 22 [ACK] Seq=1 Ack=89 Win=720 Len=0 TSval=3427721230 TSecr=3636338312
+    6 0.680299120           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
+    7 0.684743000           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
+    8 0.691088125           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
+    9 0.769719439           :: → ff02::1:ffde:63d5 ICMPv6 86 Neighbor Solicitation for fe80::c4f7:7e94:5cde:63d5
+   10 0.769834818 fe80::c4f7:7e94:5cde:63d5 → ff02::1      ICMPv6 86 Neighbor Advertisement fe80::c4f7:7e94:5cde:63d5 (ovr) is at 3e:25:21:cb:22:6a

@@ -1,22 +1,22 @@
 This is CS609 Lab. Execution starts
 
-33de2289-e957-4972-ae01-ff8007bfcf68
+47c24a6d-c394-4ea7-a3ec-dad61e9b5615
+    Bridge s1
+        Controller "tcp:127.0.0.1:6653"
+        fail_mode: secure
+        Port s1-eth1
+            Interface s1-eth1
+        Port s1
+            Interface s1
+                type: internal
+        Port s1-eth3
+            Interface s1-eth3
+        Port s1-eth2
+            Interface s1-eth2
     Bridge br0
         Port br0
             Interface br0
                 type: internal
-    Bridge s1
-        Controller "tcp:127.0.0.1:6653"
-        fail_mode: secure
-        Port s1
-            Interface s1
-                type: internal
-        Port s1-eth1
-            Interface s1-eth1
-        Port s1-eth2
-            Interface s1-eth2
-        Port s1-eth3
-            Interface s1-eth3
     ovs_version: "2.17.9"
 
 ovs-vsctl: cannot create a bridge named br0 because a bridge named br0 already exists
@@ -25,11 +25,11 @@ ovs-vsctl: cannot create a bridge named br0 because a bridge named br0 already e
 ovs-ofctl (Open vSwitch) 2.17.9
 OpenFlow versions 0x1:0x6
 
-OFPT_FEATURES_REPLY (xid=0x2): dpid:0000e6a325272a47
+OFPT_FEATURES_REPLY (xid=0x2): dpid:000082cdd0d4fb42
 n_tables:254, n_buffers:0
 capabilities: FLOW_STATS TABLE_STATS PORT_STATS QUEUE_STATS ARP_MATCH_IP
 actions: output enqueue set_vlan_vid set_vlan_pcp strip_vlan mod_dl_src mod_dl_dst mod_nw_src mod_nw_dst mod_nw_tos mod_tp_src mod_tp_dst
- LOCAL(br0): addr:e6:a3:25:27:2a:47
+ LOCAL(br0): addr:82:cd:d0:d4:fb:42
      config:     PORT_DOWN
      state:      LINK_DOWN
      speed: 0 Mbps now, 0 Mbps max
@@ -54,7 +54,89 @@ OFPST_PORT reply (xid=0x2): 1 ports
 
 normal
 
- cookie=0x0, duration=1501.909s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
+ cookie=0x0, duration=392.976s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
+
+NXST_AGGREGATE reply (xid=0x4): packet_count=0 byte_count=0 flow_count=1
+
+OFPST_QUEUE reply (xid=0x2): 0 queues
+
+OFPT_ERROR (xid=0x2): NXST_NOT_CONFIGURED
+NXST_IPFIX_BRIDGE request (xid=0x2):
+
+OFPT_ERROR (xid=0x2): NXST_NOT_CONFIGURED
+NXST_IPFIX_FLOW request (xid=0x2):
+
+Switch connected to controller with OpenFlow version:
+[OpenFlow10, OpenFlow12, OpenFlow13]
+
+Rule 1 starts here
+
+Rule 1 ends here
+
+Rule 2 ends here
+Rule 3 ends here
+Rule 4 ends here
+Rule 5 ends here
+Rule 6 ends here
+Testing connectivity with pingall:
+Execution ends
+This is CS609 Lab. Execution starts
+
+47c24a6d-c394-4ea7-a3ec-dad61e9b5615
+    Bridge s1
+        Controller "tcp:127.0.0.1:6653"
+        fail_mode: secure
+        Port s1-eth3
+            Interface s1-eth3
+        Port s1
+            Interface s1
+                type: internal
+        Port s1-eth2
+            Interface s1-eth2
+        Port s1-eth1
+            Interface s1-eth1
+    Bridge br0
+        Port br0
+            Interface br0
+                type: internal
+    ovs_version: "2.17.9"
+
+ovs-vsctl: cannot create a bridge named br0 because a bridge named br0 already exists
+
+
+ovs-ofctl (Open vSwitch) 2.17.9
+OpenFlow versions 0x1:0x6
+
+OFPT_FEATURES_REPLY (xid=0x2): dpid:000082cdd0d4fb42
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS QUEUE_STATS ARP_MATCH_IP
+actions: output enqueue set_vlan_vid set_vlan_pcp strip_vlan mod_dl_src mod_dl_dst mod_nw_src mod_nw_dst mod_nw_tos mod_tp_src mod_tp_dst
+ LOCAL(br0): addr:82:cd:d0:d4:fb:42
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (xid=0x4): frags=normal miss_send_len=0
+
+OFPST_TABLE reply (xid=0x2):
+  table 0:
+    active=1, lookup=0, matched=0
+    max_entries=1000000
+    matching:
+      exact match or wildcard: in_port eth_{src,dst,type} vlan_{vid,pcp} ip_{src,dst} nw_{proto,tos} tcp_{src,dst}
+
+  table 1:
+    active=0, lookup=0, matched=0
+    (same features)
+
+  tables 2...253: ditto
+
+OFPST_PORT reply (xid=0x2): 1 ports
+  port LOCAL: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+
+normal
+
+ cookie=0x0, duration=461.683s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
 
 NXST_AGGREGATE reply (xid=0x4): packet_count=0 byte_count=0 flow_count=1
 
