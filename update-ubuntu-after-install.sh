@@ -13,6 +13,7 @@ echo "\n\n=========================\n\n"
 
 sudo apt-get install curl
 curl -O https://codeload.github.com/rajdeepbaru/525a1/zip/refs/heads/main
+unzip main
 
 
 
