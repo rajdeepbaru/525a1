@@ -35,6 +35,8 @@ To install tshark run the following command:
 
     bash 01-tshark-install.sh
 
+Once installation is completed at your terminal, use the following command to check the version:
+
     02-tshark-version-check.sh
 
 -   03-tshark-add-to-group.sh
