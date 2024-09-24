@@ -70,5 +70,6 @@ Once installation is completed at your terminal, use the following command to ch
 
 
 ---
-[comment]: <> (Comment)
-[comment]: <> (it is comment)
+
+[comment]: # (Comment)
+[comment]: # (it is comment)
