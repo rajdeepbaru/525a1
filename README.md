@@ -31,7 +31,9 @@
 
 ### 03-tshark-
 
-    01-tshark-install.sh
+To install tshark run the following command:
+
+    bash 01-tshark-install.sh
 
     02-tshark-version-check.sh
 
