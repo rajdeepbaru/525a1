@@ -2,10 +2,21 @@
 
 ### 01-initial-setup
 
--   script03-ubuntu-install-stage02-anaconda-pre-install.sh
--   script04-ubuntu-install-stage02-anaconda-post-install.sh
--   script05-anaconda-environment-creation.sh
--   script06-anaconda-environment-enter.sh
+We shall install Anaconda here. To start with, we shall install __curl__ and required packages. Then we shall downloadAnaconda, followed by the installation. Run the following script in your terminal to install the required packages:
+   
+    script03-ubuntu-install-stage02-anaconda-pre-install.sh
+
+Once completed, run the following script to  initialize conda after the installation process is done:
+
+    script04-ubuntu-install-stage02-anaconda-post-install.sh
+
+To create the required environment, run the following command. The name of the environment is __env01-ryu__.
+
+    script05-anaconda-environment-creation.sh
+
+Type the following command in your terminal and follow the output to activate the environment:
+
+    script06-anaconda-environment-enter.sh
 
 
 ### 02-open-flow-
