@@ -1,20 +1,10 @@
-    1 0.000000000 10.240.60.121 → 224.0.0.251  MDNS 130 Standard query response 0x0000 PTR, cache flush proxmox-225189.local A, cache flush 10.240.60.121
-    2 0.045539679 10.230.3.155 → 10.240.60.113 TCP 66 45008 → 22 [ACK] Seq=1 Ack=1 Win=296 Len=0 TSval=3609894110 TSecr=3381344388
-    3 0.086333528 ExtremeNetwo_cc:fd:6d → Spanning-tree-(for-bridges)_00 STP 119 MST. Root = 32768/0/00:04:96:cc:fd:6d  Cost = 0  Port = 0x8009
-    4 0.215643319 10.240.60.122 → 224.0.0.251  MDNS 130 Standard query response 0x0000 PTR, cache flush proxmox-226289.local A, cache flush 10.240.60.122
-    5 0.299084583  10.240.60.1 → 224.0.0.5    OSPF 110 Hello Packet
-    6 0.479133555 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
-    7 0.557579281 10.230.3.155 → 10.240.60.113 TCP 66 45008 → 22 [ACK] Seq=1 Ack=45 Win=296 Len=0 TSval=3609894622 TSecr=3381344917
-    8 0.730603425      0.0.0.0 → 255.255.255.255 DHCP 342 DHCP Discover - Transaction ID 0xaa91c071
-    9 0.734944880 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
-   10 0.761874249 10.230.3.155 → 10.240.60.113 TCP 66 45008 → 22 [ACK] Seq=1 Ack=89 Win=296 Len=0 TSval=3609894826 TSecr=3381345173
-    1 0.000000000 ExtremeNetwo_cc:fd:6d → Spanning-tree-(for-bridges)_00 STP 119 MST. Root = 32768/0/00:04:96:cc:fd:6d  Cost = 0  Port = 0x8009
-    2 0.281878703 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
-    3 0.339818219 10.230.3.155 → 10.240.60.113 TCP 66 60500 → 22 [ACK] Seq=1 Ack=45 Win=720 Len=0 TSval=3427720923 TSecr=3636338056
-    4 0.537812976 10.240.60.113 → 10.230.3.155 SSH 110 Server: Encrypted packet (len=44)
-    5 0.647200186 10.230.3.155 → 10.240.60.113 TCP 66 60500 → 22 [ACK] Seq=1 Ack=89 Win=720 Len=0 TSval=3427721230 TSecr=3636338312
-    6 0.680299120           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
-    7 0.684743000           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
-    8 0.691088125           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
-    9 0.769719439           :: → ff02::1:ffde:63d5 ICMPv6 86 Neighbor Solicitation for fe80::c4f7:7e94:5cde:63d5
-   10 0.769834818 fe80::c4f7:7e94:5cde:63d5 → ff02::1      ICMPv6 86 Neighbor Advertisement fe80::c4f7:7e94:5cde:63d5 (ovr) is at 3e:25:21:cb:22:6a
+    1 0.000000000           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
+    2 0.236756495 10.240.60.135 → 10.200.231.20 SSH 110 Server: Encrypted packet (len=44)
+    3 0.249017007 10.200.231.20 → 10.240.60.135 TCP 66 57960 → 22 [ACK] Seq=1 Ack=45 Win=380 Len=0 TSval=3419464919 TSecr=3028539300
+    4 0.325340423           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
+    5 0.340392571 140.82.112.25 → 10.240.60.135 TLSv1.2 92 Application Data
+    6 0.340528001 10.240.60.135 → 140.82.112.25 TLSv1.2 96 Application Data
+    7 0.460094592 ExtremeNetwo_cc:fd:6d → Spanning-tree-(for-bridges)_00 STP 119 MST. Root = 32768/0/00:04:96:cc:fd:6d  Cost = 0  Port = 0x8009
+    8 0.522243436           :: → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
+    9 0.621026934 140.82.112.25 → 10.240.60.135 TCP 66 443 → 34660 [ACK] Seq=27 Ack=31 Win=70 Len=0 TSval=1545324564 TSecr=279959438
+   10 0.743079047 10.240.60.135 → 10.200.231.20 SSH 110 Server: Encrypted packet (len=44)
