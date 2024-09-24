@@ -16,6 +16,7 @@ rm -dir -f -r 525a1-main/
 curl -O https://codeload.github.com/rajdeepbaru/525a1/zip/refs/heads/main
 unzip main
 rm main
+cd 525a1-main/
 
 
 
