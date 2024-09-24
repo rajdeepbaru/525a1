@@ -31,9 +31,9 @@
 
 ### 03-tshark-
 
-    ``01-tshark-install.sh``
+    01-tshark-install.sh
 
-    ``02-tshark-version-check.sh``
+    02-tshark-version-check.sh
 
 -   03-tshark-add-to-group.sh
 -   04-tshark-capture-packets.sh
