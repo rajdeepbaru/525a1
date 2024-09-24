@@ -11,8 +11,8 @@ sudo apt-get install git
 echo "\n\n=========================\n\n"
 
 
-git clone git@github.com:rajdeepbaru/525a1.git
-
+sudo apt-get install curl
 curl -O https://codeload.github.com/rajdeepbaru/525a1/zip/refs/heads/main
+
 
 
