@@ -18,6 +18,9 @@
 
 1.  Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
 2.  Change your present working directory to lab04-OpenFlow/, as shown in the picture.
+    
+    cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/
+
 3.  Move to 01-initial-set-up/ directory and execute the following commands:
     -   bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
     -   bash script04-ubuntu-install-stage02-anaconda-post-install.sh
