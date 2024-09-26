@@ -153,6 +153,23 @@ We shall create a network topology and execute a few open-flow commands.
     -   Print the statistics for each flow table the switch uses to the console.
     -   Print to the console statistics for network devices associated with the switch.
     -   Print switch's fragment handling mode.
+    -   Print to the console all flow entries in the switch's tables that match flows.
+    -   Print to the console aggregate statistics for flows in the switch's tables that match flows.
+    -   Print to the console statistics for the specified queue on the port within the switch.
+    -   Print to the console the statistics of bridge IPFIX for the switch.
+    -   Print to the console the statistics of flow-based  IPFIX  for the switch.
+    -   Print the list of protocols
+9.  Apply the static rules:
+    -   Forwarding rules between h1 and h2
+        -   Traffic from h1 is forwarded to h2
+        -   Traffic from h2 is forwarded to h1
+    -   Forwarding rules between h1 and h3
+        -   Traffic from h1 is forwarded to h3
+        -   Traffic from h3 is forwarded to h1
+    -   Forwarding rules between h2 and h3
+        -   Traffic from h2 is forwarded to h3
+        -   Traffic from h3 is forwarded to h2
+10. Verify the connectivity between the three hosts.
 
 ---
 
