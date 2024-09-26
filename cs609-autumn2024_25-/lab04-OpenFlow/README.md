@@ -17,7 +17,7 @@
 ##  Preparing the environment
 
 1.  Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
-2.  Change your present working directory to lab04-OpenFlow/, as shown in the picture.
+2.  Change your _present working directory_ to _lab04-OpenFlow/_, using the following code snippet:
     
 ```shell 
 cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/
