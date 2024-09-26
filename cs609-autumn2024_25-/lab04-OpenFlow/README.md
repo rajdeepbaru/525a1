@@ -44,7 +44,7 @@ bash script04-ubuntu-install-stage02-anaconda-post-install.sh
 ```shell
 bash script05-anaconda-environment-creation.sh
 ```
->   [!Note] env01-ryu
+>   [!NOTE] 
 >   T
 >
     -   source script06-anaconda-environment-enter.sh
