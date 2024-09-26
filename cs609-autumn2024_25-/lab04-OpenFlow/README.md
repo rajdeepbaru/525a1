@@ -171,6 +171,9 @@ We shall create a network topology and execute a few open-flow commands.
         -   Traffic from h3 is forwarded to h2
 10. Verify the connectivity between the three hosts.
 
+
+The code is given bellow. Study the components of the code with the statements of the above questions.
+
 ```python
 from mininet.net import Mininet
 from mininet.node import OVSSwitch, Controller
@@ -290,6 +293,15 @@ if __name__ == '__main__':
     print("Execution ends")
     time.sleep(5)
 ```
+
+
+Run the following command in the terminal to execute it:
+
+```shell
+sudo python3 code02-static-flow.py
+```
+
+
 
 ---
 
