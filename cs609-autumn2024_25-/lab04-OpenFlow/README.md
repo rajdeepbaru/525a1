@@ -23,7 +23,18 @@
 cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/
 ```
 
-3.  Move to 01-initial-set-up/ directory and execute the following commands:
+3.  Go to the required location using the following hints:
+
+```shell
+cd 01-initial-setup/
+```
+4.  Run the following script to start installing the package (Anaconda)[http:]
+
+```shell
+bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
+```
+
+4.  Move to 01-initial-set-up/ directory and execute the following commands:
     -   bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
     -   bash script04-ubuntu-install-stage02-anaconda-post-install.sh
     -   bash script05-anaconda-environment-creation.sh
