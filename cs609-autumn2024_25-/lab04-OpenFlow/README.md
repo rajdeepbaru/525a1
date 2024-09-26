@@ -45,7 +45,7 @@ bash script04-ubuntu-install-stage02-anaconda-post-install.sh
 bash script05-anaconda-environment-creation.sh
 ```
 >   [!Note] env01-ryu
->
+>   T
 >
     -   source script06-anaconda-environment-enter.sh
     -   Note: after executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
