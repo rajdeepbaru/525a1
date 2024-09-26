@@ -28,15 +28,15 @@ cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/
 ```shell
 cd 01-initial-setup/
 ```
-4.  Run the following script to start installing the package (Anaconda)[http:]
+4.  Run the following script to start installing the package [Anaconda](https://docs.anaconda.com/).
 
 ```shell
 bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
 ```
-
-4.  Move to 01-initial-set-up/ directory and execute the following commands:
-    -   bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
-    -   bash script04-ubuntu-install-stage02-anaconda-post-install.sh
+    -   After the completion of installation, use the following script to initialize _conda_ use the following command in your terminal:
+```shell
+bash script04-ubuntu-install-stage02-anaconda-post-install.sh
+```
     -   bash script05-anaconda-environment-creation.sh
     -   source script06-anaconda-environment-enter.sh
     -   Note: after executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
