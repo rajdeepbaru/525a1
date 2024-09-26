@@ -87,15 +87,13 @@ Type the following command in your terminal and follow the output to activate th
 ## Working with OpenFlow <a name="of"></a>
 
 
+1.  To install _mininet_ python library, run the following ccommand:
 
--   code01-install-mininet-in-python-environment.sh
--   code02-static-flow.py
--   mininet/
--   oflops/
--   oftest/
--   openflow/
--   pox/
+```shell
+bash code01-install-mininet-in-python-environment.sh
+```
 
+2.  Check
 
 ## Working with TShark <a name="ts"></a>
 
