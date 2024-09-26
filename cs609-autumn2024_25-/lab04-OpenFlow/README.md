@@ -14,13 +14,15 @@
 
 #   Lab 04
 
+---
 
 # Table of contents
-1. [Introduction](#pr)
-2. [Some paragraph](#of)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#ts)
-4.  [Ryu](#ry)
+1. [Preparing the environment](#pr)
+2. [Working with OpenFlow](#of)
+3. [Working with TShark](#ts)
+4.  [Working with Ryu](#ry)
+
+---
 
 ##  Preparing the environment <a name="pr"></a>
 
