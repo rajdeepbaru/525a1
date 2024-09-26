@@ -13,7 +13,7 @@
 -->
 We shall install Anaconda here. To start with, we shall install __curl__ and required packages. Then we shall downloadAnaconda, followed by the installation. Run the following script in your terminal to install the required packages:
    
-    ``` script03-ubuntu-install-stage02-anaconda-pre-install.sh ```
+    script03-ubuntu-install-stage02-anaconda-pre-install.sh 
 
 Once completed, run the following script to  initialize conda after the installation process is done:
 
