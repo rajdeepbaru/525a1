@@ -19,10 +19,10 @@
 ### Table of contents
 1. [Preparing the environment](#pr)
 2. [Working with OpenFlow](#of)
-    -   [Preparing the environmnet](#pr)
-    -   [The OpenFlow topology with static flows](#of)
-        -   [What will we solve?](#ww)
-        -   [Naming convention](#nc)
+    -   [2.1    Preparing the environmnet for OpenFlow](#pro)
+    -   [2.2    The OpenFlow topology with static flows](#of)
+        -   [2.2.1  What will we solve?](#ww)
+        -   [2.2.2  Naming convention](#nc)
 3. [Working with TShark](#ts)
 4.  [Working with Ryu](#ry)
 
@@ -91,7 +91,7 @@ Type the following command in your terminal and follow the output to activate th
 ## 2.   Working with OpenFlow <a name="of"></a>
 
 
-### 2.1 Preparing the environmnet <a name="pr"></a>
+### 2.1 Preparing the environmnet for OpenFlow<a name="pro"></a>
 
 
 1.  To install _mininet_ python library, run the following ccommand:
