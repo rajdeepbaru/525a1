@@ -87,13 +87,32 @@ Type the following command in your terminal and follow the output to activate th
 ## Working with OpenFlow <a name="of"></a>
 
 
+### Preparing the environmnet
+
 1.  To install _mininet_ python library, run the following ccommand:
 
 ```shell
 bash code01-install-mininet-in-python-environment.sh
 ```
 
-2.  Check
+2.  Check that there already exists an output file. You may check it using the below command.
+
+```shell
+ls | grep run
+```
+
+3. To delete it, execute the following command:
+
+```shell
+rm output01-static-flow.run
+```
+
+### The OpenFlow topology with static flows
+
+#### What will we solve?
+
+
+---
 
 ## Working with TShark <a name="ts"></a>
 
