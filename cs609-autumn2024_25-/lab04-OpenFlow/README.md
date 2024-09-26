@@ -15,8 +15,9 @@
 #   Preparing the environment
 
 ##  Preparing the environment
-    1. Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
-    2. Change your present working directory to lab04-OpenFlow/, as shown in the picture.
+
+1.  Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
+2.  Change your present working directory to lab04-OpenFlow/, as shown in the picture.
 
 
 We shall install Anaconda here. To start with, we shall install __curl__ and required packages. Then we shall downloadAnaconda, followed by the installation. Run the following script in your terminal to install the required packages:
