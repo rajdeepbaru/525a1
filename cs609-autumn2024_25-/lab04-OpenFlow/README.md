@@ -24,7 +24,7 @@
 
 ---
 
-##  Preparing the environment <a name="pr"></a>
+##  1. Preparing the environment <a name="pr"></a>
 
 1.  Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
 2.  Change your _present working directory_ to _lab04-OpenFlow/_, using the following code snippet:
@@ -84,10 +84,10 @@ Type the following command in your terminal and follow the output to activate th
 
 
 
-## Working with OpenFlow <a name="of"></a>
+## 2.   Working with OpenFlow <a name="of"></a>
 
 
-### Preparing the environmnet
+### 2.1 Preparing the environmnet
 
 1.  To install _mininet_ python library, run the following ccommand:
 
