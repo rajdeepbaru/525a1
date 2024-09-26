@@ -12,9 +12,17 @@
 ### 01-initial-setup
 -->
 
-#   Preparing the environment
+#   Lab 04
 
-##  Preparing the environment
+
+# Table of contents
+1. [Introduction](#pr)
+2. [Some paragraph](#of)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#ts)
+4.  [Ryu](#ry)
+
+##  Preparing the environment <a name="pr"></a>
 
 1.  Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
 2.  Change your _present working directory_ to _lab04-OpenFlow/_, using the following code snippet:
@@ -73,7 +81,10 @@ Type the following command in your terminal and follow the output to activate th
     script06-anaconda-environment-enter.sh
 
 
-### 02-open-flow-
+
+## Working with OpenFlow <a name="of"></a>
+
+
 
 -   code01-install-mininet-in-python-environment.sh
 -   code02-static-flow.py
@@ -84,7 +95,7 @@ Type the following command in your terminal and follow the output to activate th
 -   pox/
 
 
-### 03-tshark-
+## Working with TShark <a name="ts"></a>
 
 To install tshark run the following command:
 
@@ -103,7 +114,7 @@ Once installation is completed at your terminal, use the following command to ch
 
 
 
-### 04-ryu-
+## Working with Ryu <a name="ry"></a>
 
 -   01-ryu-install/
     *   ryu/
