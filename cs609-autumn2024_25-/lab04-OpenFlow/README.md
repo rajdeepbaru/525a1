@@ -19,6 +19,10 @@
 ### Table of contents
 1. [Preparing the environment](#pr)
 2. [Working with OpenFlow](#of)
+    -   [Preparing the environmnet](#pr)
+    -   [The OpenFlow topology with static flows](#of)
+        -   [What will we solve?](#ww)
+        -   [Naming convention](#nc)
 3. [Working with TShark](#ts)
 4.  [Working with Ryu](#ry)
 
@@ -87,7 +91,8 @@ Type the following command in your terminal and follow the output to activate th
 ## 2.   Working with OpenFlow <a name="of"></a>
 
 
-### 2.1 Preparing the environmnet
+### 2.1 Preparing the environmnet <a name="pr"></a>
+
 
 1.  To install _mininet_ python library, run the following ccommand:
 
@@ -107,19 +112,23 @@ ls | grep run
 rm output01-static-flow.run
 ```
 
-### 2.2 The OpenFlow topology with static flows
+### 2.2 The OpenFlow topology with static flows <a name="of"></a>
 
-####    2.2.1  What will we solve?
+
+####    2.2.1  What will we solve? <a name="ww"></a>
+
 OpenFlow topology with static flows.
 
-####    2.2.2   Naming convention
+####    2.2.2   Naming convention <a name="nc"></a>
+
 
 1.  Hosts: h1, h2, h3
 2.  OVSSwitch: s1
 3.  Controller: c0
 4.  Bridge: br0
 
-####    2.2.3   Problem at hand
+####    2.2.3   Problem at hand <a name="ph"></a>
+
 
 We shall create a network topology and execute a few open-flow commands.
 
