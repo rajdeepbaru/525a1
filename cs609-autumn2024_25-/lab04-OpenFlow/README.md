@@ -34,7 +34,7 @@ cd 01-initial-setup/
 bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
 ```
 
-    -   After the completion of installation, use the following script to initialize _conda_ use the following command in your terminal:
+5.  After the completion of installation, use the following script to initialize _conda_ use the following command in your terminal:
 
 ```shell
 bash script04-ubuntu-install-stage02-anaconda-post-install.sh
