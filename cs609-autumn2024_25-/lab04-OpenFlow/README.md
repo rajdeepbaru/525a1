@@ -137,11 +137,22 @@ We shall create a network topology and execute a few open-flow commands.
     -   Mininet’s built-in OpenFlow reference controller (controller), and
     -   The OVSSwitch
 2.  Add the following:
-    -   three hosts: h1, h2, and h3, with IP 10.10.10.1, 10.10.10.2, and 10.10.10.1, respectively
+    -   three hosts: h1, h2, and h3, with IP 10.10.10.1, 10.10.10.2, and 10.10.10.1, respectively, and
     -   a switch s1, and
     -   links between the hosts and switch, and
     -   the default OpenFlow controller
-
+3.  Start the network
+4.  Initialize the  Open vSwitch database
+5.  Print the following:
+    -   a brief overview of the database contents
+6.  Create a new bridge named br0
+7.  Enable OpenFlow 1.0, 1.1, 1.2, and 1.3 on br0
+8.  Print the following:
+    -   OpenFlow version of the switch
+    -   Print information on the switch to the console, including information on its flow tables and ports
+    -   Print the statistics for each flow table the switch uses to the console.
+    -   Print to the console statistics for network devices associated with the switch.
+    -   Print switch's fragment handling mode.
 
 ---
 
