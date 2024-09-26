@@ -3,7 +3,7 @@
 #   Tuesday, 10th September 2024, Worksheet - 04 (OpenFlow)
 
 ***
-<h1 align="center" style="border-bottom: none">
+<h1 align="center" style="border-bottom: 5px solid red">
     Event-Driven Declarative Orchestrator
 </h1>
 
