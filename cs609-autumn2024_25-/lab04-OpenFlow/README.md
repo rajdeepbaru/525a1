@@ -18,6 +18,13 @@
 
 1.  Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
 2.  Change your present working directory to lab04-OpenFlow/, as shown in the picture.
+3.  Move to 01-initial-set-up/ directory and execute the following commands:
+    -   bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
+    -   bash script04-ubuntu-install-stage02-anaconda-post-install.sh
+    -   bash script05-anaconda-environment-creation.sh
+    -   source script06-anaconda-environment-enter.sh
+    -   Note: after executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
+4.  Make sure that (env01-ryu) is visible at the left-most end, as shown in the picture.
 
 
 We shall install Anaconda here. To start with, we shall install __curl__ and required packages. Then we shall downloadAnaconda, followed by the installation. Run the following script in your terminal to install the required packages:
