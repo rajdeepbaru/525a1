@@ -1,4 +1,4 @@
-<p style="text-align:center;">
+<p align="center">
 <h2>    CS 609: Software-Defined Networking and Network Function Virtualization <br> 
     Autumn 2024-25, Indian Institute of Technology Dharwad  </h2>
 </p>
