@@ -171,8 +171,8 @@ We shall create a network topology and execute a few open-flow commands.
         -   Traffic from h3 is forwarded to h2
 10. Verify the connectivity between the three hosts.
 
-
-The code is given bellow. Study the components of the code with the statements of the above questions.
+> [!TIP]
+> The code is given bellow. Study the components of the code with the statements of the above questions.
 
 ```python
 from mininet.net import Mininet
