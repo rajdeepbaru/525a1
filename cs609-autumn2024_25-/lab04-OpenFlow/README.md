@@ -107,9 +107,30 @@ ls | grep run
 rm output01-static-flow.run
 ```
 
-### The OpenFlow topology with static flows
+### 2.2 The OpenFlow topology with static flows
 
-#### What will we solve?
+####    2.2.1  What will we solve?
+OpenFlow topology with static flows.
+
+####    2.2.2   Naming convention
+
+1.  Hosts: h1, h2, h3
+2.  OVSSwitch: s1
+3.  Controller: c0
+4.  Bridge: br0
+
+####    2.2.3   Problem at hand
+
+We shall create a network topology and execute a few open-flow commands.
+
+1.  Create a network using
+    -   Mininet’s built-in OpenFlow reference controller (controller), and
+    -   The OVSSwitch
+2.  Add the following:
+    -   three hosts: h1, h2, and h3, with IP 10.10.10.1, 10.10.10.2, and 10.10.10.1, respectively
+    -   a switch s1, and
+    -   links between the hosts and switch, and
+    -   the default OpenFlow controller
 
 
 ---
