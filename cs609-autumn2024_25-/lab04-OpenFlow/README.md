@@ -39,7 +39,14 @@ bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
 ```shell
 bash script04-ubuntu-install-stage02-anaconda-post-install.sh
 ```
-    -   bash script05-anaconda-environment-creation.sh
+
+6.  To create our desired _virtual environment_, use the following command.
+```shell
+bash script05-anaconda-environment-creation.sh
+```
+>   [!Note] env01-ryu
+>
+>
     -   source script06-anaconda-environment-enter.sh
     -   Note: after executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
 4.  Make sure that (env01-ryu) is visible at the left-most end, as shown in the picture.
