@@ -91,7 +91,7 @@ source script06-anaconda-environment-enter.sh
 >   Make sure that *(env01-ryu)* is visible at the left-most end. Otherwise fix the issue without proceeding further.
 >
 
-<img src="../../supporting-files/img01-env01-ryu.png" />
+<img src="../../supporting-files/img01-env01-ryu.png" >
 
 ## 2.   Working with OpenFlow <a name="of"></a>
 
@@ -116,6 +116,15 @@ ls | grep run
 ```shell
 rm output01-static-flow.run
 ```
+4. After deletion, cross-verify whether deletion is completed successfully or not. To do so, execute the following command:
+
+```shell
+ls | grep run
+```
+Match the output with the below snapshot.
+
+<img src="../../supporting-files/img02-remove-existing-output-in-openflow.png" >
+
 
 ### 2.2 The OpenFlow topology with static flows <a name="of"></a>
 
@@ -357,6 +366,7 @@ test
 ---
 
 [comment]: # (Comment)
+
 
 
 
