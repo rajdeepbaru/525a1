@@ -83,10 +83,13 @@ To do so, execute the following command:
 source script06-anaconda-environment-enter.sh
 ```
 
->   [!NOTE] 
+>   [!WARNING] 
 >   After executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
 >
-8.  Make sure that (env01-ryu) is visible at the left-most end. Otherwise fix the issue without proceeding further.
+
+>   [!CAUTION]
+>   Make sure that (env01-ryu) is visible at the left-most end. Otherwise fix the issue without proceeding further.
+>
 
 
 
