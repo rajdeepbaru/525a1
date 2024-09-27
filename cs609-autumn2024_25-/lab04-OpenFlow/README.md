@@ -32,6 +32,12 @@
 ---
 
 ##  1. Preparing the environment <a name="pr"></a>
+Check your Gmail inbox, search for the email titled as "Reg. Software Defined Networking and Network Function Virtualization (CS-609), Autumn 2024-25" sent on Tuesday, 20th August 2024 between 5 p.m. to 7 p.m. If the provided IP address is AB.CDE.EF.GHI, then type the following:
+
+```shell
+ssh-keygen -R AB.CDE.EF.GHI
+```
+Choose "yes" when prompt is appeared in your terminal.
 
 1.  Clone the GitHub repository using the following command:
 
