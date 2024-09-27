@@ -309,13 +309,14 @@ if __name__ == '__main__':
 
 ####    2.2.4   Solution  <a name="sol1"></a>
 
-Run the following command in the terminal to execute it:
+1.  Run the following command in the terminal to execute it:
 
 ```shell
 sudo python3 code02-static-flow.py
 ```
 
-
+2.  Check the following execution
+<img src="../../supporting-files/vid01-staticFlowExecution.mp4" >
 
 ---
 
@@ -366,6 +367,7 @@ test
 ---
 
 [comment]: # (Comment)
+
 
 
 
