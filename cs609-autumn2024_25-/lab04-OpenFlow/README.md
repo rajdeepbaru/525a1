@@ -92,7 +92,7 @@ source script06-anaconda-environment-enter.sh
 >
 
 [env01-ryu](../../supporting-files/img01-env01-ryu.png)
-
+<img src="../../supporting-files/img01-env01-ryu.png" width="128"/>
 
 ## 2.   Working with OpenFlow <a name="of"></a>
 
