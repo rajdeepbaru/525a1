@@ -32,43 +32,44 @@
 ---
 
 ##  1. Preparing the environment <a name="pr"></a>
-Check your Gmail inbox, search for the email titled as "Reg. Software Defined Networking and Network Function Virtualization (CS-609), Autumn 2024-25" sent on Tuesday, 20th August 2024 between 5 p.m. to 7 p.m. If the provided IP address is AB.CDE.EF.GHI, then type the following:
+
+1.   Check your Gmail inbox, search for the email titled as "Reg. Software Defined Networking and Network Function Virtualization (CS-609), Autumn 2024-25" sent on Tuesday, 20th August 2024 between 5 p.m. to 7 p.m. If the provided IP address is AB.CDE.EF.GHI, then type the following:
 
 ```shell
 ssh-keygen -R AB.CDE.EF.GHI
 ```
 Choose "yes" when prompt is appeared in your terminal.
 
-1.  Clone the GitHub repository using the following command:
+2.  Clone the GitHub repository using the following command:
 
 ```shell
 git clone https://github.com/rajdeepbaru/525a1.git
 ```
 
-2.  Change your _present working directory_ to _lab04-OpenFlow/_, using the following code snippet:
+3.  Change your _present working directory_ to _lab04-OpenFlow/_, using the following code snippet:
     
 ```shell 
 cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/
 ```
 
-3.  Go to the required location using the following hints:
+4.  Go to the required location using the following hints:
 
 ```shell
 cd 01-initial-setup/
 ```
-4.  Run the following script to start installing the package [Anaconda](https://docs.anaconda.com/).
+5.  Run the following script to start installing the package [Anaconda](https://docs.anaconda.com/).
 
 ```shell
 bash script03-ubuntu-install-stage02-anaconda-pre-install.sh
 ```
 
-5.  After the completion of installation, use the following script to initialize _conda_ use the following command in your terminal:
+6.  After the completion of installation, use the following script to initialize _conda_ use the following command in your terminal:
 
 ```shell
 bash script04-ubuntu-install-stage02-anaconda-post-install.sh
 ```
 
-6.  To create our desired _virtual environment_, use the following command.
+7.  To create our desired _virtual environment_, use the following command.
 ```shell
 bash script05-anaconda-environment-creation.sh
 ```
@@ -80,25 +81,11 @@ To do so, execute the following command:
 source script06-anaconda-environment-enter.sh
 ```
 
-    -   Note: after executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
-4.  Make sure that (env01-ryu) is visible at the left-most end, as shown in the picture.
+>   [!NOTE] 
+>   After executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
+>
+8.  Make sure that (env01-ryu) is visible at the left-most end. Otherwise fix the issue without proceeding further.
 
-
-We shall install Anaconda here. To start with, we shall install __curl__ and required packages. Then we shall downloadAnaconda, followed by the installation. Run the following script in your terminal to install the required packages:
-   
-    script03-ubuntu-install-stage02-anaconda-pre-install.sh 
-
-Once completed, run the following script to  initialize conda after the installation process is done:
-
-    script04-ubuntu-install-stage02-anaconda-post-install.sh
-
-To create the required environment, run the following command. The name of the environment is __env01-ryu__.
-
-    script05-anaconda-environment-creation.sh
-
-Type the following command in your terminal and follow the output to activate the environment:
-
-    script06-anaconda-environment-enter.sh
 
 
 
