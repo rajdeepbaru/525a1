@@ -1,22 +1,22 @@
 This is CS609 Lab. Execution starts
 
 c5ad8f77-d543-4550-a66b-2a6a69301c6e
-    Bridge br0
-        Port br0
-            Interface br0
-                type: internal
     Bridge s1
         Controller "tcp:127.0.0.1:6653"
         fail_mode: secure
+        Port s1-eth2
+            Interface s1-eth2
+        Port s1
+            Interface s1
+                type: internal
         Port s1-eth1
             Interface s1-eth1
         Port s1-eth3
             Interface s1-eth3
-        Port s1
-            Interface s1
+    Bridge br0
+        Port br0
+            Interface br0
                 type: internal
-        Port s1-eth2
-            Interface s1-eth2
     ovs_version: "2.17.9"
 
 ovs-vsctl: cannot create a bridge named br0 because a bridge named br0 already exists
@@ -54,7 +54,7 @@ OFPST_PORT reply (xid=0x2): 1 ports
 
 normal
 
- cookie=0x0, duration=10.880s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
+ cookie=0x0, duration=81831.002s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
 
 NXST_AGGREGATE reply (xid=0x4): packet_count=0 byte_count=0 flow_count=1
 
