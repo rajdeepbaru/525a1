@@ -316,7 +316,7 @@ sudo python3 code02-static-flow.py
 ```
 
 2.  Check the following execution
-<img src="../../supporting-files/vid01-staticFlowExecution.mp4" >
+<img src="../../supporting-files/vid01-staticFlowExecution.gif" >
 
 ---
 
