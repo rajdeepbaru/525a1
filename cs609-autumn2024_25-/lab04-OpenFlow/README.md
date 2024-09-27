@@ -38,7 +38,7 @@
 ```shell
 ssh-keygen -R AB.CDE.EF.GHI
 ```
-Choose "yes" when prompt is appeared in your terminal.
+    -   Choose "yes" when prompt is appeared in your terminal.
 
 2.  Clone the GitHub repository using the following command:
 
