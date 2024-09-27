@@ -33,7 +33,12 @@
 
 ##  1. Preparing the environment <a name="pr"></a>
 
-1.  Clone the GitHub repository: https://github.com/rajdeepbaru/525a1.git
+1.  Clone the GitHub repository using the following command:
+
+```shell
+git clone https://github.com/rajdeepbaru/525a1.git
+```
+
 2.  Change your _present working directory_ to _lab04-OpenFlow/_, using the following code snippet:
     
 ```shell 
