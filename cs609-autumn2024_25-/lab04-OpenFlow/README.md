@@ -84,14 +84,14 @@ source script06-anaconda-environment-enter.sh
 ```
 
 >   [!WARNING] 
->   After executing the above four commands, the output should be similar to the following image ((env01-ryu) should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.)
+>   After executing the above four commands, the output should be similar to the following image. Make sure that *(env01-ryu)* should be visible at the left-most end of the prompt string 1. If not, do not proceed further, and raise your hand, the TA will be solving the issue with you.
 >
 
 >   [!CAUTION]
->   Make sure that (env01-ryu) is visible at the left-most end. Otherwise fix the issue without proceeding further.
+>   Make sure that *(env01-ryu)* is visible at the left-most end. Otherwise fix the issue without proceeding further.
 >
 
-
+[env01-ryu](../../supporting-files/img01-env01-ryu.png)
 
 
 ## 2.   Working with OpenFlow <a name="of"></a>
@@ -358,5 +358,6 @@ test
 ---
 
 [comment]: # (Comment)
+
 
 
