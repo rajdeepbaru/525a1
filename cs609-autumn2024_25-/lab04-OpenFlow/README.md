@@ -91,8 +91,7 @@ source script06-anaconda-environment-enter.sh
 >   Make sure that *(env01-ryu)* is visible at the left-most end. Otherwise fix the issue without proceeding further.
 >
 
-[env01-ryu](../../supporting-files/img01-env01-ryu.png)
-<img src="../../supporting-files/img01-env01-ryu.png" width="128"/>
+<img src="../../supporting-files/img01-env01-ryu.png" />
 
 ## 2.   Working with OpenFlow <a name="of"></a>
 
