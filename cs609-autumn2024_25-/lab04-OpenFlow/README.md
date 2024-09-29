@@ -91,7 +91,7 @@ source script06-anaconda-environment-enter.sh
 >   Make sure that *(env01-ryu)* is visible at the left-most end. Otherwise fix the issue without proceeding further.
 >
 
-<img src="../../supporting-files/img01-env01-ryu.png" >
+<img src="../../.supporting-files/img01-env01-ryu.png" >
 
 ## 2.   Working with OpenFlow <a name="of"></a>
 
@@ -123,7 +123,7 @@ ls | grep run
 ```
 Match the output with the below snapshot.
 
-<img src="../../supporting-files/img02-remove-existing-output-in-openflow.png" >
+<img src="../../.supporting-files/img02-remove-existing-output-in-openflow.png" >
 
 
 ### 2.2 The OpenFlow topology with static flows <a name="of"></a>
@@ -316,7 +316,7 @@ sudo python3 code02-static-flow.py
 ```
 
 2.  Check the following execution for hints.
-<img src="../../supporting-files/vid01-staticFlowExecution.gif" >
+<img src="../../.supporting-files/vid01-staticFlowExecution.gif" >
 
 ---
 
