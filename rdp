@@ -1,6 +1,0 @@
-#sudo ufw delete 1
-#sudo ufw status numbered
-#sudo ufw status
-#sudo ufw allow from 10.200.233.40/20 to any port 3389
-sudo ufw status
-#sudo ufw allow 3389
