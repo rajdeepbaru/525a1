@@ -28,7 +28,7 @@
 
 3. [Working with TShark](#ts)
 4. [Working with Ryu: first example](#ry1)
-5. [Working with Ryu: second example](#ry2)
+5. [Working with Ryu: Ryu with tshark](#ry2)
 6. [Working with Ryu: third example](#ry3)
 
 
@@ -474,9 +474,35 @@ A sample output is as follows:
 <img src="../../.supporting-files/side-by-side3.png" >
 
 
-## Working with Ryu: second example]<a name="ry2"></a>
+## Working with Ryu: <a name="ry2"></a>
 
-## Working with Ryu: third example]<a name="ry3"></a>
+1.	Navigate to the desired location by executing the following command in both of the terminals:
+
+cd ../03-experiment-with-ryu-and-tshark/
+
+2. In the *first terminal*, type the following:
+```shell
+ryu-manager simple_switch.py
+```
+
+3. In the *second terminal*, type the following:
+```shell
+sudo mn --controller=remote,ip=127.0.0.1,port=6653 --switch=ovsk,protocols=OpenFlow13 --topo=tree,depth=2,fanout=4
+```
+4. Observe the output in the *first terminal*.
+
+5. In the *second terminal* type the following:
+```shell
+pingall
+```
+6. Observe the output in the *first terminal*. A sample output is available below:
+
+<img src="../../.supporting-files/side-by-side4.png" >
+
+
+
+
+## Working with Ryu: third example<a name="ry3"></a>
 
 
 
