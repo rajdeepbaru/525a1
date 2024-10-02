@@ -545,14 +545,16 @@ pingall
 ### To set up hosts
 
 Run the following command one by one:
-    -   nets
-    -   h1 ifconfig h1-eth0 10.0.1.1/24
-    -   h2 ifconfig h2-eth0 10.0.1.2/24
-    -   h1 route add default gw 10.0.1.1
-    -   h2 route add default gw 10.0.1.2
-    -   h1 route -n
-    -   net
-    -   dump
+-   nets
+-   h1 ifconfig h1-eth0 10.0.1.1/24
+-   h2 ifconfig h2-eth0 10.0.1.2/24
+-   h1 route add default gw 10.0.1.1
+-   h2 route add default gw 10.0.1.2
+-   h1 route -n
+-   net
+-   dump
+
+
 
 
 <!---
