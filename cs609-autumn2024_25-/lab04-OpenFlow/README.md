@@ -506,7 +506,7 @@ pingall
 	-	sudo tshark -i lo -Y tcp port 6653
 
 9. And observe the *openflow packets* in the *third terminal*. A sample output is available below:
-<img src="../../.supporting-files/side-by-side4.png" >
+<img src="../../.supporting-files/side-by-side5.png" >
 
 10. A sample video of the execution process is available below:
 <img src="../../.supporting-files/vid----" >
