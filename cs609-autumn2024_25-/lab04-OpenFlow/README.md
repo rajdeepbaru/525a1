@@ -95,6 +95,11 @@ source script06-anaconda-environment-enter.sh
 
 ## 2.   Working with OpenFlow <a name="of"></a>
 
+Move to the proper location by executing the following command:
+
+```shell
+cd ../02-open-flow-/
+```
 
 ### 2.1 Preparing the environmnet for OpenFlow<a name="pro"></a>
 
