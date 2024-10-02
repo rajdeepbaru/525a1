@@ -28,8 +28,8 @@
 
 3. [Working with TShark](#ts)
 4. [Working with Ryu: first example](#ry1)
-5. [Working with Ryu: Ryu with tshark](#ry2)
-6. [Working with Ryu: third example](#ry3)
+5. [Working with Ryu: Ryu with Tshark](#ry2)
+6. [Working with Ryu: Create router](#ry3)
 
 
 ---
@@ -474,7 +474,7 @@ A sample output is as follows:
 <img src="../../.supporting-files/side-by-side3.png" >
 
 
-## Working with Ryu: second <a name="ry2"></a>
+## Working with Ryu: Ryu with Tshark <a name="ry2"></a>
 
 **Notation:** Here we will be needing three terminals. We shall call them *first terminal*, *second terminal*, and *third terminal* in the follosing discussion.
 
@@ -514,18 +514,7 @@ pingall
 
 
 
-## Working with Ryu: third example<a name="ry3"></a>
-
-
-
--   01-ryu-install/
-    *   ryu/
-    *   script07-install-ryu-and-test.sh
-
-2. 02-experiment-with-ryu/
-    *   code02-test.py
-    *   code-for-ryu-controller.py
-    *   \_\_pycache__/
+## Working with Ryu: Create router<a name="ry3"></a>
 
 3. 03-create-router/
     *   code01-copy-custom-topology.sh
