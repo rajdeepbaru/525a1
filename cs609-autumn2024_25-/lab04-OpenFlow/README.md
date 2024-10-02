@@ -545,7 +545,7 @@ pingall
 ### To set up hosts
 
 Run the following command one by one:
--   nets
+-   net
 -   h1 ifconfig h1-eth0 10.0.1.1/24
 -   h2 ifconfig h2-eth0 10.0.1.2/24
 -   h1 route add default gw 10.0.1.1
@@ -554,7 +554,9 @@ Run the following command one by one:
 -   net
 -   dump
 
+A sample snapshot is available below:
 
+<img src="../../.supporting-files/img06-create-router.png" >
 
 
 <!---
