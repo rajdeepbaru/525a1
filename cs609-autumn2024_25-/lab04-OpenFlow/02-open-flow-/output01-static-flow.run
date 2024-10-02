@@ -1,21 +1,21 @@
 This is CS609 Lab. Execution starts
 
-c5ad8f77-d543-4550-a66b-2a6a69301c6e
+404f7d84-9b5b-4112-92e0-fa7e15809903
+    Bridge br0
+        Port br0
+            Interface br0
+                type: internal
     Bridge s1
         Controller "tcp:127.0.0.1:6653"
         fail_mode: secure
         Port s1-eth2
             Interface s1-eth2
-        Port s1
-            Interface s1
-                type: internal
-        Port s1-eth1
-            Interface s1-eth1
         Port s1-eth3
             Interface s1-eth3
-    Bridge br0
-        Port br0
-            Interface br0
+        Port s1-eth1
+            Interface s1-eth1
+        Port s1
+            Interface s1
                 type: internal
     ovs_version: "2.17.9"
 
@@ -25,11 +25,11 @@ ovs-vsctl: cannot create a bridge named br0 because a bridge named br0 already e
 ovs-ofctl (Open vSwitch) 2.17.9
 OpenFlow versions 0x1:0x6
 
-OFPT_FEATURES_REPLY (xid=0x2): dpid:0000fa256c620740
+OFPT_FEATURES_REPLY (xid=0x2): dpid:000086758b878346
 n_tables:254, n_buffers:0
 capabilities: FLOW_STATS TABLE_STATS PORT_STATS QUEUE_STATS ARP_MATCH_IP
 actions: output enqueue set_vlan_vid set_vlan_pcp strip_vlan mod_dl_src mod_dl_dst mod_nw_src mod_nw_dst mod_nw_tos mod_tp_src mod_tp_dst
- LOCAL(br0): addr:fa:25:6c:62:07:40
+ LOCAL(br0): addr:86:75:8b:87:83:46
      config:     PORT_DOWN
      state:      LINK_DOWN
      speed: 0 Mbps now, 0 Mbps max
@@ -54,7 +54,7 @@ OFPST_PORT reply (xid=0x2): 1 ports
 
 normal
 
- cookie=0x0, duration=81831.002s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
+ cookie=0x0, duration=39.451s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
 
 NXST_AGGREGATE reply (xid=0x4): packet_count=0 byte_count=0 flow_count=1
 

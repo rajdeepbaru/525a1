@@ -325,6 +325,27 @@ sudo python3 code02-static-flow.py
 
 ---
 
+3.	To save the output, use the following command:
+
+```shell
+sudo python3 code02-static-flow.py >> output01-static-flow.run
+```
+
+4.	To view the output, the the follosing command:
+```shell
+vim output01-static-flow.run
+```
+
+5.	To return to the terminal, use the follosing command:
+```shell
+	-	:
+	-	q
+	-	!
+	-	<Press the Enter key.>
+
+
+
+
 ## Working with TShark <a name="ts"></a>
 
 To install tshark run the following command:
