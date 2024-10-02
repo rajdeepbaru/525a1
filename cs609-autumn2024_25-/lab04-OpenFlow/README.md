@@ -32,7 +32,7 @@
 6. [Working with Ryu: Create router](#ry3)
     -   [6.1    Create topology](#ct)
     -   [6.2    To set up hosts](#su)
-
+7. [Reference](#ref)
 ---
 
 ##  1. Preparing the environment <a name="pr"></a>
@@ -556,7 +556,11 @@ A sample snapshot is available below:
 
 <img src="../../.supporting-files/img06-create-router.png" >
 
-
+##	7.	Reference
+1.	[Open vSwitch Manual: ovs-ofctl](http://www.openvswitch.org//support/dist-docs/ovs-ofctl.8.txt)
+2.	[Using OpenFlow](https://docs.openvswitch.org/en/latest/faq/openflow/)
+3.	[Open vSwitch Manual: ovs-vsctl](http://www.openvswitch.org/support/dist-docs/ovs-vsctl.8.txt)
+4.	[TShark Manual Page](https://www.wireshark.org/docs/man-pages/tshark.html)
 <!---
 test
 --->
