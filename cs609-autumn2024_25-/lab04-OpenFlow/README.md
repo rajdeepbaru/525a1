@@ -445,6 +445,15 @@ conda activate env01-ryu
 cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/04-ryu-/02-experiment-with-ryu/
 ```
 
+
+>   [!NOTE] 
+> Make sure that the *present working directory* in both of the terminals i.e., *first terminal* and the *second terminal* are identical.   A sample output is below:
+
+<img src="../../.supporting-files/side-by-side.png" >
+
+>
+
+
 -   01-ryu-install/
     *   ryu/
     *   script07-install-ryu-and-test.sh
