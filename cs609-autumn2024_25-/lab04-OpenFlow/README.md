@@ -356,7 +356,7 @@ cd ../03-tshark-/
 bash 01-tshark-install.sh
 ```
 >   [!NOTE] 
->  Choose *yes* is colored as *red* when the following dialogue box appear. To do so, use the *left-and-right* arrow key.
+>  Make sure that *yes* is colored as *red* when the following dialogue box appear. To do so, use the *left-and-right* arrow key.
 
 <img src="../../.supporting-files/img03-yes-is-red.png" >
 
