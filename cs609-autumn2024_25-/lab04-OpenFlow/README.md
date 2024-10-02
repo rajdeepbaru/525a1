@@ -525,6 +525,34 @@ pingall
     *   mytopo.py
 
 
+### Create topology
+
+1.  Run the following command:
+```shell
+bash code01-copy-custom-topology.sh
+```
+
+2. Start mininet by executing the following command:
+```shell
+bash code02-run-custom-topology.sh
+```
+
+3.  In the *mininet shell*, type the following:
+```shell
+pingall
+```
+
+### To set up hosts
+
+Run the following command one by one:
+    -   nets
+    -   h1 ifconfig h1-eth0 10.0.1.1/24
+    -   h2 ifconfig h2-eth0 10.0.1.2/24
+    -   h1 route add default gw 10.0.1.1
+    -   h2 route add default gw 10.0.1.2
+    -   h1 route -n
+    -   net
+    -   dump
 
 
 <!---
