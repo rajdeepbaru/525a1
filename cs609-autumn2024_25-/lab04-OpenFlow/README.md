@@ -331,18 +331,16 @@ sudo python3 code02-static-flow.py
 sudo python3 code02-static-flow.py >> output01-static-flow.run
 ```
 
-4.	To view the output, the the follosing command:
+4.	To view the output, the the following command:
 ```shell
 vim output01-static-flow.run
 ```
 
-5.	To return to the terminal, use the follosing command:
-```shell
+5.	To return to the terminal, use the following command:
 	-	:
 	-	q
 	-	!
 	-	<Press the Enter key.>
-
 
 
 
