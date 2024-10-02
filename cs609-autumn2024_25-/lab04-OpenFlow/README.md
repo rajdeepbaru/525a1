@@ -355,6 +355,12 @@ cd ../03-tshark-/
 ```shell
 bash 01-tshark-install.sh
 ```
+>   [!NOTE] 
+>  Choose *yes* is colored as *red* when the following dialogue box appear. To do so, use the *left-and-right* arrow key.
+
+<img src="../../.supporting-files/img03-yes-is-red.png" >
+
+>
 
 3.	Once installation is completed at your terminal, use the following command to check the version:
 ```shell
@@ -370,6 +376,13 @@ bash 03-tshark-add-to-group.sh
 ```shell
 bash 04-tshark-capture-packets.sh
 ```
+>   [!NOTE] 
+>  A sample output is below:
+
+<img src="../../.supporting-files/img04-output-tshark.png" >
+
+>
+  
 
 6.	To view the list of all interfaces, use the followiing command:
 ```shell
