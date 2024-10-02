@@ -340,7 +340,7 @@ vim output01-static-flow.run
 	-	:
 	-	q
 	-	!
-	-	<Press the Enter key.>
+	-	Press the Enter key
 
 
 
