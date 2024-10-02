@@ -12,7 +12,7 @@
 ### 01-initial-setup
 -->
 
-#   Lab 04: Thursday Morning, 03rd October 2024, Worksheet - 04 (OpenFlow)
+#   Lab Worksheet 04: Thursday morning session, 03rd October 2024. 
 
 ---
 
