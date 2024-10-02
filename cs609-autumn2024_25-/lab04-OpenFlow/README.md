@@ -407,7 +407,7 @@ bash 07-tshark-capture-ten-packets.sh
  
 9.	To view the result, rub the following command:
 ```shell
-vim output01.this-is-the-result
+cat output01.this-is-the-result
 ```
 
 
