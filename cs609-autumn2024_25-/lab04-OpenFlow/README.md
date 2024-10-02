@@ -517,14 +517,11 @@ pingall
 
 ## 6.  Working with Ryu: Create router<a name="ry3"></a>
 
-3. 03-create-router/
-    *   code01-copy-custom-topology.sh
-    *   code02-run-custom-topology.sh
-    *   code03-do-pingall.sh
-    *   code04-setupHosts-via-cli.sh
-    *   code04-setupHosts-via-xterm.sh
-    *   mytopo.py
+Navigate to the desired location by executing the following command:
 
+```shell
+cd ../04-create-router/
+```
 
 ### 6.1.    Create topology<a name="ct"></a>
 
