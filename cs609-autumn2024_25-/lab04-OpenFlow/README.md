@@ -424,6 +424,27 @@ cd ../04-ryu-/01-ryu-install/
 bash script07-install-ryu-and-test.sh
 ```
 
+3. Navigate to the proper directory by issuing the following command:
+```shell
+cd ../02-experiment-with-ryu/
+```
+Let us call this current terminal as the *first terminal*.
+
+4. We need another terminal. So open another terminal side-by-side. Let us call it as the *second terminal*. In the *second terminal*, please log in to your same VM using the *ssh* command. A sample status is available in the following image:
+
+---
+
+5. In the *second terminal*, activate the desired python *virtual environment* by issuing the following command:
+```shell
+conda activate env01-ryu
+```
+
+
+6. In the *second terminal*, navigate to the desired location by issuing the following command:
+```shell
+cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/04-ryu-/02-experiment-with-ryu/
+```
+
 -   01-ryu-install/
     *   ryu/
     *   script07-install-ryu-and-test.sh
