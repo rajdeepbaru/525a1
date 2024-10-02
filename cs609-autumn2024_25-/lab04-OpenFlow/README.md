@@ -27,7 +27,10 @@
         -   [2.2.4  Solution](#sol1)
 
 3. [Working with TShark](#ts)
-4.  [Working with Ryu](#ry)
+4. [Working with Ryu: first example](#ry1)
+5. [Working with Ryu: second example](#ry2)
+6. [Working with Ryu: third example](#ry3)
+
 
 ---
 
@@ -410,9 +413,7 @@ bash 07-tshark-capture-ten-packets.sh
 cat output01.this-is-the-result
 ```
 
-
-
-## Working with Ryu <a name="ry"></a>
+## Working with Ryu: first example <a name="ry1"></a>
 
 1. To navigate to the proper directory, run the following command:
 ```shell
@@ -458,13 +459,13 @@ cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/04-ryu-/02-experiment-with-ryu/
 
 >
 
-7. In the *first terminal* i.e., in the *left hand side*, run the following command:
+7. In the *first terminal*, i.e., in the *left hand side*, run the following command:
 ```shell
 ryu-manager ../01-ryu-install/ryu/ryu/app/simple_switch_13.py
 ```
 
 
-8. In the *second terminal* i.e., in the *right hand side*, run the following command:
+8. In the *second terminal*, i.e., in the *right hand side*, run the following command:
 ```shell
 sudo mn --controller=remote,ip=127.0.0.1 --mac -i 10.1.1.0/24 --topo=tree,depth=2,fanout=3	
 ```
@@ -472,6 +473,10 @@ A sample output is as follows:
 
 <img src="../../.supporting-files/side-by-side3.png" >
 
+
+## Working with Ryu: second example]<a name="ry2"></a>
+
+## Working with Ryu: third example]<a name="ry3"></a>
 
 
 
