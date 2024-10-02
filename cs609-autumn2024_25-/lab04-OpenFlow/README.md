@@ -51,6 +51,14 @@ ssh-keygen -R AB.CDE.EF.GHI
 ```shell
 git clone https://github.com/rajdeepbaru/525a1.git
 ```
+The above strategy is for cloning via HTTPS. 
+
+You may also clone using SSH if you have your own SSH key. In that scenario, use the following snippet:
+```shell
+git clone git@github.com:rajdeepbaru/525a1.git
+```
+
+Cloning the repository using either strategy is fine.
 
 3.  Change your _present working directory_ to _lab04-OpenFlow/_, using the following code snippet:
     
