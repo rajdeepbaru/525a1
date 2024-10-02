@@ -12,11 +12,9 @@
 ### 01-initial-setup
 -->
 
----
+
 
 #   Lab Worksheet 04: Thursday morning session, 03rd October 2024. 
-
----
 
 ### Table of contents
 1. [Preparing the environment](#pr)
