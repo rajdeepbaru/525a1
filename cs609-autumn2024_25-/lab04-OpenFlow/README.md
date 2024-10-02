@@ -509,7 +509,7 @@ pingall
 <img src="../../.supporting-files/side-by-side5.png" >
 
 10. A sample video of the execution process is available below:
-<img src="../../.supporting-files/vid----" >
+<img src="../../.supporting-files/vid02-exp2.gif" >
 
 
 
