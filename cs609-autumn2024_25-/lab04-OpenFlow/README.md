@@ -432,7 +432,12 @@ Let us call this current terminal as the *first terminal*.
 
 4. We need another terminal. So open another terminal side-by-side. Let us call it as the *second terminal*. In the *second terminal*, please log in to your same VM using the *ssh* command. A sample status is available in the following image:
 
----
+<img src="../../.supporting-files/side-by-side1.png" >
+
+
+In the following discussion, the *first terminal* will be in the *left hand side* and the *second terminal* will be in the *right hand side*.
+
+
 
 5. In the *second terminal*, activate the desired python *virtual environment* by issuing the following command:
 ```shell
@@ -449,10 +454,14 @@ cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/04-ryu-/02-experiment-with-ryu/
 >   [!NOTE] 
 > Make sure that the *present working directory* in both of the terminals i.e., *first terminal* and the *second terminal* are identical.   A sample output is below:
 
-<img src="../../.supporting-files/side-by-side.png" >
+<img src="../../.supporting-files/side-by-side2.png" >
 
 >
 
+7. In the *first terminal*, run the following command:
+```shell
+ryu-manager ../01-ryu-install/ryu/ryu/app/simple_switch_13.py
+```
 
 -   01-ryu-install/
     *   ryu/
