@@ -474,7 +474,9 @@ A sample output is as follows:
 <img src="../../.supporting-files/side-by-side3.png" >
 
 
-## Working with Ryu: <a name="ry2"></a>
+## Working with Ryu: second <a name="ry2"></a>
+
+**Notation:** Here we will be needing three terminals. We shall call them *first terminal*, *second terminal*, and *third terminal* in the follosing discussion.
 
 1.	Navigate to the desired location by executing the following command in both of the terminals:
 
@@ -498,6 +500,14 @@ pingall
 6. Observe the output in the *first terminal*. A sample output is available below:
 
 <img src="../../.supporting-files/side-by-side4.png" >
+
+8. In a *third terminal*, execute the following commands:
+	-	sudo tshark -D
+	-	sudo tshark -i lo -Y tcp port 6653
+
+9. And observe the *openflow packets* in the *third terminal*. A sample output is available bellow:
+<img src="../../.supporting-files/side-by-side4.png" >
+
 
 
 
