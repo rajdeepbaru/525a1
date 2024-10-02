@@ -458,10 +458,22 @@ cd 525a1/cs609-autumn2024_25-/lab04-OpenFlow/04-ryu-/02-experiment-with-ryu/
 
 >
 
-7. In the *first terminal*, run the following command:
+7. In the *first terminal* i.e., in the *left hand side*, run the following command:
 ```shell
 ryu-manager ../01-ryu-install/ryu/ryu/app/simple_switch_13.py
 ```
+
+
+8. In the *second terminal* i.e., in the *right hand side*, run the following command:
+```shell
+sudo mn --controller=remote,ip=127.0.0.1 --mac -i 10.1.1.0/24 --topo=tree,depth=2,fanout=3	
+```
+A sample output is as follows:
+
+<img src="../../.supporting-files/side-by-side3.png" >
+
+
+
 
 -   01-ryu-install/
     *   ryu/
