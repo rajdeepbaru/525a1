@@ -414,6 +414,16 @@ cat output01.this-is-the-result
 
 ## Working with Ryu <a name="ry"></a>
 
+1. To navigate to the proper directory, run the following command:
+```shell
+cd ../04-ryu-/01-ryu-install/
+```
+
+2.  To install Ryu, use the following command:
+```shell
+bash script07-install-ryu-and-test.sh
+```
+
 -   01-ryu-install/
     *   ryu/
     *   script07-install-ryu-and-test.sh
