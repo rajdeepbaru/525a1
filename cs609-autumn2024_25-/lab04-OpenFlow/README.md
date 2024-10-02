@@ -379,7 +379,7 @@ bash 04-tshark-capture-packets.sh
 >   [!NOTE] 
 >  A sample output is below:
 
-<img src="../../.supporting-files/img04-output-tshark.png" >
+<img src="../../.supporting-files/img04-output1-tshark.png" >
 
 >
   
@@ -398,7 +398,13 @@ bash 06-tshark-scan-one-network-interface.sh
 ```shell
 bash 07-tshark-capture-ten-packets.sh
 ```
+>   [!NOTE] 
+>  A sample output is below:
 
+<img src="../../.supporting-files/img05-output2-tshark.png" >
+
+>
+ 
 9.	To view the result, rub the following command:
 ```shell
 vim output01.this-is-the-result
