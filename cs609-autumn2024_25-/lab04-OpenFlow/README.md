@@ -353,42 +353,42 @@ cd ../03-tshark-/
 
 2.	To install tshark run the following command:
 ```shell
-    bash 01-tshark-install.sh
+bash 01-tshark-install.sh
 ```
 
 3.	Once installation is completed at your terminal, use the following command to check the version:
 ```shell
-02-tshark-version-check.sh
+bash 02-tshark-version-check.sh
 ```
 
 4.	To add tshark to the current group, use the following command:
 ```shell
-03-tshark-add-to-group.sh
+bash 03-tshark-add-to-group.sh
 ```
 
 5.	To capture packets, start tshark using the following command:
 ```shell
-04-tshark-capture-packets.sh
+bash 04-tshark-capture-packets.sh
 ```
 
 6.	To view the list of all interfaces, use the followiing command:
 ```shell
-05-tshark-list-of-all-interfaces.sh
+bash 05-tshark-list-of-all-interfaces.sh
 ```
 
 7.	To scan a network, use the following command:
 ```shell
-06-tshark-scan-one-network-interface.sh
+bash 06-tshark-scan-one-network-interface.sh
 ```
 
 8.	To capture ten packets, use the following command:
 ```shell
-07-tshark-capture-ten-packets.sh
+bash 07-tshark-capture-ten-packets.sh
 ```
 
 9.	To view the result, rub the following command:
 ```shell
-vim	output01.this-is-the-result
+vim output01.this-is-the-result
 ```
 
 
