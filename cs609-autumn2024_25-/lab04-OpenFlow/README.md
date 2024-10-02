@@ -193,7 +193,7 @@ We shall create a network topology and execute a few open-flow commands.
 10. Verify the connectivity between the three hosts.
 
 > [!TIP]
-> The code is given bellow. Study the components of the code with the statements of the above questions.
+> The code is given below. Study the components of the code with the statements of the above questions.
 
 ```python
 from mininet.net import Mininet
@@ -505,9 +505,11 @@ pingall
 	-	sudo tshark -D
 	-	sudo tshark -i lo -Y tcp port 6653
 
-9. And observe the *openflow packets* in the *third terminal*. A sample output is available bellow:
+9. And observe the *openflow packets* in the *third terminal*. A sample output is available below:
 <img src="../../.supporting-files/side-by-side4.png" >
 
+10. A sample video of the execution process is available below:
+<img src="../../.supporting-files/vid----" >
 
 
 
