@@ -30,7 +30,8 @@
 4. [Working with Ryu: first example](#ry1)
 5. [Working with Ryu: Ryu with Tshark](#ry2)
 6. [Working with Ryu: Create router](#ry3)
-
+    -   [6.1    Create topology](#ct)
+    -   [6.2    To set up hosts](#su)
 
 ---
 
@@ -347,7 +348,7 @@ vim output01-static-flow.run
 
 
 
-## Working with TShark <a name="ts"></a>
+## 3.   Working with TShark <a name="ts"></a>
 
 1.	Go to the proper location by using the follosing command:
 ```shell
@@ -413,7 +414,7 @@ bash 07-tshark-capture-ten-packets.sh
 cat output01.this-is-the-result
 ```
 
-## Working with Ryu: first example <a name="ry1"></a>
+## 4.   Working with Ryu: first example <a name="ry1"></a>
 
 1. To navigate to the proper directory, run the following command:
 ```shell
@@ -474,7 +475,7 @@ A sample output is as follows:
 <img src="../../.supporting-files/side-by-side3.png" >
 
 
-## Working with Ryu: Ryu with Tshark <a name="ry2"></a>
+## 5.   Working with Ryu: Ryu with Tshark <a name="ry2"></a>
 
 **Notation:** Here we will be needing three terminals. We shall call them *first terminal*, *second terminal*, and *third terminal* in the follosing discussion.
 
@@ -514,7 +515,7 @@ pingall
 
 
 
-## Working with Ryu: Create router<a name="ry3"></a>
+## 6.  Working with Ryu: Create router<a name="ry3"></a>
 
 3. 03-create-router/
     *   code01-copy-custom-topology.sh
@@ -525,7 +526,7 @@ pingall
     *   mytopo.py
 
 
-### Create topology
+### 6.1.    Create topology<a name="ct"></a>
 
 1.  Run the following command:
 ```shell
@@ -542,7 +543,7 @@ bash code02-run-custom-topology.sh
 pingall
 ```
 
-### To set up hosts
+### 6.2 To set up hosts<a name="su"></a>
 
 Run the following command one by one:
 -   net
