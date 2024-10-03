@@ -587,7 +587,7 @@ sudo systemctl status xrdp
 > Make sure that the status is visible as *active (running)*   A sample output is below. If not, please do not proceed further, and ask for help.
 
 <img src="../../.supporting-files/rdp1.png" >
->
+
 
 5.  To start xrdp, exxecute the following command:
 ```shell
