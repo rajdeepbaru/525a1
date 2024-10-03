@@ -72,7 +72,7 @@
 ##	Router	<a	name="r1"></a>
 
 ##	a9	Reference	<a	name="r2"></a>
-1.	[RYU SDN Framework](https://book.ryu-sdn.org/en/html/switching_hub.html)
+1.	[RYU SDN Framework](https://book.ryu-sdn.org/en/html/)
 
 <!---
 test
