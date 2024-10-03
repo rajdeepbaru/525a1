@@ -604,7 +604,7 @@ sudo systemctl start xrdp
 cd ~
 ```
 
-7.  To create a `.xsession` file under the `HOME` directory, and addd the `fce4-session` as the *session manager*, run the following:
+7.  To create a `.xsession` file under the `HOME` directory, and add the `fce4-session` as the *session manager*, run the following:
 ```shell
 echo "xfce4-session" | tee .xsession
 ```
