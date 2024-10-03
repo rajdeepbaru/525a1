@@ -568,19 +568,87 @@ A sample snapshot is available below:
 
 ##	7.	Testing a remote desktop protocol <a name="rd"></a>
 1.	Install [Remmina](https://remmina.org/) using this link.
-2.	Use the following command:
+
+2.  Install a desktop environment. In this case, we care going to install [xfce](https://www.xfce.org) desktop environment. To do so, use the following command:
+```shell
+sudo apt install xfce4 xfce4-goodies -y
+```
+
+3.  Install *xrdp* on ubuntu. To do so, execute the following:
+```shell
+sudo apt install xrdp -y
+```
+
+4.  To check the status, execute the following command.
+```shell
+sudo systemctl status xrdp
+```
+>   [!NOTE] 
+> Make sure that the status is visible as *active (running)*   A sample output is below. If not, please do not proceed further, and ask for help.
+
+<img src="../../.supporting-files/rdp1.png" >
+>
+
+5.  To start xrdp, exxecute the following command:
+```shell
+sudo systemctl start xrdp
+```
+
+6. Navigate to the *home directory* by using the following command:
+```shell
+cd ~
+```
+
+7.  To create a `.xsession` file under the `HOME` directory, and addd the `fce4-session` as the *session manager*, run the following:
+```shell
+echo "xfce4-session" | tee .xsession
+```
+
+8.  Restart the `xrdp server` by executing the following command:
+```shell
+sudo systemctl restart xrdp
+```
+
+9.  To allow access to the RDP port 3389, execute the follosing command:
 ```shell
 sudo ufw allow from any to any port 3389
 ```
-3.	Follow the following weblink to enable remote desktop protocol using xrdp.
 
-[Enable Remote Desktop Protocol Using xrdp](https://www.digitalocean.com/community/tutorials/how-to-enable-remote-desktop-protocol-using-xrdp-on-ubuntu-22-04)
+10. Check status:
+```shell
+sudo ufw status
+```
+
+> [!CAUTION]
+> If the *status* is not *Active*, then use the following step:
+```shell
+sudo ufw enable
+```
+
+
+> [!IMPORTANT]  
+> Make sure that the output of the following command is *Active*
+```shell
+sudo ufw status
+```
+
+11. Done. Now open *Remmina* from your *local machine* and connect the VM using *RDP*. You may refer the following for a better understanding:
+
+
+<img src="../../.supporting-files/rdp2" >
+
+
+
+3.	Follow the following weblink to enable remote desktop protocol using xrdp.
 
 ##	8.	Reference
 1.	[Open vSwitch Manual: ovs-ofctl](http://www.openvswitch.org//support/dist-docs/ovs-ofctl.8.txt)
 2.	[Using OpenFlow](https://docs.openvswitch.org/en/latest/faq/openflow/)
 3.	[Open vSwitch Manual: ovs-vsctl](http://www.openvswitch.org/support/dist-docs/ovs-vsctl.8.txt)
 4.	[TShark Manual Page](https://www.wireshark.org/docs/man-pages/tshark.html)
+5.  [Enable Remote Desktop Protocol Using xrdp](https://www.digitalocean.com/community/tutorials/how-to-enable-remote-desktop-protocol-using-xrdp-on-ubuntu-22-04)
+
+
 <!---
 test
 --->
