@@ -586,7 +586,7 @@ sudo systemctl status xrdp
 >   [!NOTE] 
 > Make sure that the status is visible as *active (running)*   A sample output is below. If not, please do not proceed further, and ask for help.
 
-<img src="../../.supporting-files/rdp1.png" >
+<img src="../../.supporting-files/rdp01.png" >
 
 
 5.  To start xrdp, exxecute the following command:
@@ -635,7 +635,7 @@ sudo ufw status
 11. Done. Now open *Remmina* from your *local machine* and connect the VM using *RDP*. You may refer the following for a better understanding:
 
 
-<img src="../../.supporting-files/rdp2" >
+<img src="../../.supporting-files/rdp02.gif" >
 
 
 
