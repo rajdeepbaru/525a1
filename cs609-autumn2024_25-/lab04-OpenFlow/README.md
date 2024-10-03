@@ -635,7 +635,14 @@ sudo ufw status
 11. Done. Now open *Remmina* from your *local machine* and connect the VM using *RDP*. You may consider the following preview as a reference:
 <img src="../../.supporting-files/rdp03.png" >
 
-12. You may refer the following for a better understanding:
+
+12. Once you are able to connect, the view may be similar to the following snapshot:
+
+<img src="../../.supporting-files/rdp04.png" >
+
+
+
+13. You may refer the following for a better understanding:
 
 
 <img src="../../.supporting-files/rdp02.gif" >
