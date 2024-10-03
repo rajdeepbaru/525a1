@@ -568,7 +568,11 @@ A sample snapshot is available below:
 
 ##	7.	Testing a remote desktop protocol <a name="rd"></a>
 1.	Install [Remmina](https://remmina.org/) using this link.
-2.	Follow the following weblink to enable remote desktop protocol using xrdp.
+2.	Use the following command:
+```shell
+sudo ufw allow from any to any port 3389
+```
+3.	Follow the following weblink to enable remote desktop protocol using xrdp.
 
 [Enable Remote Desktop Protocol Using xrdp](https://www.digitalocean.com/community/tutorials/how-to-enable-remote-desktop-protocol-using-xrdp-on-ubuntu-22-04)
 
