@@ -639,8 +639,6 @@ sudo ufw status
 
 
 
-3.	Follow the following weblink to enable remote desktop protocol using xrdp.
-
 ##	8.	Reference
 1.	[Open vSwitch Manual: ovs-ofctl](http://www.openvswitch.org//support/dist-docs/ovs-ofctl.8.txt)
 2.	[Using OpenFlow](https://docs.openvswitch.org/en/latest/faq/openflow/)
