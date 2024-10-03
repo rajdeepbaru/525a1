@@ -59,7 +59,7 @@
 
 ##	Switching Hub	<a	name="sh"></a>
 
--	*Brief overview:* [Switching Hub](https://book.ryu-sdn.org/en/html/switching_hub.html)
+-	**Brief overview:** [Switching Hub](https://book.ryu-sdn.org/en/html/switching_hub.html)
 
 
 
