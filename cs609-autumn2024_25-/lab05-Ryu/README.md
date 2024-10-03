@@ -60,6 +60,7 @@
 ##	Switching Hub	<a	name="sh"></a>
 
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
+-	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
 
 
 
