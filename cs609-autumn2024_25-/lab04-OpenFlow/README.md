@@ -632,7 +632,10 @@ sudo ufw enable
 sudo ufw status
 ```
 
-11. Done. Now open *Remmina* from your *local machine* and connect the VM using *RDP*. You may refer the following for a better understanding:
+11. Done. Now open *Remmina* from your *local machine* and connect the VM using *RDP*. You may consider the following preview as a reference:
+<img src="../../.supporting-files/rdp03.png" >
+
+12. You may refer the following for a better understanding:
 
 
 <img src="../../.supporting-files/rdp02.gif" >
