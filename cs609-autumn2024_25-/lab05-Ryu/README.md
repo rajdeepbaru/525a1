@@ -1,0 +1,65 @@
+<h2 align="center" style="border-bottom: 5px dotted">
+   <p> Software-Defined Networking and Network Function Virtualization, (CS-609)</p>
+    <p> Autumn 2024-25, Indian Institute of Technology Dharwad </p>
+    
+
+</h2>
+
+
+<!---
+## Lab - 04: OpenFlow
+
+### 01-initial-setup
+-->
+
+
+
+#   Lab Worksheet 05: Tuesday morning session, 08th October 2024. 
+<!---
+
+### Table of contents
+1. [Preparing the environment](#pr)
+2. [Working with OpenFlow](#of)
+    -   [2.1    Preparing the environmnet for OpenFlow](#pro)
+    -   [2.2    The OpenFlow topology with static flows](#of)
+        -   [2.2.1  What will we solve?](#ww)
+        -   [2.2.2  Naming convention](#nc)
+        -   [2.2.3  Problem at hand](#ph)
+        -   [2.2.4  Solution](#sol1)
+
+3. [Working with TShark](#ts)
+4. [Working with Ryu: first example](#ry1)
+5. [Working with Ryu: Ryu with Tshark](#ry2)
+6. [Working with Ryu: Create router](#ry3)
+    -   [6.1    Create topology](#ct)
+    -   [6.2    To set up hosts](#su)
+7.	[Testing a remote desktop protocol](#rd)
+8. [Reference](#ref)
+--->
+
+
+---
+<!---
+
+##  1. Preparing the environment <a name="pr"></a>
+
+
+<img src="../../.supporting-files/rdp02.gif" >
+
+--->
+
+
+##	a9	Reference
+1.	[RYU SDN Framework](https://book.ryu-sdn.org/en/html/switching_hub.html)
+
+<!---
+test
+--->
+---
+
+[comment]: # (Comment)
+
+
+
+
+
