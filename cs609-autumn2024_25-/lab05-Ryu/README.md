@@ -39,6 +39,7 @@
 
 ### Table of contents
 
+1.	[Initialization step](#is)
 1.	[Switching Hub](#sh)
 2.	[Traffic Monitor](#tm)
 3.	[REST Linkage](#rl)
@@ -56,6 +57,24 @@
 <img src="../../.supporting-files/rdp02.gif" >
 
 --->
+##	Initialization step<a	name="is"></a>
+
+1.	Please navigate to the *desired location*. By the term *desired location*, we mean that the *present working directory* should be `525a1`. To do so, run the follosing command:
+```shell
+cd 525a1/
+```
+
+2.	Please execute the following command `git pull` in the *desired location* to fetch and download content from this GitHub repository and immediately update your *local repository* to match that content:
+```shell
+git pull
+```
+
+3.	Please activate the desired *virtual environment* `env01-ryu` by executing the following command:
+```shell
+conad activate env01-ryu
+```
+
+4.	We are all set to proceed to the following step.
 
 ##	Switching Hub	<a	name="sh"></a>
 
