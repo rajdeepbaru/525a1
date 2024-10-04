@@ -59,12 +59,12 @@
 --->
 ##	Initialization step<a	name="is"></a>
 
-1.	Please navigate to the *desired location*. By the term *desired location*, we mean that the *present working directory* should be `525a1`. To do so, run the follosing command:
+1.	Please navigate to the *desired location*. By the term *desired location*, we mean that the *present working directory* should be `525a1`. To do so, run the following command:
 ```shell
 cd 525a1/
 ```
 
-2.	Please execute the following command `git pull` in the *desired location* to fetch and download content from this GitHub repository and immediately update your *local repository* to match that content:
+2.	Please execute the following command at the *desired location* to fetch and download content from [this GitHub repository](https://github.com/rajdeepbaru/525a1/tree/main) and immediately update your *local repository* to match that content:
 ```shell
 git pull
 ```
