@@ -429,68 +429,73 @@ h1 ping -c 1 h
 
 
 
-
-2
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3
-
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:01 ff:ff:ff:ff:ff:ff 1
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:02 00:00:00:00:00:01 2
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:01 00:00:00:00:00:02 1
-
-
+5. Let us execute REST API that acquires the MAC table of the switching hub. This time, use the curl command to call REST API. To do so, execute the following command:
+```shell
 curl -X GET http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
+```
 
-{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}
-
-
-(21634) accepted ('127.0.0.1', 58836)
-127.0.0.1 - - [06/Oct/2024 16:12:17] "GET /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000787
-
+> [!TIPS]
+> The output in the *right terminal* should be similar to following:  
+> `{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}`  
 
 
+> [!CAUTION]
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
+
+
+> [!TIPS]
+> The output in the *left terminal* should be similar to following:  
+> `(21634) accepted ('127.0.0.1', 58836)`  
+> `127.0.0.1 - - [06/Oct/2024 16:12:17] "GET /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000787`  
+
+6. Now call REST API for updating of the MAC address table for each host. The data format when calling REST API shall be {``mac`` : ``MAC address``, ``port`` : Connection port number}.
+
+```shell
 curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
+```
 
 
-{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}
+> [!TIPS]
+> The output in the *right terminal* should be similar to following:  
+> {"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}
 
-(21634) accepted ('127.0.0.1', 59148)
-127.0.0.1 - - [06/Oct/2024 16:14:20] "PUT /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000377
-EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
-packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3
+
+
+> [!TIPS]
+> The output in the *left terminal* should be similar to following:  
+> `(21634) accepted ('127.0.0.1', 59148)`  
+> `127.0.0.1 - - [06/Oct/2024 16:14:20] "PUT /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000377`  
+> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`  
+> `packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3`  
 
 
 4. Do `ping` from `host 1` to `host 2`. The output will be similar to the following:
 
-<img src="../../.supporting-files/dia07.png">
+```shell
+h1 ping -c 1 h2
+```
 
+> [!TIPS]
+> The output in the *right terminal* should be similar to following:
+> `PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.`  
+> `64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.183 ms`  
+> `--- 10.0.0.2 ping statistics ---`  
+> `1 packets transmitted, 1 received, 0% packet loss, time 0ms`  
+> `rtt min/avg/max/mdev = 0.183/0.183/0.183/0.000 ms`  
+
+
+
+<!---
+<img src="../../.supporting-files/dia07.png">
+--->
 
 
 5. Do `pingall`. The output will be similar to the following:
 
+
+<!---
 <img src="../../.supporting-files/dia08.png">
-
-
-h1 ping -c 1 h2
-PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
-64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.183 ms
-
---- 10.0.0.2 ping statistics ---
-1 packets transmitted, 1 received, 0% packet loss, time 0ms
-rtt min/avg/max/mdev = 0.183/0.183/0.183/0.000 ms
+--->
 
 
 
