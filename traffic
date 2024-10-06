@@ -1,0 +1,10 @@
+sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
+
+sh ovs-vsctl show
+
+sh ovs-dpctl show
+
+
+sh ovs-vsctl set Bridge s1 protocols=OpenFlow13
+
+h1 ping  -c1 h2
