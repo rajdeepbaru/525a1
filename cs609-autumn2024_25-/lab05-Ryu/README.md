@@ -182,6 +182,11 @@ sh ovs-ofctl -O openflow13 dump-flows s1
 
 > [!NOTE]  
 >  The output should be similar to `cookie=0x0, duration=45.666s, table=0, n_packets=2, n_bytes=140, priority=0 actions=CONTROLLER:65535`
+> [!IMPORTANT]  
+> - The priority level is 0,
+> - match,
+> - bytes 140,
+> - CONTROLLER is specified for action, and transfer data size of 65535(0xffff = OFPCML_NO_BUFFER) is specified.
 
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
