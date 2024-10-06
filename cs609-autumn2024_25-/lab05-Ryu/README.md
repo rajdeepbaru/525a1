@@ -221,7 +221,8 @@ sh tcpdump -en -i s1-eth1
 > packet in 1 00:00:00:00:00:02 33:33:00:00:00:02 2`
 
 
-
+12. For reference, you may look into the following video:
+<img src="../../.supporting-files/lab-5-vid04.gif">
 
 
 
