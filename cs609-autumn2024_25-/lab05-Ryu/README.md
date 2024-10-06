@@ -92,6 +92,9 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 ### Our job is to execute the Ryu application and verify the output
 
+**Notation:** We shall be working with two *terminals*, next to each other. In the follosing discussion, the words *first terminal* and *left terminal* are used interchangeably. Similarly, the words *second terminal* and *right terminal* are used interchangeably.
+
+
 sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
 
 In s1: 
