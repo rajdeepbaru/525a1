@@ -110,7 +110,11 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 ### Our job is to execute the Ryu application and verify the output
 
+1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the follosing command in the *right termianl* or equivalently *second terminal*.
+```shell
 sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
+```
+
 
 In s1: 
 ovs-vsctl show
