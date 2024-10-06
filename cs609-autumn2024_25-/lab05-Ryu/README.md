@@ -194,6 +194,35 @@ sh ovs-ofctl -O openflow13 dump-flows s1
 > Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the differenc between the two results?**
 
 
+10. Please check all the network interfaces on your system. To do so, execute the following command:
+```shell
+sh ifconfig -a
+```
+
+You should see a output similar to the following:
+
+<img src="../../.supporting-files/dia06.png" >
+
+
+11. We shall check packets were received by the hosts. For `h1`, execute the following:
+```shell
+sh tcpdump -en -i s1-eth1
+```
+> [!NOTE]  
+>  The output should be similar to `listening on s1-eth1, link-type EN10MB (Ethernet), snapshot length 262144 bytes 07:50:39.580864 00:00:00:00:00:02 > 33:33:00:00:00:02, ethertype IPv6 (0x86dd), length 70: fe80::200:ff:fe00:2 > ff02::2: ICMP6, router solicitation, length 16`
+
+
+> [!IMPORTANT]  
+> The output in the *left terminal* is 
+> `EVENT ofp_event->ExampleSwitch13 EventOFPPacketIn
+> packet in 1 00:00:00:00:00:02 33:33:00:00:00:02 2`
+
+
+
+
+
+
+
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
 
