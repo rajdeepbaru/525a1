@@ -234,25 +234,20 @@ sh tcpdump -en -i s1-eth1
 -   `sh tcpdump -en -i s1-eth2`
 -   `sh tcpdump -en -i s1-eth3`
 
-
-
-
-In s1:
-# ovs-ofctl -O openflow13 dump-flows s1
-
-In h1:
-# tcpdump -en -i h1-eth0
-
-In h2:
-# tcpdump -en -i h2-eth0
-
-
-In h3:
-# tcpdump -en -i h3-eth0
-
-
-In mn:
+15. Execute the following command to issue ping from host 1 to host 2:
+```shell
 mininet> h1 ping -c1 h2
+```
+You should see output similar to the following: 
+`PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.` 
+`64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=2.80 ms` 
+ 
+`--- 10.0.0.2 ping statistics ---` 
+`1 packets transmitted, 1 received, 0% packet loss, time 0ms` 
+`rtt min/avg/max/mdev = 2.799/2.799/2.799/0.000 ms` 
+
+
+
 
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
