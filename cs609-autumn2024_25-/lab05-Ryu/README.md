@@ -191,7 +191,7 @@ sh ovs-ofctl -O openflow13 dump-flows s1
 
 
 > [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify it?**
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the differenc between the two resultse?**
 
 
 In s1:
