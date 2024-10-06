@@ -266,7 +266,7 @@ sh ovs-ofctl -O OpenFlow13 dump-flows s1
 ```
 
 > [!NOTE]
-> The output should be similar to the following: 
+> The output should be similar to the following:   
 > `cookie=0x0, duration=20.055s, table=0, n_packets=2, n_bytes=140, priority=1,in_port="s1-eth2",dl_dst=00:00:00:00:00:01 actions=output:"s1-eth1"`  
 > `cookie=0x0, duration=20.054s, table=0, n_packets=1, n_bytes=42, priority=1,in_port="s1-eth1",dl_dst=00:00:00:00:00:02 actions=output:"s1-eth2"`  
 > `cookie=0x0, duration=260.171s, table=0, n_packets=8, n_bytes=532, priority=0 actions=CONTROLLER:65535`  
@@ -274,6 +274,13 @@ sh ovs-ofctl -O OpenFlow13 dump-flows s1
 
 15. For reference, you may look into the following video:
 <img src="../../.supporting-files/lab05-vid06.gif">
+
+
+> [!IMPORTANT]  
+> Above, in step 9, compare the output.  
+
+**What happened?**
+
 
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
