@@ -107,6 +107,9 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
 
+-   **Relevant python code:** 
+
+
 
 ### Our job is to execute the Ryu application and verify the output
 
@@ -323,17 +326,27 @@ In the *left terminal*, you should see an output similar to following:
     -   For this reason, constant monitoring of the health of a network is essential for continuous and safe operation of the services or businesses that use that network. As a matter of course, simply monitoring traffic information does not provide a perfect guarantee but this section describes how to use OpenFlow to acquire statistical information for a switch.
 
 
+-   **Relevant python code:** 
+
+
 1. Follow the [Initialization step](#is) for the two terminals.
 
-2. sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
+2. To set OpenFlow13 for the OpenFlow version, execute the following steps:
+```shell
+sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
+```
 
+```shell
 sh ovs-vsctl show
+```
 
+```shell
 sh ovs-dpctl show
+```
 
-
+```shell
 sh ovs-vsctl set Bridge s1 protocols=OpenFlow13
-
+```
 
 
 
