@@ -175,7 +175,7 @@ You should a similar output similar to the following:
 ### What happened?
 The OVS is connected, handshake is done, the Table-miss flow entry has been added and the switching hub is in the status waiting for Packet-In.
 
-9.  Now we shall confirm that the Table-miss flow entry has been added. To do so, execute the following in the *right terminal*.
+9.  Now we shall confirm that the Table-miss flow entry has been added. To do so, execute the following in the *right terminal*. <a	name="s9"></a>
 ```shell
 sh ovs-ofctl -O openflow13 dump-flows s1
 ```
@@ -277,7 +277,7 @@ sh ovs-ofctl -O OpenFlow13 dump-flows s1
 
 
 > [!IMPORTANT]  
-> Above, in step 9, compare the output.  
+> [Above, in step 9](#s9), compare the output.  
 
 **What happened?**
 -   Receive port (in_port):2, Destination MAC address (dl_dst):host 1 -> Action (actions):Transfer to port 1 
