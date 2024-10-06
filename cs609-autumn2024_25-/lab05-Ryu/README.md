@@ -376,15 +376,9 @@ ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simpl
 
 ##	REST Linkage	<a	name="rl"></a>
 
-##	Link Aggregation	<a	name="la"></a>
+##	OpenFlow protocol	<a	name="la"></a>
 
-##	Spanning Tree	<a	name="st"></a>
-
-##	Firewall	<a	name="f"></a>
-
-##	Router	<a	name="r1"></a>
-
-##	a9	Reference	<a	name="r2"></a>
+##  Reference	<a	name="r2"></a>
 1.	[RYU SDN Framework](https://book.ryu-sdn.org/en/html/)
 
 <!---
