@@ -238,13 +238,13 @@ sh tcpdump -en -i s1-eth1
 ```shell
 mininet> h1 ping -c1 h2
 ```
-You should see output similar to the following: 
-`PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.` 
-`64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=2.80 ms` 
+You should see output similar to the following:   
+`PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.`  
+`64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=2.80 ms`  
  
-`--- 10.0.0.2 ping statistics ---` 
-`1 packets transmitted, 1 received, 0% packet loss, time 0ms` 
-`rtt min/avg/max/mdev = 2.799/2.799/2.799/0.000 ms` 
+`--- 10.0.0.2 ping statistics ---`  
+`1 packets transmitted, 1 received, 0% packet loss, time 0ms`  
+`rtt min/avg/max/mdev = 2.799/2.799/2.799/0.000 ms`  
 
 
 
