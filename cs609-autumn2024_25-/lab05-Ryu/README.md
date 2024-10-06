@@ -172,7 +172,16 @@ You should a similar output similar to the following:
 8.  You may verify your steps and outputs with the following reference:
 <img src="../../.supporting-files/lab05-vid03.gif" >
 
+### What happened?
+The OVS is connected, handshake is done, the Table-miss flow entry has been added and the switching hub is in the status waiting for Packet-In.
 
+9.  Now we shall confirm that the Table-miss flow entry has been added. To do so, execute the following in the *right terminal*.
+```shell
+sh ovs-ofctl -O openflow13 dump-flows s1
+```
+
+> [!NOTE]  
+>  The output should be similar to `cookie=0x0, duration=45.666s, table=0, n_packets=2, n_bytes=140, priority=0 actions=CONTROLLER:65535`
 
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
