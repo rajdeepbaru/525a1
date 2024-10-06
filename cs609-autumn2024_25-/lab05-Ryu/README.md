@@ -313,23 +313,14 @@ In the *left terminal*, you should see an output similar to following:
 
 
 
-In s1:
-# ovs-ofctl -O openflow13 dump-flows s1
-
-Look at controller
-
-
-In h1:
-# tcpdump -en -i h1-eth0
-
-In h2:
-# tcpdump -en -i h2-eth0
-
-In h3:
-# tcpdump -en -i h3-eth0
-
 
 ##	Traffic Monitor	<a	name="tm"></a>
+
+We shall add a function to monitor OpenFlow switch statistical information to the switching hub.
+
+1. Follow the [Initialization step](#is) for the two terminals.
+
+
 
 ##	REST Linkage	<a	name="rl"></a>
 
