@@ -43,12 +43,11 @@
 1.	[Switching Hub](#sh)
 2.	[Traffic Monitor](#tm)
 3.	[REST Linkage](#rl)
-4.	[Link Aggregation](#la)
-5.	[Spanning Tree](#st)
-6.	[Firewall](#f)
-7.	[Router](#r1)
-8.	[Reference](#r2)
+4.	[OpenFlow protocol](#la)
+6.	[Reference](#r2)
+
 ---
+
 <!---
 
 ##  1. Preparing the environment <a name="pr"></a>
