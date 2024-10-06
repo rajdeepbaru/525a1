@@ -189,6 +189,11 @@ sh ovs-ofctl -O openflow13 dump-flows s1
 > - bytes 140,
 > - CONTROLLER is specified for action, and transfer data size of 65535(0xffff = OFPCML_NO_BUFFER) is specified.
 
+
+> [!CAUTION]
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). Can you identify it?
+
+
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
 
