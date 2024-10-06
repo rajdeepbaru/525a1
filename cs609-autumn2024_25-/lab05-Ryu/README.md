@@ -57,7 +57,22 @@
 <img src="../../.supporting-files/rdp02.gif" >
 
 --->
-##	Initialization step<a	name="is"></a>
+
+
+**Notation:** We shall be working with two *terminals*, next to each other. In the follosing discussion, the words *first terminal* and *left terminal* are used interchangeably. Similarly, the words *second terminal* and *right terminal* are used interchangeably. For example, you may refer to the follosing diagram:
+<img src="../../.supporting-files/dia01.png" >
+
+
+
+
+
+##	Initialization step <a	name="is"></a>
+
+### How many terminals do we need here?
+
+Two.
+
+### Execute the following steps in both of the terminals
 
 1.	Please navigate to the *desired location*. By the term *desired location*, we mean that the *present working directory* should be `525a1`. To do so, run the following command:
 ```shell
@@ -91,9 +106,6 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 
 ### Our job is to execute the Ryu application and verify the output
-
-**Notation:** We shall be working with two *terminals*, next to each other. In the follosing discussion, the words *first terminal* and *left terminal* are used interchangeably. Similarly, the words *second terminal* and *right terminal* are used interchangeably.
-
 
 sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
 
