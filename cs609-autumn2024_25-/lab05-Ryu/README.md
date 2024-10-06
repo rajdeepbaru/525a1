@@ -165,7 +165,13 @@ You should a similar output similar to the following:
 
 > [!IMPORTANT]  
 > Wait for ten seconds and you will see the following as output in the *left terminal*. This is because it may take time to connect to OVS.
+
 <img src="../../.supporting-files/dia05.png" >
+
+
+8.  You may verify your steps and outputs with the following reference:
+<img src="../../.supporting-files/lab05-vid03.gif" >
+
 
 
 In s1:
