@@ -40,11 +40,12 @@
 ### Table of contents
 
 1.	[Initialization step](#is)
-1.	[Switching Hub](#sh)
-2.	[Traffic Monitor](#tm)
-3.	[REST Linkage](#rl)
-4.	[OpenFlow protocol](#la)
-6.	[Reference](#r2)
+2.  [Ryu SDN framework]
+    -   2.1. [Switching Hub](#sh)
+    -   2.2. [Traffic Monitor](#tm)
+    -   2.3 [REST Linkage](#rl)
+3.  [OpenFlow protocol](#la)
+4.	[Reference](#r2)
 
 ---
 
