@@ -224,7 +224,8 @@ sh tcpdump -en -i s1-eth1
 12. For reference, you may look into the following video:
 <img src="../../.supporting-files/lab05-vid04.gif">
 
-
+13. To exit from the execution of the *right terminal*, press:
+-   <Ctrl + c>
 
 
 In s1:
