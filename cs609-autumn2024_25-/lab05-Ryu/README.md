@@ -110,17 +110,45 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 ### Our job is to execute the Ryu application and verify the output
 
-1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the follosing command in the *right termianl* or equivalently *second terminal*.
+1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the following command in the *right termianl* or equivalently *second terminal*.
 ```shell
 sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
 ```
 
+You may refer the following situationn for a reference.
+<img src="../../.supporting-files/lab05-vid01.gif" >
 
-In s1: 
-ovs-vsctl show
+2.  Let us check the status of the Open vSwitch. To do so, execute the following command in the *right terminal*:
+```shell
+sh ovs-vsctl show
+```
+
+You should get an output similar to the following reference:
+<img src="../../.supporting-files/dia02.png" >
+
+3.  We shall print  a summary of configured datapaths, including their datapath numbers and a list of ports  connected  to  each  datapath. To do so, execute the following in  the *right terminal*:
+```shell
 ovs-dpctl show
+```
+You should get an output similar to the following reference:
+<img src="../../.supporting-files/dia03.png" >
+
+4.  We shall set 1.3 for the OpenFlow version:
+
+To do so, execute the following in  the *right terminal*:
+```shell
 ovs-vsctl set Bridge s1 protocols=OpenFlow13
+```
+
+
+5.  Let us check the empty flow table. To do so, execute the following in  the *right terminal*:
+```shell
 ovs-ofctl -O OpenFlow13 dump-flows s1
+```
+
+6. The overall process is stated below:
+<img src="../../.supporting-files/lab05-vid02.gif" >
+
 
 In c0:
 ryu-manager --verbose ryu.app.example_switch_13
