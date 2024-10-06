@@ -244,7 +244,17 @@ You should see output similar to the following:
  
 `--- 10.0.0.2 ping statistics ---`  
 `1 packets transmitted, 1 received, 0% packet loss, time 0ms`  
-`rtt min/avg/max/mdev = 2.799/2.799/2.799/0.000 ms`  
+`rtt min/avg/max/mdev = 2.799/2.799/2.799/0.000 ms` 
+
+> [!NOTE]
+> In the *first terminal*, you should see an output similar to the following:  
+> `EVENT ofp_event->ExampleSwitch13 EventOFPPacketIn`  
+> `packet in 1 00:00:00:00:00:01 ff:ff:ff:ff:ff:ff 1`  
+> `EVENT ofp_event->ExampleSwitch13 EventOFPPacketIn`  
+> `packet in 1 00:00:00:00:00:02 00:00:00:00:00:01 2`  
+> `EVENT ofp_event->ExampleSwitch13 EventOFPPacketIn`  
+> `packet in 1 00:00:00:00:00:01 00:00:00:00:00:02 1`  
+  
 
 
 
