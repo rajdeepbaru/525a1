@@ -228,7 +228,7 @@ sh tcpdump -en -i s1-eth1
 
 -   <Ctrl + c>
 
-**Self quesion:** How many packets captured?
+**Self evaluation quesion:** How many packets captured?
 
 14. Execute each of the following commands and note your observation down.
 -   `sh tcpdump -en -i s1-eth2`
@@ -303,6 +303,9 @@ You should see an output similar to below in *right terminal*:
 In the *left terminal*, you should see an output similar to following:
 `EVENT ofp_event->ExampleSwitch13 EventOFPPacketIn`  
 `packet in 1 00:00:00:00:00:01 00:00:00:00:00:02 1`  
+
+
+**Self evaluation quesion:** What is the output of tcpdump executed on `s1-eth2` and `s1-eth3`?
 
 
 
