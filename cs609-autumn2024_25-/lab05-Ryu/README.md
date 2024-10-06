@@ -475,6 +475,12 @@ curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080
 
 
 
+> [!CAUTION]
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
+
+
+
+
 > [!TIP]
 > The output in the *left terminal* should be similar to following:  
 > `(21634) accepted ('127.0.0.1', 59148)`  
@@ -500,6 +506,12 @@ h1 ping -c 1 h2
 > `rtt min/avg/max/mdev = 0.183/0.183/0.183/0.000 ms`  
 
 <img src="../../.supporting-files/f5.png">
+
+
+
+
+> [!CAUTION]
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
 
 
 
