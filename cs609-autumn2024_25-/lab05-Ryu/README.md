@@ -377,6 +377,125 @@ ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simpl
 
 ###	REST Linkage	<a	name="rl"></a>
 
+We shall add a REST link function to the switching hub.
+-	**Brief overview:** Please read about [*REST Linkage*](https://book.ryu-sdn.org/en/html/rest_api.html) before proceeding further.
+
+-   **Relevant python code:** 
+
+
+1. Follow the [Initialization step](#is) for the two terminals.
+
+2. To set OpenFlow13 for the OpenFlow version, execute the following steps in the *right terminal*:
+```shell
+sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
+```
+
+```shell
+sh ovs-vsctl show
+```
+
+```shell
+sh ovs-dpctl show
+```
+
+```shell
+sh sudo ovs-vsctl set Bridge s1 protocols=OpenFlow13
+```
+
+3. To execute the traffic monitor, run the following in the *left terminal*:
+```shell
+ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simple_switch_rest_13.py
+```
+
+4. In the *right terminal*, execute the following:
+```shell
+h1 ping -c 1 h
+```
+
+> [!NOTE]
+> `The output should be similar to following:`   
+> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
+> `packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1`   
+> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
+> `packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2`   
+> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
+> `packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3`   
+> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
+> `packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1`   
+> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
+> `packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2`   
+> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
+> `packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3`   
+
+
+
+
+2
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3
+
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:01 ff:ff:ff:ff:ff:ff 1
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:02 00:00:00:00:00:01 2
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:01 00:00:00:00:00:02 1
+
+
+curl -X GET http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
+
+{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}
+
+
+(21634) accepted ('127.0.0.1', 58836)
+127.0.0.1 - - [06/Oct/2024 16:12:17] "GET /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000787
+
+
+
+curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
+
+
+{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}
+
+(21634) accepted ('127.0.0.1', 59148)
+127.0.0.1 - - [06/Oct/2024 16:14:20] "PUT /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000377
+EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn
+packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3
+
+
+4. Do `ping` from `host 1` to `host 2`. The output will be similar to the following:
+
+<img src="../../.supporting-files/dia07.png">
+
+
+
+5. Do `pingall`. The output will be similar to the following:
+
+<img src="../../.supporting-files/dia08.png">
+
+
+h1 ping -c 1 h2
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.183 ms
+
+--- 10.0.0.2 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.183/0.183/0.183/0.000 ms
+
+
+
+
+
 ##	OpenFlow protocol	<a	name="la"></a>
 
 There are *match*, *instructions* and *actions* defined in the OpenFlow protocol. 
