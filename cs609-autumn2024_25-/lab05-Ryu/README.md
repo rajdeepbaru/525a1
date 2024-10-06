@@ -316,9 +316,24 @@ In the *left terminal*, you should see an output similar to following:
 
 ##	Traffic Monitor	<a	name="tm"></a>
 
-We shall add a function to monitor OpenFlow switch statistical information to the switching hub.
+-	**Brief overview:** Please read about [*Traffic Monitor*](https://book.ryu-sdn.org/en/html/traffic_monitor.html) before proceeding further.
+-	**Experiment objective:** In this setup, we shall add a function to monitor OpenFlow switch statistical information to the switching hub.
+-   **Motivation for this experiment:** Networks have already become the infrastructure of many services and businesses, so maintaining of normal and stable operation is expected. Having said that, problems always occur.
+    -   When an error occurred on network, the cause must be identified and operation restored quickly. Needless to say, in order to detect errors and identify causes, it is necessary to understand the network status on a regular basis. For example, assuming the traffic volume of a port of some network device indicates a very high value, whether it is an abnormal state or is usually that way and when it became that way cannot be determined if the port’s traffic volume has not been measured continuously.
+    -   For this reason, constant monitoring of the health of a network is essential for continuous and safe operation of the services or businesses that use that network. As a matter of course, simply monitoring traffic information does not provide a perfect guarantee but this section describes how to use OpenFlow to acquire statistical information for a switch.
+
 
 1. Follow the [Initialization step](#is) for the two terminals.
+
+2. sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
+
+sh ovs-vsctl show
+
+sh ovs-dpctl show
+
+
+sh ovs-vsctl set Bridge s1 protocols=OpenFlow13
+
 
 
 
