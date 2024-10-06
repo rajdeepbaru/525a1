@@ -280,6 +280,17 @@ sh ovs-ofctl -O OpenFlow13 dump-flows s1
 > Above, in step 9, compare the output.  
 
 **What happened?**
+-   Receive port (in_port):2, Destination MAC address (dl_dst):host 1 -> Action (actions):Transfer to port 1 
+-   Receive port (in_port):1, Destination MAC address (dl_dst): host 2 -> Action (actions): Transfer to port 2
+
+> [!CAUTION]
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the differenc between the two results?**
+
+
+
+
+---
+
 
 
 In s1:
