@@ -272,6 +272,9 @@ sh ovs-ofctl -O OpenFlow13 dump-flows s1
 > `cookie=0x0, duration=260.171s, table=0, n_packets=8, n_bytes=532, priority=0 actions=CONTROLLER:65535`  
 
 
+15. For reference, you may look into the following video:
+<img src="../../.supporting-files/lab05-vid06.gif">
+
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
 
