@@ -257,6 +257,9 @@ You should see output similar to the following:
   
 
 
+13. For reference, you may look into the following video:
+<img src="../../.supporting-files/lab05-vid05.gif">
+
 
 
 In s1:
