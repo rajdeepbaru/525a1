@@ -295,7 +295,7 @@ sh tcpdump -en -i s1-eth1
 ```
 
 
-You should see an output similar to below in *right terminal*:
+You should see an output similar to below in *right terminal*:  
 `tcpdump: verbose output suppressed, use -v[v]... for full protocol decode`  
 `listening on s1-eth1, link-type EN10MB (Ethernet), snapshot length 262144 bytes`  
 `07:53:19.323956 00:00:00:00:00:01 > 33:33:00:00:00:02, ethertype IPv6 (0x86dd), length 70: fe80::200:ff:fe00:1 > ff02::2: ICMP6, router solicitation, length 16`  
