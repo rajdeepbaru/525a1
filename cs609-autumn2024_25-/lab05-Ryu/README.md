@@ -508,8 +508,7 @@ h1 ping -c 1 h2
 --->
 
 
-5. Do `pingall`. The output will be similar to the following:
-
+5. Do `pingall`. Checl the output in both of the terminals.
 
 <!---
 <img src="../../.supporting-files/dia08.png">
