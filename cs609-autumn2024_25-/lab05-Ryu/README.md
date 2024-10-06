@@ -59,9 +59,7 @@
 --->
 
 
-**Notation:** We shall be working with two *terminals*, next to each other. In the follosing discussion, the words *first terminal* and *left terminal* are used interchangeably. Similarly, the words *second terminal* and *right terminal* are used interchangeably. For example, you may refer to the follosing diagram:
-<img src="../../.supporting-files/dia01.png" >
-
+**Notation:** We shall be working with two *terminals*, next to each other. In the follosing discussion, the words *first terminal* and *left terminal* are used interchangeably. Similarly, the words *second terminal* and *right terminal* are used interchangeably. 
 
 
 
@@ -93,8 +91,11 @@ conad activate env01-ryu
 ```shell
 cd cs609-autumn2024_25-/lab05-Ryu/
 ```
- 
-6.	We are all set to proceed to the following step.
+
+6.  For example, you may refer to the follosing diagram:
+<img src="../../.supporting-files/dia01.png" >
+
+7..	We are all set to proceed to the following step.
 ---
 
 
