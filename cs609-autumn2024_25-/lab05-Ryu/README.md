@@ -40,7 +40,7 @@
 ### Table of contents
 
 1.	[Initialization step](#is)
-2.  [Ryu SDN framework]
+2.  [Ryu SDN framework](#rf)
     -   2.1. [Switching Hub](#sh)
     -   2.2. [Traffic Monitor](#tm)
     -   2.3 [REST Linkage](#rl)
@@ -100,9 +100,9 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 ---
 
+## Ryu SDN framework <a	name="rf"></a>
 
-
-##	Switching Hub	<a	name="sh"></a>
+###	Switching Hub	<a	name="sh"></a>
 
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
@@ -111,7 +111,7 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 
 
-### Our job is to execute the Ryu application and verify the output
+#### Our job is to execute the Ryu application and verify the output
 
 1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the following command in the *right termianl* or equivalently *second terminal*.
 ```shell
@@ -317,7 +317,7 @@ In the *left terminal*, you should see an output similar to following:
 
 
 
-##	Traffic Monitor	<a	name="tm"></a>
+###	Traffic Monitor	<a	name="tm"></a>
 
 -	**Brief overview:** Please read about [*Traffic Monitor*](https://book.ryu-sdn.org/en/html/traffic_monitor.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall add a function to monitor OpenFlow switch statistical information to the switching hub.
@@ -375,7 +375,7 @@ ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simpl
 
 
 
-##	REST Linkage	<a	name="rl"></a>
+###	REST Linkage	<a	name="rl"></a>
 
 ##	OpenFlow protocol	<a	name="la"></a>
 
