@@ -407,6 +407,10 @@ sh sudo ovs-vsctl set Bridge s1 protocols=OpenFlow13
 ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simple_switch_rest_13.py
 ```
 
+<img src="../../.supporting-files/f1.png">
+
+
+
 4. In the *right terminal*, execute the following:
 ```shell
 h1 ping -c 1 h
@@ -426,6 +430,16 @@ h1 ping -c 1 h
 > `packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2`   
 > `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
 > `packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3`   
+
+
+<img src="../../.supporting-files/f2.png">
+
+
+
+<img src="../../.supporting-files/f3.png">
+
+
+
 
 
 
@@ -474,6 +488,8 @@ curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080
 ```shell
 h1 ping -c 1 h2
 ```
+<img src="../../.supporting-files/f4.png">
+
 
 > [!TIP]
 > The output in the *right terminal* should be similar to following:
@@ -482,6 +498,8 @@ h1 ping -c 1 h2
 > `--- 10.0.0.2 ping statistics ---`  
 > `1 packets transmitted, 1 received, 0% packet loss, time 0ms`  
 > `rtt min/avg/max/mdev = 0.183/0.183/0.183/0.000 ms`  
+
+<img src="../../.supporting-files/f5.png">
 
 
 
