@@ -149,13 +149,24 @@ ovs-vsctl set Bridge s1 protocols=OpenFlow13
 ovs-ofctl -O OpenFlow13 dump-flows s1
 ```
 
-6. The overall process is stated below:
+6. The overall process till now is stated below:
 
 <img src="../../.supporting-files/lab05-vid02.gif" >
 
+7. Execute the following command in the *left terminal*. It will start *ryu manager*.
+```shell
+ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/example_switch_13.py 
+```
 
-In c0:
-ryu-manager --verbose ryu.app.example_switch_13
+You should a similar output similar to the following:
+
+<img src="../../.supporting-files/dia04.png" >
+
+
+> [!IMPORTANT]  
+> Wait for ten seconds and you will see the following as output in the *left terminal*. This is because it may take time to connect to OVS.
+<img src="../../.supporting-files/dia05.png" >
+
 
 In s1:
 # ovs-ofctl -O openflow13 dump-flows s1
