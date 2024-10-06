@@ -277,7 +277,7 @@ sh ovs-ofctl -O OpenFlow13 dump-flows s1
 
 
 > [!IMPORTANT]  
-> [Above, in step 9](#s9), compare the output.  
+> Compare this output with the output [above, in step 9](#s9).  
 
 **What happened?**
 -   Receive port (in_port):2, Destination MAC address (dl_dst):host 1 -> Action (actions):Transfer to port 1 
