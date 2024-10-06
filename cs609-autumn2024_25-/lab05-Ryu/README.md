@@ -331,7 +331,7 @@ In the *left terminal*, you should see an output similar to following:
 
 1. Follow the [Initialization step](#is) for the two terminals.
 
-2. To set OpenFlow13 for the OpenFlow version, execute the following steps:
+2. To set OpenFlow13 for the OpenFlow version, execute the following steps in the *right terminal*:
 ```shell
 sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
 ```
@@ -347,6 +347,31 @@ sh ovs-dpctl show
 ```shell
 sh ovs-vsctl set Bridge s1 protocols=OpenFlow13
 ```
+
+3. To execute the traffic monitor, run the following in the *left terminal*:
+```shell
+ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simple_monitor_13.py
+```
+
+4. Do `ping` from `host 1` to `host 2`. The output will be similar to the following:
+
+<img src="../../.supporting-files/dia07.png">
+
+
+
+5. Do `pingall`. The output will be similar to the following:
+
+<img src="../../.supporting-files/dia08.png">
+
+
+
+6. For reference, you may look at the following video:
+
+<img src="../../.supporting-files/lab05-vid07.gif">
+
+
+---
+
 
 
 
