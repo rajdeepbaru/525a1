@@ -124,6 +124,7 @@ sh ovs-vsctl show
 ```
 
 You should get an output similar to the following reference:
+
 <img src="../../.supporting-files/dia02.png" >
 
 3.  We shall print  a summary of configured datapaths, including their datapath numbers and a list of ports  connected  to  each  datapath. To do so, execute the following in  the *right terminal*:
@@ -131,6 +132,8 @@ You should get an output similar to the following reference:
 ovs-dpctl show
 ```
 You should get an output similar to the following reference:
+
+
 <img src="../../.supporting-files/dia03.png" >
 
 4.  We shall set 1.3 for the OpenFlow version:
@@ -147,6 +150,7 @@ ovs-ofctl -O OpenFlow13 dump-flows s1
 ```
 
 6. The overall process is stated below:
+
 <img src="../../.supporting-files/lab05-vid02.gif" >
 
 
