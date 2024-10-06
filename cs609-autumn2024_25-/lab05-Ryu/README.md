@@ -434,7 +434,7 @@ h1 ping -c 1 h
 curl -X GET http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
 ```
 
-> [!TIPS]
+> [!TIP]
 > The output in the *right terminal* should be similar to following:  
 > `{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}`  
 
@@ -443,7 +443,7 @@ curl -X GET http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
 > Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
 
 
-> [!TIPS]
+> [!TIP]
 > The output in the *left terminal* should be similar to following:  
 > `(21634) accepted ('127.0.0.1', 58836)`  
 > `127.0.0.1 - - [06/Oct/2024 16:12:17] "GET /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000787`  
@@ -455,13 +455,13 @@ curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080
 ```
 
 
-> [!TIPS]
+> [!TIP]
 > The output in the *right terminal* should be similar to following:  
 > {"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}
 
 
 
-> [!TIPS]
+> [!TIP]
 > The output in the *left terminal* should be similar to following:  
 > `(21634) accepted ('127.0.0.1', 59148)`  
 > `127.0.0.1 - - [06/Oct/2024 16:14:20] "PUT /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000377`  
@@ -475,7 +475,7 @@ curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080
 h1 ping -c 1 h2
 ```
 
-> [!TIPS]
+> [!TIP]
 > The output in the *right terminal* should be similar to following:
 > `PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.`  
 > `64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.183 ms`  
