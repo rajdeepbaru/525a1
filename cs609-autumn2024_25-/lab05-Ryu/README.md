@@ -64,13 +64,13 @@
 
 
 
-##	Initialization step <a	name="is"></a>
+##	1. Initialization step <a	name="is"></a>
 
-### How many terminals do we need here?
+### 1.1 How many terminals do we need here?
 
 Two.
 
-### Execute the following steps in both of the terminals
+### 1.2 Execute the following steps in both of the terminals
 
 1.	Please navigate to the *desired location*. By the term *desired location*, we mean that the *present working directory* should be `525a1`. To do so, run the following command:
 ```shell
@@ -100,9 +100,9 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 ---
 
-## Ryu SDN framework <a	name="rf"></a>
+## 2. Ryu SDN framework <a	name="rf"></a>
 
-###	Switching Hub	<a	name="sh"></a>
+###	2.1 Switching Hub	<a	name="sh"></a>
 
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
@@ -111,7 +111,7 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 
 
-#### Our job is to execute the Ryu application and verify the output
+#### 2.1.1 Our job is to execute the Ryu application and verify the output
 
 1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the following command in the *right termianl* or equivalently *second terminal*.
 ```shell
@@ -175,7 +175,7 @@ You should a similar output similar to the following:
 8.  You may verify your steps and outputs with the following reference:
 <img src="../../.supporting-files/lab05-vid03.gif" >
 
-### What happened?
+### 2.1.2 What happened?
 The OVS is connected, handshake is done, the Table-miss flow entry has been added and the switching hub is in the status waiting for Packet-In.
 
 9.  Now we shall confirm that the Table-miss flow entry has been added. To do so, execute the following in the *right terminal*. <a	name="s9"></a>
@@ -317,7 +317,7 @@ In the *left terminal*, you should see an output similar to following:
 
 
 
-###	Traffic Monitor	<a	name="tm"></a>
+###	2.2 Traffic Monitor	<a	name="tm"></a>
 
 -	**Brief overview:** Please read about [*Traffic Monitor*](https://book.ryu-sdn.org/en/html/traffic_monitor.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall add a function to monitor OpenFlow switch statistical information to the switching hub.
@@ -375,7 +375,7 @@ ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simpl
 
 
 
-###	REST Linkage	<a	name="rl"></a>
+###	2.3 REST Linkage	<a	name="rl"></a>
 
 We shall add a REST link function to the switching hub.
 -	**Brief overview:** Please read about [*REST Linkage*](https://book.ryu-sdn.org/en/html/rest_api.html) before proceeding further.
@@ -518,7 +518,7 @@ h1 ping -c 1 h2
 
 
 
-##	OpenFlow protocol	<a	name="la"></a>
+##	3. OpenFlow protocol	<a	name="la"></a>
 
 There are *match*, *instructions* and *actions* defined in the OpenFlow protocol. 
 -   **Match:** There are a variety of conditions that can be specified to match, and it grows each time OpenFlow is updated.
@@ -528,7 +528,7 @@ There are *match*, *instructions* and *actions* defined in the OpenFlow protocol
 Please go through [OpenFlow Protocol](https://book.ryu-sdn.org/en/html/openflow_protocol.html) for the details.
 
 
-##  Reference	<a	name="r2"></a>
+##  4. Reference	<a	name="r2"></a>
 -   [RYU SDN Framework](https://book.ryu-sdn.org/en/html/)
 
 <!---
