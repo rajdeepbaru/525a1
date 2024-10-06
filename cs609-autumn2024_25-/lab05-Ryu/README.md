@@ -225,7 +225,16 @@ sh tcpdump -en -i s1-eth1
 <img src="../../.supporting-files/lab05-vid04.gif">
 
 13. To exit from the execution of the *right terminal*, press:
+
 -   <Ctrl + c>
+
+**Self quesion:** How many packets captured?
+
+14. Execute each of the following commands and note your observation down.
+-   `sh tcpdump -en -i s1-eth2`
+-   `sh tcpdump -en -i s1-eth3`
+
+
 
 
 In s1:
