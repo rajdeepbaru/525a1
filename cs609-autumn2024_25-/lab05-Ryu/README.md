@@ -59,18 +59,18 @@
 --->
 
 
-**Notation:** We shall be working with two *terminals*, next to each other. In the follosing discussion, the words *first terminal* and *left terminal* are used interchangeably. Similarly, the words *second terminal* and *right terminal* are used interchangeably. 
+**Notation:** We shall be working with two *terminals*, next to each other. In the following discussion, the words *first terminal* and *left terminal* are used interchangeably. Similarly, the words *second terminal* and *right terminal* are used interchangeably. 
 
 
 
 
-##	1. Initialization step <a	name="is"></a>
+##	Initialization step <a	name="is"></a>
 
-### 1.1 How many terminals do we need here?
+### How many terminals do we need here?
 
 Two.
 
-### 1.2 Execute the following steps in both of the terminals
+### Execute the following steps in both of the terminals
 
 1.	Please navigate to the *desired location*. By the term *desired location*, we mean that the *present working directory* should be `525a1`. To do so, run the following command:
 ```shell
@@ -84,25 +84,25 @@ git pull
 
 3.	Please activate the desired *virtual environment* `env01-ryu` by executing the following command:
 ```shell
-conad activate env01-ryu
+conda activate env01-ryu
 ```
 
-5.	Now we shall navigate to the subdirectory for todays lab session. To do so, execute the following command:
+5.	Now we shall navigate to the subdirectory for today's *lab session*. To do so, execute the following command:
 ```shell
 cd cs609-autumn2024_25-/lab05-Ryu/
 ```
 
-6.  For example, you may refer to the follosing diagram:
+6.  For example, you may refer to the following diagram:
 <img src="../../.supporting-files/dia01.png" >
 
-7..	We are all set to proceed to the following step.
+7.	We are all set to proceed to the following step.
 
 
 ---
 
-## 2. Ryu SDN framework <a	name="rf"></a>
+## Ryu SDN framework <a	name="rf"></a>
 
-###	2.1 Switching Hub	<a	name="sh"></a>
+###	Switching Hub	<a	name="sh"></a>
 
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
@@ -111,7 +111,7 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 
 
-#### 2.1.1 Our job is to execute the Ryu application and verify the output
+#### Our job is to execute the Ryu application and verify the output
 
 1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the following command in the *right termianl* or equivalently *second terminal*.
 ```shell
@@ -175,7 +175,7 @@ You should a similar output similar to the following:
 8.  You may verify your steps and outputs with the following reference:
 <img src="../../.supporting-files/lab05-vid03.gif" >
 
-### 2.1.2 What happened?
+### What happened?
 The OVS is connected, handshake is done, the Table-miss flow entry has been added and the switching hub is in the status waiting for Packet-In.
 
 9.  Now we shall confirm that the Table-miss flow entry has been added. To do so, execute the following in the *right terminal*. <a	name="s9"></a>
@@ -317,7 +317,7 @@ In the *left terminal*, you should see an output similar to following:
 
 
 
-###	2.2 Traffic Monitor	<a	name="tm"></a>
+###	Traffic Monitor	<a	name="tm"></a>
 
 -	**Brief overview:** Please read about [*Traffic Monitor*](https://book.ryu-sdn.org/en/html/traffic_monitor.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall add a function to monitor OpenFlow switch statistical information to the switching hub.
@@ -375,162 +375,9 @@ ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simpl
 
 
 
-###	2.3 REST Linkage	<a	name="rl"></a>
+###	REST Linkage	<a	name="rl"></a>
 
-We shall add a REST link function to the switching hub.
--	**Brief overview:** Please read about [*REST Linkage*](https://book.ryu-sdn.org/en/html/rest_api.html) before proceeding further.
-
--   **Relevant python code:** 
-
-
-1. Follow the [Initialization step](#is) for the two terminals.
-
-2. To set OpenFlow13 for the OpenFlow version, execute the following steps in the *right terminal*:
-```shell
-sudo mn --topo single,3 --mac --switch ovsk --controller remote -x
-```
-
-```shell
-sh ovs-vsctl show
-```
-
-```shell
-sh ovs-dpctl show
-```
-
-```shell
-sh sudo ovs-vsctl set Bridge s1 protocols=OpenFlow13
-```
-
-3. To execute the traffic monitor, run the following in the *left terminal*:
-```shell
-ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simple_switch_rest_13.py
-```
-
-<img src="../../.supporting-files/f1.png">
-
-
-
-4. In the *right terminal*, execute the following:
-```shell
-h1 ping -c 1 h
-```
-
-> [!NOTE]
-> `The output should be similar to following:`   
-> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
-> `packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1`   
-> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
-> `packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2`   
-> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
-> `packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3`   
-> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
-> `packet in 0000000000000001 00:00:00:00:00:01 33:33:00:00:00:02 1`   
-> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
-> `packet in 0000000000000001 00:00:00:00:00:02 33:33:00:00:00:02 2`   
-> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`   
-> `packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3`   
-
-
-<img src="../../.supporting-files/f2.png">
-
-
-
-<img src="../../.supporting-files/f3.png">
-
-
-
-
-
-
-5. Let us execute REST API that acquires the MAC table of the switching hub. This time, use the curl command to call REST API. To do so, execute the following command:
-```shell
-curl -X GET http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
-```
-
-> [!TIP]
-> The output in the *right terminal* should be similar to following:  
-> `{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}`  
-
-
-> [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
-
-
-> [!TIP]
-> The output in the *left terminal* should be similar to following:  
-> `(21634) accepted ('127.0.0.1', 58836)`  
-> `127.0.0.1 - - [06/Oct/2024 16:12:17] "GET /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000787`  
-
-6. Now call REST API for updating of the MAC address table for each host. The data format when calling REST API shall be {``mac`` : ``MAC address``, ``port`` : Connection port number}.
-
-```shell
-curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
-```
-
-
-> [!TIP]
-> The output in the *right terminal* should be similar to following:  
-> `{"00:00:00:00:00:01": 1, "00:00:00:00:00:02": 2, "00:00:00:00:00:03": 3}`
-
-
-
-> [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
-
-
-
-
-> [!TIP]
-> The output in the *left terminal* should be similar to following:  
-> `(21634) accepted ('127.0.0.1', 59148)`  
-> `127.0.0.1 - - [06/Oct/2024 16:14:20] "PUT /simpleswitch/mactable/0000000000000001 HTTP/1.1" 200 180 0.000377`  
-> `EVENT ofp_event->SimpleSwitchRest13 EventOFPPacketIn`  
-> `packet in 0000000000000001 00:00:00:00:00:03 33:33:00:00:00:02 3`  
-
-
-4. Do `ping` from `host 1` to `host 2`. The output will be similar to the following:
-
-```shell
-h1 ping -c 1 h2
-```
-<img src="../../.supporting-files/f4.png">
-
-
-> [!TIP]
-> The output in the *right terminal* should be similar to following:
-> `PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.`  
-> `64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.183 ms`  
-> `--- 10.0.0.2 ping statistics ---`  
-> `1 packets transmitted, 1 received, 0% packet loss, time 0ms`  
-> `rtt min/avg/max/mdev = 0.183/0.183/0.183/0.000 ms`  
-
-<img src="../../.supporting-files/f5.png">
-
-
-
-
-> [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
-
-
-
-<!---
-<img src="../../.supporting-files/dia07.png">
---->
-
-
-5. Do `pingall`. Checl the output in both of the terminals.
-
-<!---
-<img src="../../.supporting-files/dia08.png">
---->
-
-
----
-
-
-##	3. OpenFlow protocol	<a	name="la"></a>
+##	OpenFlow protocol	<a	name="la"></a>
 
 There are *match*, *instructions* and *actions* defined in the OpenFlow protocol. 
 -   **Match:** There are a variety of conditions that can be specified to match, and it grows each time OpenFlow is updated.
@@ -540,12 +387,8 @@ There are *match*, *instructions* and *actions* defined in the OpenFlow protocol
 Please go through [OpenFlow Protocol](https://book.ryu-sdn.org/en/html/openflow_protocol.html) for the details.
 
 
-
----
-
-
-##  4. Reference	<a	name="r2"></a>
--   [RYU SDN Framework](https://book.ryu-sdn.org/en/html/)
+##  Reference	<a	name="r2"></a>
+1.	[RYU SDN Framework](https://book.ryu-sdn.org/en/html/)
 
 <!---
 test
