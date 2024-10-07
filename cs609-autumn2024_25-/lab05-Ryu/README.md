@@ -388,7 +388,7 @@ Please go through [OpenFlow Protocol](https://book.ryu-sdn.org/en/html/openflow_
 
 
 ##  Reference	<a	name="r2"></a>
-1.	[RYU SDN Framework](https://book.ryu-sdn.org/en/html/)
+1.	[Ryubook 1.0 documentation](https://book.ryu-sdn.org/en/html/)
 
 <!---
 test
