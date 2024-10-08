@@ -443,7 +443,7 @@ sh ovs-ofctl -O openflow13 dump-flows s1
 
 
 > [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the difference between the two results?**
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html#:~:text=The%20priority%20level%20is%200%2C%20no%20match%2C%20and%20CONTROLLER%20is%20specified%20for%20action%2C%20and%20transfer%20data%20size%20of%2065535(0xffff%20%3D%20OFPCML_NO_BUFFER)%20is%20specified). **Can you identify the difference between the two results?**
 
 
 10. Please check all the network interfaces on your system. To do so, execute the following command:
