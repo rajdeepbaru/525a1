@@ -15,6 +15,13 @@
 
 
 #   Lab Worksheet 05: Tuesday morning session, 08th October 2024. 
+
+**Lab objective:** The following are the broad overview for toady's lab session.
+-   We shall see an existing *switching hub* application implementation. Also we shall learn to use it.
+-   We shall use an existing implementation to add a function to monitor OpenFlow switch statistical information to the switching hub.
+-   We shall learn how to add a *REST link function* to the *switching hub*.
+
+
 <!---
 
 ### Table of contents
@@ -102,6 +109,8 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 ## 2. Ryu SDN framework <a	name="rf"></a>
 
+
+
 ###	2.1 Switching Hub	<a	name="sh"></a>
 
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
@@ -109,6 +118,11 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 -   **Relevant python code:** 
 
+Switching hubs have a variety of functions. Here, we take a look at a switching hub having the following simple functions.
+
+    Learns the MAC address of the host connected to a port and retains it in the MAC address table.
+    When receiving packets addressed to a host already learned, transfers them to the port connected to the host.
+    When receiving packets addressed to an unknown host, performs flooding.
 
 
 #### 2.1.1 Our job is to execute the Ryu application and verify the output
