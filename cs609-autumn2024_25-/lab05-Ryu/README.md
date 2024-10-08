@@ -96,7 +96,7 @@ git pull
 
 3.	Please activate the desired *virtual environment* `env01-ryu` by executing the following command:
 ```shell
-conad activate env01-ryu
+conda activate env01-ryu
 ```
 
 5.	Now we shall navigate to the subdirectory for todays lab session. To do so, execute the following command:
