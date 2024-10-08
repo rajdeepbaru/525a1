@@ -118,14 +118,16 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 According to [A Comprehensive Guide to Switch Hubs: All You Need to Know](https://medium.com/@gbicfiber123/a-comprehensive-guide-to-switch-hubs-all-you-need-to-know-dadf642afbe9), a  *switching hub* is a vital networking tool that connects devices within a local area network (LAN). Its main responsibility is to effectively transmit data packets from one device to another. Unlike a *hub*, which sends data to all connected devices, a *switching hub* can intelligently identify the recipient of each packet and send it directly to them. This approach reduces network traffic and improves the performance of the entire network.
 
 
--	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
+#### 2.1.1 Experiment objective and overview
+
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
 
 
-Switching hubs have a variety of functions. Here, we take a look at a switching hub having the following simple functions.
--   Learns the MAC address of the host connected to a port and retains it in the MAC address table.
--   When receiving packets addressed to a host already learned, transfers them to the port connected to the host.
--   When receiving packets addressed to an unknown host, performs flooding.
+-	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
+-   **Functions of switching hub:** Switching hubs have a variety of functions. Here, we take a look at a switching hub having the following simple functions.
+    -   Learns the MAC address of the host connected to a port and retains it in the MAC address table.
+    -   When receiving packets addressed to a host already learned, transfers them to the port connected to the host.
+    -   When receiving packets addressed to an unknown host, performs flooding.
 
 
 ### The *Switching Hub* by *OpenFlow* -- an intuitive algorithm
