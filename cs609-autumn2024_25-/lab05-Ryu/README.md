@@ -223,8 +223,10 @@ It is possible to achieve a switching hub having those functions combined.
 `action: OUTPUT:Port 4`   
 
 
-<code style="color : blue">text</code>
 
+<!---
+<code style="color : blue">text</code>
+--->
 
 **Relevant python code:** 
 
