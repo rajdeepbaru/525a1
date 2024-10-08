@@ -124,7 +124,8 @@ According to [A Comprehensive Guide to Switch Hubs: All You Need to Know](https:
 -   **Relevant python code:** 
 
 
-`# Copyright (C) 2016 Nippon Telegraph and Telephone Corporation.
+```python
+# Copyright (C) 2016 Nippon Telegraph and Telephone Corporation.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -224,8 +225,8 @@ class ExampleSwitch13(app_manager.RyuApp):
                                   buffer_id=ofproto.OFP_NO_BUFFER,
                                   in_port=in_port, actions=actions,
                                   data=msg.data)
-        datapath.send_msg(out)`
-
+        datapath.send_msg(out)
+```
 
 Switching hubs have a variety of functions. Here, we take a look at a switching hub having the following simple functions.
 -   Learns the MAC address of the host connected to a port and retains it in the MAC address table.
