@@ -354,9 +354,9 @@ class ExampleSwitch13(app_manager.RyuApp):
 4.  **Packet-in Message:** Create the handler of the Packet-In event handler in order to accept received packets with an unknown destination.
 5. **Updating the MAC Address Table:** In `def _packet_in_handler(self, ev):`, check the blocks under `get the received port number from packet_in message` and `learn a mac address to avoid FLOOD next time`
 6. **Judging the Transfer Destination Port:** The strategy is:
--   if the destination mac address is already learned, decide which port to output the packet, otherwise FLOOD.
--   construct action list.
--   install a flow to avoid packet_in next time.
+    -   if the destination mac address is already learned, decide which port to output the packet, otherwise FLOOD.
+    -   construct action list.
+    -   install a flow to avoid packet_in next time.
 
 #### 2.1.5 Our job is to execute the Ryu application and verify the output<a	name="215"></a>
 
