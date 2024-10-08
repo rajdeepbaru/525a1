@@ -157,7 +157,7 @@ It is possible to achieve a switching hub having those functions combined.
 
 <img src="../../.supporting-files/morningDiagram01.png" >
 
-2.  Host A -> Host B
+2.  **Host A -> Host B**
 
 -   When packets are sent from host A to host B, a Packet-In message is sent and the MAC address of host A is learned by port 1. Because the port for host B has not been found, the packets are flooded and are received by host B and host C.
 
@@ -178,7 +178,7 @@ It is possible to achieve a switching hub having those functions combined.
 `action: OUTPUT:Flooding`  
 
 
-3.  Host B -> Host A
+3.  **Host B -> Host A**
 -   When the packets are returned from host B to host A, an entry is added to the flow table and also the packets are transferred to port 1. For that reason, the packets are not received by host C.
 
 
@@ -202,7 +202,7 @@ It is possible to achieve a switching hub having those functions combined.
 
 
 
-4.  Host A -> Host B
+4.  **Host A -> Host B**
 
 -   Again, when packets are sent from host A to host B, an entry is added to the flow table and also the packets are transferred to port 4.
 
