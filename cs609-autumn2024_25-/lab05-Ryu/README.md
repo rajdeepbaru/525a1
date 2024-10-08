@@ -223,7 +223,7 @@ eth-src: Host A
 action: OUTPUT:Port 4
 ```
 
-<code style="color : aqua">text</code>
+<code style="color : magenta">text</code>
 
 
 -   **Relevant python code:** 
