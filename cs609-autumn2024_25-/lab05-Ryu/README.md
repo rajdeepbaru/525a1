@@ -115,6 +115,8 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 > Ryu means *flow* in Japanese. Ryu is pronounced *ree-yooh*.
 
 ###	2.1 Switching Hub	<a	name="sh"></a>
+A  *switching hub* is a vital networking tool that connects devices within a local area network (LAN). Its main responsibility is to effectively transmit data packets from one device to another. Unlike a *hub*, which sends data to all connected devices, a *switching hub* can intelligently identify the recipient of each packet and send it directly to them. This approach reduces network traffic and improves the performance of the entire network.
+
 
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
