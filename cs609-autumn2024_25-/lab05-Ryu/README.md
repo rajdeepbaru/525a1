@@ -49,6 +49,11 @@
 1.	[Initialization step](#is)
 2.  [Ryu SDN framework](#rf)
     -   2.1. [Switching Hub](#sh)
+            -   2.1.1 [Experiment objective and overview](#211)
+            -   2.1.2 [The Switching Hub by OpenFlow -- an intuitive algorithm](#212)
+            -   2.1.3 [Example of the above mentioned algorithm](#213)
+            -   2.1.4 [Relevant python code](#214)
+            -   2.1.5 [Our job is to execute the Ryu application and verify the output](#214)
     -   2.2. [Traffic Monitor](#tm)
     -   2.3 [REST Linkage](#rl)
 3.  [OpenFlow protocol](#la)
@@ -118,7 +123,7 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 According to [A Comprehensive Guide to Switch Hubs: All You Need to Know](https://medium.com/@gbicfiber123/a-comprehensive-guide-to-switch-hubs-all-you-need-to-know-dadf642afbe9), a  *switching hub* is a vital networking tool that connects devices within a local area network (LAN). Its main responsibility is to effectively transmit data packets from one device to another. Unlike a *hub*, which sends data to all connected devices, a *switching hub* can intelligently identify the recipient of each packet and send it directly to them. This approach reduces network traffic and improves the performance of the entire network.
 
 
-#### 2.1.1 Experiment objective and overview
+#### 2.1.1 Experiment objective and overview<a	name="211"></a>
 
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
 
@@ -130,7 +135,7 @@ According to [A Comprehensive Guide to Switch Hubs: All You Need to Know](https:
     -   When receiving packets addressed to an unknown host, performs flooding.
 
 
-#### 2.1.2 The *Switching Hub* by *OpenFlow* -- an intuitive algorithm
+#### 2.1.2 The *Switching Hub* by *OpenFlow* -- an intuitive algorithm<a	name="212"></a>
 
 OpenFlow switches can perform the following by receiving instructions from OpenFlow controllers such as Ryu.
 
@@ -150,7 +155,7 @@ It is possible to achieve a switching hub having those functions combined.
 -   If the host is unknown host ... Use the Packet-Out function to perform flooding.
 
 
-#### 2.1.3 Example of the above mentioned algorithm
+#### 2.1.3 Example of the above mentioned algorithm<a	name="213"></a>
 
 1.  **Initial status**
 
@@ -233,7 +238,7 @@ ${\color{blue}Blue}$
 <code style="color : blue">text</code>
 --->
 
-#### 2.1.4 **Relevant python code:** 
+#### 2.1.4 **Relevant python code:** <a	name="214"></a>
 
 
 ```python
@@ -345,7 +350,7 @@ class ExampleSwitch13(app_manager.RyuApp):
 
 
 
-#### 2.1.5 Our job is to execute the Ryu application and verify the output
+#### 2.1.5 Our job is to execute the Ryu application and verify the output<a	name="215"></a>
 
 1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the following command in the *right termianl* or equivalently *second terminal*.
 ```shell
@@ -409,7 +414,7 @@ You should a similar output similar to the following:
 8.  You may verify your steps and outputs with the following reference:
 <img src="../../.supporting-files/lab05-vid03.gif" >
 
-### 2.2 What happened?
+**What happened?**
 The OVS is connected, handshake is done, the Table-miss flow entry has been added and the switching hub is in the status waiting for Packet-In.
 
 9.  Now we shall confirm that the Table-miss flow entry has been added. To do so, execute the following in the *right terminal*. <a	name="s9"></a>
