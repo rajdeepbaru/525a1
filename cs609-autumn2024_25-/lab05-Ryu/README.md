@@ -698,6 +698,17 @@ class SimpleSwitch13(app_manager.RyuApp):
                                   in_port=in_port, actions=actions, data=data)
         datapath.send_msg(out)
 ```
+
+**Components of the above python code**
+
+
+-   **Fixed-Cycle Processing:** In parallel with switching hub processing, create a thread to periodically issue a request to the OpenFlow switch to acquire statistical information.
+-   **FlowStats:** In order to receive a response from the switch, create an event handler that receives the FlowStatsReply message.
+-   **PortStats:** In order to receive a response from the switch, create an event handler that receives the PortStatsReply message.
+
+
+
+
 1. Follow the [Initialization step](#is) for the two terminals.
 
 2. To set OpenFlow13 for the OpenFlow version, execute the following steps in the *right terminal*:
