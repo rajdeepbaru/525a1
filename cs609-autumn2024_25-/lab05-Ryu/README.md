@@ -174,9 +174,9 @@ It is possible to achieve a switching hub having those functions combined.
 
 **Packet-Out:**
 
-```shell
-action: OUTPUT:Flooding
-```
+
+`action: OUTPUT:Flooding`  
+
 
 3.  Host B -> Host A
 -   When the packets are returned from host B to host A, an entry is added to the flow table and also the packets are transferred to port 1. For that reason, the packets are not received by host C.
@@ -188,18 +188,18 @@ action: OUTPUT:Flooding
 
 **Packet-In:**
 
-```shell
-in-port: 4
-eth-dst: Host A
-eth-src: Host B
-```
+
+`in-port: 4`  
+`eth-dst: Host A`  
+`eth-src: Host B`  
+
 
 
 **Packet-Out:**
 
-```shell
-action: OUTPUT:Port 1
-```
+
+`action: OUTPUT:Port 1`  
+
 
 
 4.  Host A -> Host B
@@ -211,17 +211,17 @@ action: OUTPUT:Port 1
 
 **Packet-In:**
 
-```shell
-in-port: 1
-eth-dst: Host B
-eth-src: Host A
-```
+
+`in-port: 1`  
+`eth-dst: Host B` 
+`eth-src: Host A` 
+
 
 **Packet-Out:**
 
-```shell
-action: OUTPUT:Port 4
-```
+
+`action: OUTPUT:Port 4`   
+
 
 <code style="color : blue">text</code>
 
