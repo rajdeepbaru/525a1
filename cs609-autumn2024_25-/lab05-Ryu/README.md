@@ -121,6 +121,111 @@ According to [A Comprehensive Guide to Switch Hubs: All You Need to Know](https:
 -	**Brief overview:** Please read about [*Switching Hub*](https://book.ryu-sdn.org/en/html/switching_hub.html) before proceeding further.
 -	**Experiment objective:** In this setup, we shall have a functioning *switching hub* using the Ryu controller that learns MAC addresses and reduces flooding.
 
+
+Switching hubs have a variety of functions. Here, we take a look at a switching hub having the following simple functions.
+-   Learns the MAC address of the host connected to a port and retains it in the MAC address table.
+-   When receiving packets addressed to a host already learned, transfers them to the port connected to the host.
+-   When receiving packets addressed to an unknown host, performs flooding.
+
+
+### The *Switching Hub* by *OpenFlow* -- an intuitive algorithm
+
+OpenFlow switches can perform the following by receiving instructions from OpenFlow controllers such as Ryu.
+
+-   Rewrites the address of received packets or transfers the packets from the specified port.
+-   Transfers the received packets to the controller (Packet-In).
+-   Transfers the packets forwarded by the controller from the specified port (Packet-Out).
+
+It is possible to achieve a switching hub having those functions combined.
+
+-   First of all, you need to use the Packet-In function to learn MAC addresses.
+    -   The controller can use the Packet-In function to receive packets from the switch. 
+    -   The switch analyzes the received packets to learn the MAC address of the host and information about the connected port.
+-   After learning, the switch transfers the received packets. 
+    -   The switch investigates whether the destination MAC address of the packets belong to the learned host. 
+    -   Depending on the investigation results, the switch performs the following processing.
+-   If the host is already a learned host ... Uses the Packet-Out function to transfer the packets from the connected port.
+-   If the host is unknown host ... Use the Packet-Out function to perform flooding.
+
+
+#### Example of the above mentioned algorithm
+
+1.  **Initial status**
+
+-   This is the initial status where the flow table is empty.
+-   Assuming host A is connected to port 1, host B to part 4, and host C to port 3.
+
+<img src="../../.supporting-files/morningDiagram01.png" >
+
+2.  Host A -> Host B
+
+-   When packets are sent from host A to host B, a Packet-In message is sent and the MAC address of host A is learned by port 1. Because the port for host B has not been found, the packets are flooded and are received by host B and host C.
+
+<img src="../../.supporting-files/morningDiagram02.png" >
+
+**Packet-In:**
+
+```shell
+in-port: 1
+eth-dst: Host B
+eth-src: Host A
+```
+
+
+**Packet-Out:**
+
+```shell
+action: OUTPUT:Flooding
+```
+
+3.  Host B -> Host A
+-   When the packets are returned from host B to host A, an entry is added to the flow table and also the packets are transferred to port 1. For that reason, the packets are not received by host C.
+
+
+
+<img src="../../.supporting-files/morningDiagram03.png" >
+
+
+**Packet-In:**
+
+```shell
+in-port: 4
+eth-dst: Host A
+eth-src: Host B
+```
+
+
+**Packet-Out:**
+
+```shell
+action: OUTPUT:Port 1
+```
+
+
+4.  Host A -> Host B
+
+-   Again, when packets are sent from host A to host B, an entry is added to the flow table and also the packets are transferred to port 4.
+
+
+<img src="../../.supporting-files/morningDiagram04.png" >
+
+**Packet-In:**
+
+```shell
+in-port: 1
+eth-dst: Host B
+eth-src: Host A
+```
+
+**Packet-Out:**
+
+```shell
+action: OUTPUT:Port 4
+```
+
+
+
+
 -   **Relevant python code:** 
 
 
@@ -228,30 +333,6 @@ class ExampleSwitch13(app_manager.RyuApp):
         datapath.send_msg(out)
 ```
 
-Switching hubs have a variety of functions. Here, we take a look at a switching hub having the following simple functions.
--   Learns the MAC address of the host connected to a port and retains it in the MAC address table.
--   When receiving packets addressed to a host already learned, transfers them to the port connected to the host.
--   When receiving packets addressed to an unknown host, performs flooding.
-
-
-### Switching Hub by OpenFlow
-
-OpenFlow switches can perform the following by receiving instructions from OpenFlow controllers such as Ryu.
-
--   Rewrites the address of received packets or transfers the packets from the specified port.
--   Transfers the received packets to the controller (Packet-In).
--   Transfers the packets forwarded by the controller from the specified port (Packet-Out).
-
-It is possible to achieve a switching hub having those functions combined.
-
--   First of all, you need to use the Packet-In function to learn MAC addresses.
-    -   The controller can use the Packet-In function to receive packets from the switch. 
-    -   The switch analyzes the received packets to learn the MAC address of the host and information about the connected port.
--   After learning, the switch transfers the received packets. 
-    -   The switch investigates whether the destination MAC address of the packets belong to the learned host. 
-    -   Depending on the investigation results, the switch performs the following processing.
--   If the host is already a learned host ... Uses the Packet-Out function to transfer the packets from the connected port.
--   If the host is unknown host ... Use the Packet-Out function to perform flooding.
 
 
 
