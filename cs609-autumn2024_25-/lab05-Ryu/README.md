@@ -421,7 +421,7 @@ sh ovs-ofctl -O openflow13 dump-flows s1
 
 
 > [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the differenc between the two results?**
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the difference between the two results?**
 
 
 10. Please check all the network interfaces on your system. To do so, execute the following command:
@@ -514,7 +514,7 @@ sh ovs-ofctl -O OpenFlow13 dump-flows s1
 -   Receive port (in_port):1, Destination MAC address (dl_dst): host 2 -> Action (actions): Transfer to port 2
 
 > [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the differenc between the two results?**
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/switching_hub.html). **Can you identify the difference between the two results?**
 
 
 
@@ -681,7 +681,7 @@ curl -X GET http://127.0.0.1:8080/simpleswitch/mactable/0000000000000001
 
 
 > [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the difference between the two results?**
 
 
 > [!TIP]
@@ -703,7 +703,7 @@ curl -X PUT -d '{"mac" : "00:00:00:00:00:01", "port" : 1}' http://127.0.0.1:8080
 
 
 > [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the difference between the two results?**
 
 
 
@@ -738,7 +738,7 @@ h1 ping -c 1 h2
 
 
 > [!CAUTION]
-> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the differenc between the two results?**
+> Our experimental results slightly differs with the [results mentioned here](https://book.ryu-sdn.org/en/html/rest_api.html). **Can you identify the difference between the two results?**
 
 
 
