@@ -130,7 +130,7 @@ According to [A Comprehensive Guide to Switch Hubs: All You Need to Know](https:
     -   When receiving packets addressed to an unknown host, performs flooding.
 
 
-### The *Switching Hub* by *OpenFlow* -- an intuitive algorithm
+#### 2.1.2 The *Switching Hub* by *OpenFlow* -- an intuitive algorithm
 
 OpenFlow switches can perform the following by receiving instructions from OpenFlow controllers such as Ryu.
 
@@ -150,7 +150,7 @@ It is possible to achieve a switching hub having those functions combined.
 -   If the host is unknown host ... Use the Packet-Out function to perform flooding.
 
 
-#### Example of the above mentioned algorithm
+#### 2.1.3 Example of the above mentioned algorithm
 
 1.  **Initial status**
 
@@ -233,7 +233,7 @@ ${\color{blue}Blue}$
 <code style="color : blue">text</code>
 --->
 
-**Relevant python code:** 
+#### 2.1.4 **Relevant python code:** 
 
 
 ```python
@@ -345,7 +345,7 @@ class ExampleSwitch13(app_manager.RyuApp):
 
 
 
-#### 2.1.1 Our job is to execute the Ryu application and verify the output
+#### 2.1.5 Our job is to execute the Ryu application and verify the output
 
 1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the following command in the *right termianl* or equivalently *second terminal*.
 ```shell
@@ -409,7 +409,7 @@ You should a similar output similar to the following:
 8.  You may verify your steps and outputs with the following reference:
 <img src="../../.supporting-files/lab05-vid03.gif" >
 
-### 2.1.2 What happened?
+### 2.2 What happened?
 The OVS is connected, handshake is done, the Table-miss flow entry has been added and the switching hub is in the status waiting for Packet-In.
 
 9.  Now we shall confirm that the Table-miss flow entry has been added. To do so, execute the following in the *right terminal*. <a	name="s9"></a>
