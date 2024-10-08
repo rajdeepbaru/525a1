@@ -238,6 +238,25 @@ Switching hubs have a variety of functions. Here, we take a look at a switching 
 
 OpenFlow switches can perform the following by receiving instructions from OpenFlow controllers such as Ryu.
 
+-   Rewrites the address of received packets or transfers the packets from the specified port.
+-   Transfers the received packets to the controller (Packet-In).
+-   Transfers the packets forwarded by the controller from the specified port (Packet-Out).
+
+It is possible to achieve a switching hub having those functions combined.
+
+-   First of all, you need to use the Packet-In function to learn MAC addresses.
+    -   The controller can use the Packet-In function to receive packets from the switch. 
+    -   The switch analyzes the received packets to learn the MAC address of the host and information about the connected port.
+-   After learning, the switch transfers the received packets. 
+    -   The switch investigates whether the destination MAC address of the packets belong to the learned host. 
+    -   Depending on the investigation results, the switch performs the following processing.
+-   If the host is already a learned host ... Uses the Packet-Out function to transfer the packets from the connected port.
+-   If the host is unknown host ... Use the Packet-Out function to perform flooding.
+
+
+
+
+
 #### 2.1.1 Our job is to execute the Ryu application and verify the output
 
 1.  We shall create a Mininet network with one switch and three hosts connected to it. We shall assign MAC addresses to the hosts automatically, use Open vSwitch for the switch, connects to a remote SDN controller, and try to open a terminal interface for each node. To do so, execute the following command in the *right termianl* or equivalently *second terminal*.
