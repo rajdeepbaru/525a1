@@ -124,10 +124,9 @@ According to [A Comprehensive Guide to Switch Hubs: All You Need to Know](https:
 -   **Relevant python code:** 
 
 Switching hubs have a variety of functions. Here, we take a look at a switching hub having the following simple functions.
-
-    Learns the MAC address of the host connected to a port and retains it in the MAC address table.
-    When receiving packets addressed to a host already learned, transfers them to the port connected to the host.
-    When receiving packets addressed to an unknown host, performs flooding.
+-   Learns the MAC address of the host connected to a port and retains it in the MAC address table.
+-   When receiving packets addressed to a host already learned, transfers them to the port connected to the host.
+-   When receiving packets addressed to an unknown host, performs flooding.
 
 
 #### 2.1.1 Our job is to execute the Ryu application and verify the output
