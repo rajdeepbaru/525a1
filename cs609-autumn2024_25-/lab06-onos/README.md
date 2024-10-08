@@ -7,7 +7,7 @@
 </h2>
 
 <h2 align="center" style="border-bottom: 5px dotted">
-   <p> O</p>
+   <p> **Topic covered:** Open Network Operating System</p>
     
 
 </h2>
