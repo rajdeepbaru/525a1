@@ -357,6 +357,8 @@ class ExampleSwitch13(app_manager.RyuApp):
     -   if the destination mac address is already learned, decide which port to output the packet, otherwise FLOOD.
     -   construct action list.
     -   install a flow to avoid packet_in next time.
+7.  **Adding Processing of Flow Entry:** construct flow_mod message and send it.
+8. **Packet Transfer:** Regardless whether the destination MAC address is found from the MAC address table, at the end the Packet-Out message is issued and received packets are transferred.
 
 #### 2.1.5 Our job is to execute the Ryu application and verify the output<a	name="215"></a>
 
