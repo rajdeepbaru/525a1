@@ -7,7 +7,7 @@
 </h2>
 
 <h2 align="center" style="border-bottom: 5px dotted">
-   <p> **Topic covered:** Open Network Operating System</p>
+   <p> Topic covered: Open Network Operating System (ONOS)</p>
     
 
 </h2>
@@ -21,3 +21,9 @@
 -->
 
 **Lab objective:** Open Network Operating System 
+
+
+# Some understanding
+
+
+Introduction: What is ONOS?
