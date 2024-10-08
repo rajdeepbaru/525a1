@@ -708,7 +708,7 @@ class SimpleSwitch13(app_manager.RyuApp):
 
 
 
-**Our job is to execute the Ryu application and verify the output:*
+**Our job is to execute the Ryu application and verify the output:**
 
 To do so, follow the steps.
 
