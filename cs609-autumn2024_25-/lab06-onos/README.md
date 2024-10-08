@@ -1,6 +1,6 @@
 <h1 align="center" style="border-bottom: 5px dotted">
-   <p> Software-Defined Networking and Network Function Virtualization, (CS-609)</p>
-    <p> Autumn 2024-25, Indian Institute of Technology Dharwad </p>
+   <p> Software-Defined Networking and Network Function Virtualization, </p>
+    <p> (CS-609, )Autumn 2024-25, Indian Institute of Technology Dharwad </p>
     
 
 </h1>
