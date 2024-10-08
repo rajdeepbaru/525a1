@@ -211,10 +211,10 @@ It is possible to achieve a switching hub having those functions combined.
 
 **Packet-In:**
 
-${\color{blue}
-`in-port: 1`  
-`eth-dst: Host B` 
-`eth-src: Host A` 
+
+`${\color{blue}in-port: 1`$ 
+`${\color{blue}eth-dst: Host B`$ 
+`${\color{blue}eth-src: Host A`$ 
 $
 
 **Packet-Out:**
