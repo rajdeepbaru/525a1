@@ -29,6 +29,18 @@
 Introduction: What is ONOS?
 
 
+# Installing and running ONOS
+
+## Requirements
+
+## Installing on a single machine
+
+## Running ONOS as a service
+
+## Accessing the CLI and GUI
+
+## Forming a cluster
+
 # References
 
 1.  [AI Assisted Automation Framework in ONOS](https://www.youtube.com/watch?v=vtnliDI4sFg)
