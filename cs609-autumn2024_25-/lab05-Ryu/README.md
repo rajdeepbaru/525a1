@@ -575,7 +575,7 @@ In the *left terminal*, you should see an output similar to following:
     -   For this reason, constant monitoring of the health of a network is essential for continuous and safe operation of the services or businesses that use that network. As a matter of course, simply monitoring traffic information does not provide a perfect guarantee but this section describes how to use OpenFlow to acquire statistical information for a switch.
 
 
--   **Relevant python code:** 
+**Relevant python code:** 
 
 ```python
 # Copyright (C) 2011 Nippon Telegraph and Telephone Corporation.
@@ -708,6 +708,9 @@ class SimpleSwitch13(app_manager.RyuApp):
 
 
 
+**Our job is to execute the Ryu application and verify the output:*
+
+To do so, follow the steps.
 
 1. Follow the [Initialization step](#is) for the two terminals.
 
