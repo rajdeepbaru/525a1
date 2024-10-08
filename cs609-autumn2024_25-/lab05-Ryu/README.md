@@ -222,7 +222,10 @@ It is possible to achieve a switching hub having those functions combined.
 
 `action: OUTPUT:Port 4`   
 
+<!---
+
 ${\color{blue}Blue}$
+--->
 
 <!---
 <code style="color : blue">text</code>
