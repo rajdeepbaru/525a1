@@ -577,7 +577,7 @@ In the *left terminal*, you should see an output similar to following:
 
 **Relevant python code:** 
 
-```
+```shell
 # Copyright (C) 2016 Nippon Telegraph and Telephone Corporation.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
