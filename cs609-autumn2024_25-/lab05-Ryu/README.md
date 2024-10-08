@@ -753,8 +753,16 @@ ryu-manager --verbose ../lab04-OpenFlow/04-ryu-/01-ryu-install/ryu/ryu/app/simpl
 <img src="../../.supporting-files/lab05-vid07.gif">
 
 
----
 
+**What happened?**
+
+We did the following:
+-   Thread generation method by Ryu application
+-   Capturing of Datapath status changes
+-   How to acquire FlowStats and PortStats
+
+
+---
 
 
 
