@@ -109,7 +109,7 @@ cd cs609-autumn2024_25-/lab05-Ryu/
 
 ## 2. Ryu SDN framework <a	name="rf"></a>
 
-According to [Ryu community](https://ryu-sdn.org/),  Ryu is a component-based software defined networking framework. Ryu provides software components with well defined API that make it easy for developers to create new network management and control applications. Ryu supports various protocols for managing network devices, such as OpenFlow, Netconf, OF-config, etc. About OpenFlow, Ryu supports fully 1.0, 1.2, 1.3, 1.4, 1.5 and Nicira Extensions. All of the code is freely available under the Apache 2.0 license.
+**What is Ryu?** According to [Ryu community](https://ryu-sdn.org/),  Ryu is a component-based software defined networking framework. Ryu provides software components with well defined API that make it easy for developers to create new network management and control applications. Ryu supports various protocols for managing network devices, such as OpenFlow, Netconf, OF-config, etc. About OpenFlow, Ryu supports fully 1.0, 1.2, 1.3, 1.4, 1.5 and Nicira Extensions. All of the code is freely available under the Apache 2.0 license.
 
 > [!NOTE]
 > Ryu means "flow" in Japanese. Ryu is pronounced "ree-yooh". 
