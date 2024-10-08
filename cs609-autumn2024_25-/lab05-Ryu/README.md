@@ -165,11 +165,11 @@ It is possible to achieve a switching hub having those functions combined.
 
 **Packet-In:**
 
-```shell
-in-port: 1
-eth-dst: Host B
-eth-src: Host A
-```
+`
+in-port: 1  
+eth-dst: Host B  
+eth-src: Host A  
+`
 
 
 **Packet-Out:**
@@ -226,14 +226,7 @@ action: OUTPUT:Port 4
 <code style="color : blue">text</code>
 
 
-<span style="color:red">
-Text content
-</span>
-
-
-<span style="color:orange;">Word up</span>
-
--   **Relevant python code:** 
+**Relevant python code:** 
 
 
 ```python
