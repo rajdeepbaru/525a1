@@ -381,7 +381,7 @@ You should get an output similar to the following reference:
 
 3.  We shall print  a summary of configured datapaths, including their datapath numbers and a list of ports  connected  to  each  datapath. To do so, execute the following in  the *right terminal*:
 ```shell
-ovs-dpctl show
+sh ovs-dpctl show
 ```
 You should get an output similar to the following reference:
 
