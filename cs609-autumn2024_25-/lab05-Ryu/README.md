@@ -223,7 +223,7 @@ eth-src: Host A
 action: OUTPUT:Port 4
 ```
 
-<code style="color : magenta">text</code>
+<code style="color : blue">text</code>
 
 
 <span style="color:red">
