@@ -165,11 +165,11 @@ It is possible to achieve a switching hub having those functions combined.
 
 **Packet-In:**
 
-`
-in-port: 1  
-eth-dst: Host B  
-eth-src: Host A  
-`
+
+`in-port: 1`  
+`eth-dst: Host B`  
+`eth-src: Host A`  
+
 
 
 **Packet-Out:**
