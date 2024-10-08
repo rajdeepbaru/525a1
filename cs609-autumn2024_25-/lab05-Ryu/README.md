@@ -771,6 +771,23 @@ We did the following:
 We shall add a REST link function to the switching hub.
 -	**Brief overview:** Please read about [*REST Linkage*](https://book.ryu-sdn.org/en/html/rest_api.html) before proceeding further.
 
+
+**Integrating REST API:** Ryu has a Web server function corresponding to WSGI. By using this function, it is possible to create a REST API, which is useful to link with other systems or browsers.
+
+**WSGI:** The term *WSGI* means a unified framework for connecting Web applications and Web servers in Python.
+
+**Implementing a Switching Hub with REST API**
+
+We shall add the following two REST APIs to the switching hub explained in *Switching Hub*.
+1.  MAC address table acquisition API
+    -   Returns the content of the MAC address table held by the switching hub. Returns a pair of MAC address and port number in JSON format.
+2.  MAC address table registration API
+    -   Registers a pair of MAC address and port number in the MAC address table and adds a flow entry to the switch.
+
+
+
+
+
 -   **Relevant python code:** 
 
 
