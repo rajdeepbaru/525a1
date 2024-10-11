@@ -1,4 +1,4 @@
-#sudo apt-get install mininet
+#sudo apt-get install mininet -y
 #sudo mn -c
 
 
