@@ -572,7 +572,12 @@ A sample snapshot is available below:
 > In the following, the term *local machine* means the OS in your own laptop, which can be *Windows OS* etc. And the term *VM* means the *Virtual Machine* which were provided to you; in which *Ubuntu 20.04* is installed.
 >
 
-1.	Install [Remmina](https://remmina.org/) at your *local machine*  using this link.
+1.	Install [Remmina](https://remmina.org/) at your *local machine*  using the following commands:
+```shell
+sudo apt-get update
+sudo apt-get install remmina
+remmina &
+```
 
 2. Log in to your VM using SSH. We shall install a desktop environment at the VM. In this case, we care going to install [xfce](https://www.xfce.org) desktop environment. To do so, use the following command:
 ```shell
