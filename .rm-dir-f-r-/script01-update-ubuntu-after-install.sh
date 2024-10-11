@@ -69,5 +69,5 @@ cat /home/rajdeep/.ssh/id_ed25519.pub >> /home/rajdeep/Music/key01-git
 
 cd
 
-git clone git@github.com:rajdeepbaru/525a1.git
-ssh rajdeep@10.240.60.114
+#git clone git@github.com:rajdeepbaru/525a1.git
+#ssh rajdeep@10.240.60.114
