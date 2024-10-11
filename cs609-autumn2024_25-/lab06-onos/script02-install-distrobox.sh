@@ -25,11 +25,11 @@
 
 
 
-curl -O https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
+curl -O https://raw.githubusercontent.com/89luca89/distrobox/main/install
 
+sudo bash install
 
-
-distrobox-list
+distrobox-list --root
 
 sudo apt install neofetch -y
 
