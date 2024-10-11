@@ -31,7 +31,7 @@ curl -O https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo
 
 distrobox-list
 
-sudo apt install neofetch
+sudo apt install neofetch -y
 
 echo -e "run: distrobox-create --root --name ubuntuu18 --image ubuntu:18.04"
 
@@ -41,4 +41,6 @@ echo -e "run: cat /etc/lsb_release"
 
 echo -e "logout"
 
+neofetch
 
+rm install
