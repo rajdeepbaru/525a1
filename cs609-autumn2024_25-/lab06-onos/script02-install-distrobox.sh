@@ -33,9 +33,15 @@ distrobox-list --root
 
 sudo apt install neofetch -y
 
-echo -e "run: distrobox-create --root --name ubuntuu18 --image ubuntu:18.04"
-echo -e "run: distrobox-create --root --name ubuntu20 --image ubuntu:20.04"
-echo -e "run: distrobox-enter --name debian10-distrobox"
+#echo -e "run: distrobox-create --root --name ubuntu20 --image ubuntu:20.04" - failed
+#echo -e "run: distrobox enter --root ubuntuu20" - failed
+
+#echo -e "run: distrobox-create --root --name ubuntuu18 --image ubuntu:18.04"
+#echo -e "run: distrobox-enter --name debian10-distrobox"
+
+
+
+echo "sudo apt install neofetch vim -y"
 
 echo -e "run: cat /etc/lsb_release"
 
