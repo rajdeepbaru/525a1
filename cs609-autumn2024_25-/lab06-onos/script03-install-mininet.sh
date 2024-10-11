@@ -1,5 +1,9 @@
-git clone https://github.com/mininet/mininet
+#sudo apt-get install mininet
+#sudo mn -c
 
-sudo mininet/util/install.sh -a
-mn --version
+
+#git clone https://github.com/mininet/mininet
+
+#sudo mininet/util/install.sh -a
+#mn --version
 
