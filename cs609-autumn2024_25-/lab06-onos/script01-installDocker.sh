@@ -1,4 +1,4 @@
-echo -e "sudo adduser sdn --system --group"
+#echo -e "sudo adduser sdn --system --group"
 
 
 # Add Docker's official GPG key:
