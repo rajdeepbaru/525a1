@@ -40,20 +40,7 @@
 
 
 
-2.  [Ryu SDN framework](#rf)
-    -   2.1. [Switching Hub](#sh)  
-            -   2.1.1 [Experiment objective and overview](#211)  
-            -   2.1.2 [The Switching Hub by OpenFlow -- an intuitive algorithm](#212)  
-            -   2.1.3 [Example of the above mentioned algorithm](#213)  
-            -   2.1.4 [Relevant python code](#214)  
-            -   2.1.5 [Our job is to execute the Ryu application and verify the output](#214)  
-    -   2.2. [Traffic Monitor](#tm)
-    -   2.3 [REST Linkage](#rl)
-3.  [OpenFlow protocol](#la)
-4.	[Reference](#r2)
-
-
-**Lab objective:** Open Network Operating System 
+**Lab objective:** The objective of performing an ONOS Lab (Open Network Operating System Lab) typically revolves around understanding and experimenting with the capabilities of ONOS, a software-defined networking (SDN) controller platform. The specific objectives for today's lab is to do some experimenting with *SDN Concepts using ONOS*.
 
 
 # 1. Some understanding <a	name="1"></a>
