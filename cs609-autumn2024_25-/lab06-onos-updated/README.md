@@ -118,6 +118,16 @@ bash script01-blackbox02of02.sh
 ### 2.3.2. Working with Distrobox <a	name="2.3.2"></a>
 
 
+According to the [ArchWiki of Distrobox](https://wiki.archlinux.org/title/Distrobox), *Distrobox* is a container wrapping layer that allows the user to install containerised versions of Linux that are different to the host while providing tight integration with the host allowing the use of binaries designed for one distribution to run on another.
+
+Distrobox itself is not a container manager and relies on Podman or Docker to create containers.
+
+
+> [!NOTE]
+> From the Distrobox documentation:  
+> Use any Linux distribution inside your terminal. Enable both backward and forward compatibility with software and freedom to use whatever distribution you’re more comfortable with. Distrobox uses Podman or Docker to create containers using the Linux distribution of your choice. The created container will be tightly integrated with the host, allowing sharing of the HOME directory of the user, external storage, external USB devices and graphical apps (X11/Wayland), and audio.
+
+
 
 1. To install distrobox, execute the following commands:
 ```shell
