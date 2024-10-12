@@ -74,7 +74,7 @@ git pull
 cd cs609-autumn2024_25-/lab06-onos-updated/
 ```
 
-## Installing on a single machine
+## Preparation of the ground for installation of ONOS
 
 ### Working with docker
 
@@ -126,7 +126,25 @@ For reference, you may look at the following snapshot:
 > We have just installed the required Ubuntu 16.04. So it is visible in the list. And you may verify it by seeing the list.
 
 
+4. To enter the container `Ubuntu16`, use the following command:
+```shell
+distrobox enter --root Ubuntu16
+```
+
+> [!NOTE]
+> You need to provide one password when the following prompt will be shown:
+> Enter new UNIX password:
+> In that case, use the password `HelloSdn`
+
+You may consider the following reference:
+<img src="../../.supporting-files/lab06-onos/vid01.jpg" >
+
+
 5.  distrobox enter --root ubuntuu18
+
+
+## Installing on a single machine
+
 
 6. sudo apt install vim git curl -y
 
