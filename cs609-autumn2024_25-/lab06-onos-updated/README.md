@@ -1,7 +1,7 @@
 <h2 align="center" style="border-bottom: 5px dotted">
    <p> Software-Defined Networking and Network Function Virtualization (CS-609)</p>
     <p> Autumn 2024-25, Indian Institute of Technology Dharwad </p>
-    <p> Lab Worksheet 06, Thursday morning session, 10th October 2024 </p>
+    <p> Lab Worksheet 06, Tuesday morning session, 15th October 2024 </p>
     
 
 </h2>
