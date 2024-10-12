@@ -244,6 +244,10 @@ sudo mv onos-2.6.0 onos
 sudo /opt/onos/bin/onos-service start
 ```
 
+All should go well and you should be seeing an output similar to the following :
+
+<img src="../../.supporting-files/lab06-onos/img04.png" >
+
 
 ## Running ONOS as a service
 
