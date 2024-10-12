@@ -158,9 +158,16 @@ You may consider the following reference:
 
 ## Installing on a single machine
 
+1. We need to download some tools, for that we need the `curl` package. To install it, execute the following:
+```shell
+sudo apt install curl -y
+```
 
-6. sudo apt install vim git curl -y
+2. Check the existing java version using the following command:
+```shell
 java -version
+```
+You should get a similar output as`bash: java: command not found`.
 sudo apt update
 sudo apt install openjdk-11-jdk -y
 java -version
@@ -169,7 +176,7 @@ echo "set javahome: https://wiki.onosproject.org/display/ONOS/Requirements -- YE
 #sudo mkdir /opt ; cd /opt
 #sudo wget -c https://repo1.maven.org/maven2/org/onosproject/onos-releases/2.6.0/onos-2.6.0.tar.gz
 #sudo tar -xvf onos-2.6.0.tar.gz
-#sudo mv onos-2.6.0 onos
+#sudo mv onos-2.6.0 ono
 #sudo /opt/onos/bin/onos-service start
 
 
