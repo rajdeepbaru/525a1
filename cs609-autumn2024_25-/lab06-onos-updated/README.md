@@ -58,7 +58,7 @@ As on October 2024, I failed several time to install ONOS in Ubuntu 22.04. So ba
 2. However while working with ONOS, we shall be using the following tools with the mentioned versions:
 -   `Ubuntu 16.04`
 -   `Mininet 2.2.1` 
--   `openjdk-11-jdk
+-   `OpenJDK 11`
 
 
 ## Synchronize your working directory and navigate to the desired location
