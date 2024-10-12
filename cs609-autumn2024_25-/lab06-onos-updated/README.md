@@ -277,7 +277,7 @@ According to the information by [Ayaka Koshibe](https://wiki.onosproject.org/dis
 
 
 
-1. Open another terminal. Let us call this new terminal as ``right-hand-side-terminal` or `Terminal 2`. Use SSH on `Terminal 2` to log in to your VM. Check the output of the following command in `terminal 2`:
+1. Open another terminal. Let us call this new terminal as `right-hand-side-terminal` or `Terminal 2`. Use SSH on `Terminal 2` to log in to your VM. Check the output of the following command in `terminal 2`:
 ```shell
 cat /etc/lsb-release
 ```
