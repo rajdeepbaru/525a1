@@ -179,7 +179,7 @@ sudo apt install openjdk-11-jdk -y
 ```
 
 > [!NOTE] 
-> If you receive an error like `E: Unable to locate package openjdk-11-jdk' then you need to do the following steps: 
+> If you receive an error like `E: Unable to locate package openjdk-11-jdk` then you need to do the following steps: 
 > `sudo add-apt-repository ppa:openjdk-r/ppa`
 > Then `sudo apt-get update` 
 > `sudo apt install openjdk-11-jdk -y`
@@ -195,10 +195,9 @@ and your output should match with the following:
 <img src="../../.supporting-files/lab06-onos/img02.png" >
 
 
+5. To set *Java HOME*, 
 
 
-java -version
-#echo "set javahome: https://github.com/ArnoTroch/ONOS-Tutorial?tab=readme-ov-file#accessing-the-cli -- NO"
 echo "set javahome: https://wiki.onosproject.org/display/ONOS/Requirements -- YES"
 #sudo mkdir /opt ; cd /opt
 #sudo wget -c https://repo1.maven.org/maven2/org/onosproject/onos-releases/2.6.0/onos-2.6.0.tar.gz
