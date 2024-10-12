@@ -28,7 +28,7 @@
 
 ## What is ONOS?
 
-According to [[1]](#ref1), Open Network Operating System (ONOS) is the leading open source SDN controller for building next-generation SDN/NFV solutions.
+According to [[2]](#ref2), Open Network Operating System (ONOS) is the leading open source SDN controller for building next-generation SDN/NFV solutions.
 
 ONOS was designed to meet the needs of operators wishing to build carrier-grade solutions that leverage the economics of white box merchant silicon hardware while offering the flexibility to create and deploy new dynamic network services with simplified programmatic interfaces. ONOS supports both configuration and real-time control of the network, eliminating the need to run routing and switching control protocols inside the network fabric. By moving intelligence into the ONOS cloud controller, innovation is enabled and end-users can easily create new network applications without the need to alter the dataplane systems.
 
@@ -55,5 +55,5 @@ The ONOS platform includes:
 # References
 
 1.  [AI Assisted Automation Framework in ONOS](https://www.youtube.com/watch?v=vtnliDI4sFg)<a	name="ref1"></a>
-2.  [Open Network Operating System](https://opennetworking.org/onos/)
-3.  [ONOS Overview - ONF Bootcamp May 23, 2017](https://www.youtube.com/watch?v=XI3ckGAK84k&t=3s)
+2.  [Open Network Operating System](https://opennetworking.org/onos/)<a	name="ref2"></a>
+3.  [ONOS Overview - ONF Bootcamp May 23, 2017](https://www.youtube.com/watch?v=XI3ckGAK84k&t=3s)<a	name="ref3"></a>
