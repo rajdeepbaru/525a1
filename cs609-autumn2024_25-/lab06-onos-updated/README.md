@@ -140,8 +140,16 @@ distrobox enter --root Ubuntu16
 You may consider the following reference:
 <img src="../../.supporting-files/lab06-onos/vid01.gif" >
 
+5. Run the command `cat /etc/lsb-release` and your output should be similar to following:
+> [!NOTE]
+> You should receive a similar output as follows:   
+> `DISTRIB_ID=Ubuntu`  
+> `DISTRIB_RELEASE=16.04`  
+> `DISTRIB_CODENAME=xenial`  
+> `DISTRIB_DESCRIPTION="Ubuntu 16.04.7 LTS"`  
 
-5.  distrobox enter --root ubuntuu18
+6. The setup is ready. We are all set to install ONOS.
+
 
 
 ## Installing on a single machine
