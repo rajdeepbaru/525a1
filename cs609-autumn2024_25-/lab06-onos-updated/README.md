@@ -270,6 +270,23 @@ cat /etc/lsb-release
 > `DISTRIB_DESCRIPTION="Ubuntu 22.04.5 LTS"`   
 
 
+14. Execute the following command in `terminal 2`:
+```shell
+distrobox-enter --root Ubuntu16
+```
+
+15. Check the output of the following command in `terminal 2`:
+```shell
+cat /etc/lsb-release
+```
+
+> [!NOTE]
+> The output should be as follows:  
+> `DISTRIB_ID=Ubuntu`   
+> `DISTRIB_RELEASE=16.04`   
+> `DISTRIB_CODENAME=xenial`   
+> `DISTRIB_DESCRIPTION="Ubuntu 16.04.7 LTS"`   
+
 
  Run the following commands in `Terminal 2` to access the CLI.
 
