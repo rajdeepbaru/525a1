@@ -44,7 +44,7 @@ The ONOS platform includes:
 
 ## Specifications we shall be using for this lab worksheet
 
-We shall use Ubuntu 16.04?? for this lab duration. 
+As on October 2024, I failed several time to install ONOS in Ubuntu 22.04. So based on that experience, I am going to use an older version of Ubuntu while using ONOS. We shall use Ubuntu 16.04 for this lab duration. 
 
 1.  Login to your Proxmox VM using the credentials provided. First, check the version of Ubuntu you are given. Run the command `cat /etc/lsb-release` and your output should be similar to following:
 > [!NOTE]
