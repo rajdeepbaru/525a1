@@ -167,9 +167,22 @@ sudo apt install curl -y
 ```shell
 java -version
 ```
-You should get a similar output as`bash: java: command not found`.
+You should get a similar output as `bash: java: command not found`.
+
+3. To install *OpenJDK 11*, use the following commands:
+```shell
 sudo apt update
+```
+and then
+```shell
 sudo apt install openjdk-11-jdk -y
+```
+
+4. Now again check the existing java version using the following command:
+```shell
+java -version
+```
+
 java -version
 #echo "set javahome: https://github.com/ArnoTroch/ONOS-Tutorial?tab=readme-ov-file#accessing-the-cli -- NO"
 echo "set javahome: https://wiki.onosproject.org/display/ONOS/Requirements -- YES"
