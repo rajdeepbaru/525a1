@@ -48,15 +48,31 @@ We shall use Ubuntu 16.04?? for this lab duration.
 
 1.  Login to your Proxmox VM using the credentials provided. First, check the version of Ubuntu you are given. Run the command `cat /etc/lsb-release` and your output should be similar to following:
 > [!NOTE]
-> You should receive a similar output as follows: 
+> You should receive a similar output as follows:   
 > `DISTRIB_ID=Ubuntu`  
 > `DISTRIB_RELEASE=22.04`  
 > `DISTRIB_CODENAME=jammy`  
 > `DISTRIB_DESCRIPTION="Ubuntu 22.04.5 LTS"`  
 
+2.  
 
+
+## Synchronize your working directory
+
+1. Please navigate to the GitHub repository by executing the following command:
+```shell
+cd 525a1/
+```
+
+2. Please execute the following command to synchrionize your *present working directory* with the GitHub repository:
+```shell
+git pull
+```
 
 ## Installing on a single machine
+
+
+
 
 ## Running ONOS as a service
 
