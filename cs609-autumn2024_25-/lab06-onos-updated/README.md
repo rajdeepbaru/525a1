@@ -260,6 +260,23 @@ The overall procedure may be seen as follows:
 
 ## Starting Karaf
 
+### What is Karaf?
+
+Karaf is a lightweight, powerful, and enterprise ready modulith runtime. It provides all the ecosystem and bootstrapping options you need for your applications. It runs on premise or on cloud. This modulith runtime supports several frameworks and different kind of applications: REST/API, Web, Spring Boot, and much more.
+
+### An example
+Used by bunch of distributions, used as runtime and support by frameworks. According to [Karaf stories](https://karaf.apache.org/stories), some softwares use Apache Karaf as runtime.
+
+**Netflix:** The Netflix media pipeline processes thousands of new shows and movies every day so that you can watch them on any device anywhere. We use a forward chaining rule engine to coordinate all of this work in multiple workflows. Hosting these workflows in a reliable, scalable and cost effective manner is a huge challenge at our scale. In this talk, we will introduce the design of Netflix’s next generation rule engine framework. The goal is to boost modularity, increase developer productivity and decrease operational overhead. The new system is a platform as a service that lets workflow developers focus on workflow data model, execution conditions, and remote function invocations without worrying about how to deploy, scale, and monitor it. The system uses the OSGI framework to build separation among workflows and leverages Apache Karaf as the runtime container. Other interesting topics such as workflow bundle management and a novel rule domain specific language will be covered in this talk. Keywords:nRule engine, OSGI, Apache Karaf, Serverless. You can find the [abstract here](https://www.apachecon.com/acna19/s/#/scheduledEvent/1209)
+
+### How is it related to ONOS?
+
+According to the information by [Ayaka Koshibe](https://wiki.onosproject.org/display/ONOS/The%2BONOS%2BCLI), the ONOS CLI is an extension of Karaf's CLI. As a result, it is capable of leveraging features such as programmatic extensibility, the ability to load and unload bundles (among others), and SSH access.
+
+### An
+
+### dd
+
 1. Open another terminal. Let us call this new terminal as ``right-hand-side-terminal` or `Terminal 2`. Use SSH on `Terminal 2` to log in to your VM. Check the output of the following command in `terminal 2`:
 ```shell
 cat /etc/lsb-release
