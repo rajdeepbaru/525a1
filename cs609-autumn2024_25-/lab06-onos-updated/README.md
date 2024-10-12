@@ -173,13 +173,13 @@ You should get a similar output as `bash: java: command not found`.
 ```shell
 sudo apt update
 ```
-and then
+and then run
 ```shell
 sudo apt install openjdk-11-jdk -y
 ```
 
 > [!NOTE] 
-> If you receive an error like `E: Unable to locate package openjdk-11-jdk', you need to do the following steps: 
+> If you receive an error like `E: Unable to locate package openjdk-11-jdk' then you need to do the following steps: 
 > `sudo add-apt-repository ppa:openjdk-r/ppa`
 > Then `sudo apt-get update` 
 > `sudo apt install openjdk-11-jdk -y`
@@ -190,6 +190,12 @@ sudo apt install openjdk-11-jdk -y
 ```shell
 java -version
 ```
+and your output should match with the following:
+
+<img src="../../.supporting-files/lab06-onos/img02.png" >
+
+
+
 
 java -version
 #echo "set javahome: https://github.com/ArnoTroch/ONOS-Tutorial?tab=readme-ov-file#accessing-the-cli -- NO"
