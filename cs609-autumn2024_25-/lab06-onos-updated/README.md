@@ -263,7 +263,7 @@ cat /etc/lsb-release
 ```
 
 > [!NOTE]
-> The output should be as follows:`  
+> The output should be as follows:  
 > `DISTRIB_ID=Ubuntu`   
 > `DISTRIB_RELEASE=22.04`   
 > `DISTRIB_CODENAME=jammy`   
