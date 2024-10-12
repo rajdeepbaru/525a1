@@ -215,12 +215,30 @@ EOL
 
 <img src="../../.supporting-files/lab06-onos/img03.png" >
 
+7. Please move to the`opt` directory by using the following command:
+```shell
+sudo mkdir /opt ; cd /opt
+```
 
-#sudo mkdir /opt ; cd /opt
-#sudo wget -c https://repo1.maven.org/maven2/org/onosproject/onos-releases/2.6.0/onos-2.6.0.tar.gz
-#sudo tar -xvf onos-2.6.0.tar.gz
-#sudo mv onos-2.6.0 ono
-#sudo /opt/onos/bin/onos-service start
+8. To download ONOS, use the following command:
+```shell
+sudo wget -c https://repo1.maven.org/maven2/org/onosproject/onos-releases/2.6.0/onos-2.6.0.tar.gz
+```
+
+9. Untar the downloaded file by the following command
+```shell
+sudo tar -xvf onos-2.6.0.tar.gz
+```
+
+10. Rename the extracted directory as follows:
+```shell
+sudo mv onos-2.6.0 onos
+```
+
+11. Verify that ONOS is working. To do it, run the following command:
+```shell
+sudo /opt/onos/bin/onos-service start
+```
 
 
 ## Running ONOS as a service
