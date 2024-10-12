@@ -323,3 +323,7 @@ The overallall process is mentioned here:
 1.  [AI Assisted Automation Framework in ONOS](https://www.youtube.com/watch?v=vtnliDI4sFg)<a	name="ref1"></a>
 2.  [Open Network Operating System](https://opennetworking.org/onos/)<a	name="ref2"></a>
 3.  [ONOS Overview - ONF Bootcamp May 23, 2017](https://www.youtube.com/watch?v=XI3ckGAK84k&t=3s)<a	name="ref3"></a>
+4.  [Open Network Operating System (ONOS) Wiki](https://wiki.onosproject.org/)
+5.  [Administrator Guide](https://wiki.onosproject.org/display/ONOS/Administrator+Guide)
+6.  [ONOS Developer's Google group](https://groups.google.com/a/onosproject.org/g/onos-dev)
+7.  [ONOS GitHub repository](https://github.com/opennetworkinglab/onos)
