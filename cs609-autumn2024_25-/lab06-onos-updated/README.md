@@ -261,6 +261,7 @@ The overall procedure may be seen as follows:
 ```shell
 cat /etc/lsb-release
 ```
+
 > [!NOTE]
 > The output should be as follows:`  
 > `DISTRIB_ID=Ubuntu`   
