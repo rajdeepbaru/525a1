@@ -195,7 +195,22 @@ and your output should match with the following:
 <img src="../../.supporting-files/lab06-onos/img02.png" >
 
 
-5. To set *Java HOME*, 
+5. To set *Java HOME*, follow the steps:
+```shell
+sudo su
+```
+``shell
+cat >> /etc/environment << EOL
+```
+```shell
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+```
+```shell
+JRE_HOME=/usr/lib/jvm/java-11-openjdk-amd64/jre
+```
+```shell
+EOL
+``` 
 
 
 echo "set javahome: https://wiki.onosproject.org/display/ONOS/Requirements -- YES"
