@@ -56,6 +56,7 @@ We shall use Ubuntu 16.04?? for this lab duration.
 
 > [!CHECK] 
 > ;l;l;
+> > [!Hint]- test
 
 ## Installing on a single machine
 
