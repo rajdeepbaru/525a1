@@ -43,7 +43,7 @@ echo -e "run:distrobox enter --root ubuntuu18"
 
 echo "sudo apt install neofetch vim git curl -y"
 
-echo -e "run: cat /etc/lsb_release"
+echo -e "run: cat /etc/lsb-release"
 
 echo -e "logout"
 
