@@ -302,6 +302,15 @@ cat /etc/lsb-release
 sudo /opt/onos/bin/onos -l karaf
 ```
 
+17. Use the password `helloSdn` when prompted. You should exxperience a situation similar to follow:
+
+<img src="../../.supporting-files/lab06-onos/img06.png" >
+
+The overallall process is mentioned here:
+
+<img src="../../.supporting-files/lab06-onos/vid03.gif" >
+
+
 
 ## Running ONOS as a service
 
