@@ -199,7 +199,7 @@ and your output should match with the following:
 ```shell
 sudo su
 ```
-``shell
+```shell
 cat >> /etc/environment << EOL
 ```
 ```shell
