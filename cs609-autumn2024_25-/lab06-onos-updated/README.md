@@ -76,6 +76,13 @@ cd cs609-autumn2024_25-/lab06-onos-updated/
 
 ## Installing on a single machine
 
+1.   Run the following command to download the required tools:
+```shell
+bash script01-blackbox01of02.sh
+```
+followed by:
+bash script01-blackbox02of02.sh
+```
 
 
 
