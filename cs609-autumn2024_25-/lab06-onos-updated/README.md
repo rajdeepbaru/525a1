@@ -178,6 +178,14 @@ and then
 sudo apt install openjdk-11-jdk -y
 ```
 
+> [!NOTE]
+> If you receive an error like `E: Unable to locate package openjdk-11-jdk', you need to do the following steps: 
+> `sudo add-apt-repository ppa:openjdk-r/ppa` 
+> `sudo apt-get update` 
+> `sudo apt install openjdk-11-jdk -y`
+
+
+
 4. Now again check the existing java version using the following command:
 ```shell
 java -version
