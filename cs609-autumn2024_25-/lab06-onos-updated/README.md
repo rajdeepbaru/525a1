@@ -57,7 +57,7 @@ We shall use Ubuntu 16.04?? for this lab duration.
 2.  
 
 
-## Synchronize your working directory
+## Synchronize your working directory and navigate to the desired location
 
 1. Please navigate to the GitHub repository by executing the following command:
 ```shell
@@ -67,6 +67,11 @@ cd 525a1/
 2. Please execute the following command to synchrionize your *present working directory* with the GitHub repository:
 ```shell
 git pull
+```
+
+3. To navigate tio the desired location, execute the following command:
+```shell
+cd cs609-autumn2024_25-/lab06-onos-updated/
 ```
 
 ## Installing on a single machine
