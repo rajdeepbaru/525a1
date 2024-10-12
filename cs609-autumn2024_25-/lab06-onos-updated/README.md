@@ -106,6 +106,11 @@ sudo bash install
 distrobox-list --root
 ```
 
+> [!NOTE]  
+> As we have not yet created any distro using distrobox, this list should be empty.
+
+
+
 3. Now we shall install Ubuntu 16 using distrobox. To do so, execute the following command in your terminal:
 ```shell
 distrobox-create --root --name Ubuntu16 --image ubuntu:16.04
@@ -116,6 +121,9 @@ distrobox-list --root
 ```
 For reference, you may look at the following snapshot:
 <img src="../../.supporting-files/lab06-onos/img01.png" >
+
+> [!NOTE]  
+> We have just installed the required Ubuntu 16.04. So it is visible in the list. And you may verify it by seeing the list.
 
 
 5.  distrobox enter --root ubuntuu18
