@@ -29,7 +29,7 @@
     -   2.3. [Preparation of the ground for installation of ONOS](#2.3)
         -   2.3.1. [Working with docker](#2.3.1)
         -   2.3.2. [Working with Distrobox](#2.3.2)
-    -   2.4 [Installing on a single machine](#2.4)
+    -   2.4 [Installing ONOS on a single machine](#2.4)
     -   2.5. [Starting ONOS](#2.5)
     -   2.6. [Starting Karaf](#2.6)
         -   2.6.1. [What is Karaf?](#2.6.1)
@@ -190,7 +190,7 @@ You may consider the following reference:
 
 
 
-## 2.4. Installing on a single machine <a	name="2.4"></a>
+## 2.4. Installing ONOS on a single machine <a	name="2.4"></a>
 
 
 1. We need to download some tools, for that we need the `curl` package. To install it, execute the following:
