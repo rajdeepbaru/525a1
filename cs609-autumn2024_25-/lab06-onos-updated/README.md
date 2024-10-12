@@ -47,7 +47,8 @@ The ONOS platform includes:
 We shall use Ubuntu 16.04?? for this lab duration. 
 
 1.  Login to your Proxmox VM using the credentials provided. First, check the version of Ubuntu you are given. Run the command `cat /etc/lsb-release` and your output should be similar to following:
-> [!NOTE] You 
+> [!NOTE]
+> You should receive a similar output as follows: 
 > `DISTRIB_ID=Ubuntu`  
 > `DISTRIB_RELEASE=22.04`  
 > `DISTRIB_CODENAME=jammy`  
