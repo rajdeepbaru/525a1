@@ -288,6 +288,12 @@ cat /etc/lsb-release
 > `DISTRIB_DESCRIPTION="Ubuntu 16.04.7 LTS"`   
 
 
+16. At this point, your screen should look like following:
+
+<img src="../../.supporting-files/lab06-onos/img05.png" >
+
+
+
  Run the following commands in `Terminal 2` to access the CLI.
 
 -  ...
