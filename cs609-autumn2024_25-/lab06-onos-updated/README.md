@@ -133,8 +133,8 @@ distrobox enter --root Ubuntu16
 
 > [!NOTE]
 > You need to provide one password when the following prompt will be shown:  
-> `First time user password setup`
-> Enter new UNIX password:  
+> `First time user password setup`  
+> `Enter new UNIX password:`  
 > In that case, use the password `HelloSdn`  
 
 You may consider the following reference:
