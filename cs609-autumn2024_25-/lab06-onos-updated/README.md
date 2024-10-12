@@ -249,7 +249,11 @@ All should go well and you should be seeing an output similar to the following :
 <img src="../../.supporting-files/lab06-onos/img04.png" >
 
 The overall procedure may be seen as follows:
+
+
 <img src="../../.supporting-files/lab06-onos/vid02.gif" >
+
+
 
 ## Running ONOS as a service
 
