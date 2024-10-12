@@ -219,6 +219,10 @@ EOL
 ```shell
 sudo mkdir /opt ; cd /opt
 ```
+> [!NOTE]
+> If the directory exists, you shouls get a message similar to following:  
+> `mkdir: cannot create directory ‘/opt’: File exists`  
+
 
 8. To download ONOS, use the following command:
 ```shell
