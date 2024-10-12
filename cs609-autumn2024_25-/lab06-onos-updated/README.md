@@ -114,7 +114,8 @@ Run the following command to verify it:
 ```shell
 distrobox-list --root
 ```
-
+For reference, you may look at the following snapshot:
+<img src="../../.supporting-files/lab06-onos/img01.png" >
 
 
 5.  distrobox enter --root ubuntuu18
