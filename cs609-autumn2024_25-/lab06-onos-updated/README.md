@@ -211,9 +211,11 @@ JRE_HOME=/usr/lib/jvm/java-11-openjdk-amd64/jre
 ```shell
 EOL
 ``` 
+6. To exit, type `exit`. For reference, you may have a look at the following snapshot:
+
+<img src="../../.supporting-files/lab06-onos/img03.png" >
 
 
-echo "set javahome: https://wiki.onosproject.org/display/ONOS/Requirements -- YES"
 #sudo mkdir /opt ; cd /opt
 #sudo wget -c https://repo1.maven.org/maven2/org/onosproject/onos-releases/2.6.0/onos-2.6.0.tar.gz
 #sudo tar -xvf onos-2.6.0.tar.gz
