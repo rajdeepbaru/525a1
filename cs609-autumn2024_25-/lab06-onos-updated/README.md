@@ -137,7 +137,7 @@ distrobox enter --root Ubuntu16
 > In that case, use the password `HelloSdn`
 
 You may consider the following reference:
-<img src="../../.supporting-files/lab06-onos/vid01.jpg" >
+<img src="../../.supporting-files/lab06-onos/vid01.gif" >
 
 
 5.  distrobox enter --root ubuntuu18
