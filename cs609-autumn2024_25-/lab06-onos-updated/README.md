@@ -41,10 +41,10 @@
 **Lab objective:** Open Network Operating System 
 
 
-# Some understanding <a	name="1"></a>
+# 1. Some understanding <a	name="1"></a>
 
 
-## What is ONOS? <a	name="1.1"></a>
+## 1.1 What is ONOS? <a	name="1.1"></a>
 
 According to [[2]](#ref2), Open Network Operating System (ONOS) is the leading open source SDN controller for building next-generation SDN/NFV solutions.
 
@@ -58,10 +58,10 @@ The ONOS platform includes:
 
 
 
-# Installing and running ONOS <a	name="2"></a>
+# 2. Installing and running ONOS <a	name="2"></a>
 
 
-## Specifications we shall be using for this lab worksheet <a	name="2.1"></a>
+## 2.1 Specifications we shall be using for this lab worksheet <a	name="2.1"></a>
 
 As on October 2024, I failed several time to install ONOS in Ubuntu 22.04. So based on that experience, I am going to use an older version of Ubuntu while using ONOS. We shall use Ubuntu 16.04 for this lab duration. 
 
@@ -79,7 +79,7 @@ As on October 2024, I failed several time to install ONOS in Ubuntu 22.04. So ba
 -   `OpenJDK 11`
 
 
-## Synchronize your working directory and navigate to the desired location <a	name="2.2"></a>
+## 2.2 Synchronize your working directory and navigate to the desired location <a	name="2.2"></a>
 
 1. Please navigate to the GitHub repository by executing the following command:
 ```shell
@@ -96,10 +96,10 @@ git pull
 cd cs609-autumn2024_25-/lab06-onos-updated/
 ```
 
-## Preparation of the ground for installation of ONOS <a	name="2.3"></a>
+## 2.3 Preparation of the ground for installation of ONOS <a	name="2.3"></a>
 
 
-### Working with docker <a	name="2.3.1"></a>
+### 2.3.1 Working with docker <a	name="2.3.1"></a>
 
 
 1.   Run the following command to download the required tools:
@@ -111,7 +111,7 @@ followed by:
 bash script01-blackbox02of02.sh
 ```
 
-### Working with Distrobox <a	name="2.3.1"></a>
+### 2.3.2 Working with Distrobox <a	name="2.3.1"></a>
 
 
 
@@ -177,7 +177,7 @@ You may consider the following reference:
 
 
 
-## Installing on a single machine <a	name="2.4"></a>
+## 2.4 Installing on a single machine <a	name="2.4"></a>
 
 
 1. We need to download some tools, for that we need the `curl` package. To install it, execute the following:
@@ -261,7 +261,7 @@ sudo tar -xvf onos-2.6.0.tar.gz
 sudo mv onos-2.6.0 onos
 ```
 
-## Starting ONOS <a	name="2.5"></a>
+## 2.5 Starting ONOS <a	name="2.5"></a>
 
 
 1. Verify that ONOS is working. To do it, run the following command:
@@ -281,26 +281,26 @@ The overall procedure may be seen as follows:
 
 2. Let us call this ongoing terminal as the `left-hand-side terminal` or `Terminal 1`.
 
-## Starting Karaf <a	name="2.6"></a>
+## 2.6 Starting Karaf <a	name="2.6"></a>
 
 
-### What is Karaf? <a	name="2.6.1"></a>
+### 2.6.1 What is Karaf? <a	name="2.6.1"></a>
 
 
 Karaf is a lightweight, powerful, and enterprise ready modulith runtime. It provides all the ecosystem and bootstrapping options you need for your applications. It runs on premise or on cloud. This modulith runtime supports several frameworks and different kind of applications: REST/API, Web, Spring Boot, and much more.
 
-### An example <a	name="2.6.2"></a>
+### 2.6.2 An example <a	name="2.6.2"></a>
 
 Used by bunch of distributions, used as runtime and support by frameworks. According to [Karaf stories](https://karaf.apache.org/stories), some softwares use Apache Karaf as runtime.
 
 **Netflix:** The Netflix media pipeline processes thousands of new shows and movies every day so that you can watch them on any device anywhere. We use a forward chaining rule engine to coordinate all of this work in multiple workflows. Hosting these workflows in a reliable, scalable and cost effective manner is a huge challenge at our scale. In this talk, we will introduce the design of Netflix’s next generation rule engine framework. The goal is to boost modularity, increase developer productivity and decrease operational overhead. The new system is a platform as a service that lets workflow developers focus on workflow data model, execution conditions, and remote function invocations without worrying about how to deploy, scale, and monitor it. The system uses the OSGI framework to build separation among workflows and leverages Apache Karaf as the runtime container. Other interesting topics such as workflow bundle management and a novel rule domain specific language will be covered in this talk. Keywords:nRule engine, OSGI, Apache Karaf, Serverless. You can find the [abstract here](https://www.apachecon.com/acna19/s/#/scheduledEvent/1209)
 
-### How is it related to ONOS? <a	name="2.6.3"></a>
+### 2.6.3 How is it related to ONOS? <a	name="2.6.3"></a>
 
 
 According to the information by [Ayaka Koshibe](https://wiki.onosproject.org/display/ONOS/The%2BONOS%2BCLI), the ONOS CLI is an extension of Karaf's CLI. As a result, it is capable of leveraging features such as programmatic extensibility, the ability to load and unload bundles (among others), and SSH access.
 
-### Starting Karaf in a new terminal  <a	name="2.6.4"></a>
+### 2.6.4 Starting Karaf in a new terminal  <a	name="2.6.4"></a>
 
 
 
