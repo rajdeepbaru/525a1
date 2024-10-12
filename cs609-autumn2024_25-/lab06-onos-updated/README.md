@@ -254,6 +254,28 @@ The overall procedure may be seen as follows:
 <img src="../../.supporting-files/lab06-onos/vid02.gif" >
 
 
+12. Let us call this ongoing terminal as the `left-hand-side terminal` or `Terminal 1`.
+
+
+13. Open another terminal. Let us call this new terminal as ``right-hand-side-terminal` or `Terminal 2`. Use SSH on `Terminal 2` to log in to your VM. Check the output of the following command in `terminal 2`:
+```shell
+cat /etc/lsb-release
+```
+> [!NOTE]
+> The output should be as follows:`  
+> `DISTRIB_ID=Ubuntu`   
+> `DISTRIB_RELEASE=22.04`   
+> `DISTRIB_CODENAME=jammy`   
+> `DISTRIB_DESCRIPTION="Ubuntu 22.04.5 LTS"`   
+
+
+
+ Run the following commands in `Terminal 2` to access the CLI.
+-   ``
+```shell
+sudo /opt/onos/bin/onos -l karaf
+```
+
 
 ## Running ONOS as a service
 
