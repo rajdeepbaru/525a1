@@ -54,7 +54,7 @@ We shall use Ubuntu 16.04?? for this lab duration.
 > `DISTRIB_CODENAME=jammy`  
 > `DISTRIB_DESCRIPTION="Ubuntu 22.04.5 LTS"`  
 
-2.  
+2. However, we shall be using `Ubuntu 16.04` and `Mininet 2.2.1` while working with ONOS. 
 
 
 ## Synchronize your working directory and navigate to the desired location
@@ -62,7 +62,7 @@ We shall use Ubuntu 16.04?? for this lab duration.
 1. Please navigate to the GitHub repository by executing the following command:
 ```shell
 cd 525a1/
-```
+``` 
 
 2. Please execute the following command to synchrionize your *present working directory* with the GitHub repository:
 ```shell
