@@ -273,9 +273,9 @@ Used by bunch of distributions, used as runtime and support by frameworks. Accor
 
 According to the information by [Ayaka Koshibe](https://wiki.onosproject.org/display/ONOS/The%2BONOS%2BCLI), the ONOS CLI is an extension of Karaf's CLI. As a result, it is capable of leveraging features such as programmatic extensibility, the ability to load and unload bundles (among others), and SSH access.
 
-### An
+### Starting Karaf in a new terminal 
 
-### dd
+
 
 1. Open another terminal. Let us call this new terminal as ``right-hand-side-terminal` or `Terminal 2`. Use SSH on `Terminal 2` to log in to your VM. Check the output of the following command in `terminal 2`:
 ```shell
