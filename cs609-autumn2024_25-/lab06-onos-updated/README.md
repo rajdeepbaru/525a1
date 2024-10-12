@@ -83,18 +83,39 @@ cd cs609-autumn2024_25-/lab06-onos-updated/
 bash script01-blackbox01of02.sh
 ```
 followed by:
+```shell
 bash script01-blackbox02of02.sh
 ```
 
-### Install Distrobox
+## Working with Distrobox
 
-1. curl -O https://raw.githubusercontent.com/89luca89/distrobox/main/install
 
-2. sudo bash install
+1. To install distrobox, execute the following commands:
+```shell
+curl -O https://raw.githubusercontent.com/89luca89/distrobox/main/install
+```
 
-3. distrobox-list --root
+followed by
 
-4. distrobox-create --root --name ubuntuu18 --image ubuntu:18.04
+```shell
+sudo bash install
+```
+
+2. To view the list of available distroboxes, run the following command:
+```shell
+distrobox-list --root
+```
+
+3. Now we shall install Ubuntu 16 using distrobox. To do so, execute the following command in your terminal:
+```shell
+distrobox-create --root --name Ubuntu16 --image ubuntu:16.04
+```
+Run the following command to verify it:
+```shell
+distrobox-list --root
+```
+
+
 
 5.  distrobox enter --root ubuntuu18
 
