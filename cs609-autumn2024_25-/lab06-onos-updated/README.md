@@ -41,7 +41,7 @@ The ONOS platform includes:
 
 
 # Installing and running ONOS
----
+
 
 ## Specifications we shall be using for this lab worksheet
 
@@ -55,7 +55,10 @@ As on October 2024, I failed several time to install ONOS in Ubuntu 22.04. So ba
 > `DISTRIB_CODENAME=jammy`  
 > `DISTRIB_DESCRIPTION="Ubuntu 22.04.5 LTS"`  
 
-2. However, we shall be using `Ubuntu 16.04` and `Mininet 2.2.1` while working with ONOS. 
+2. However while working with ONOS, we shall be using the following tools with the mentioned versions:
+-   `Ubuntu 16.04`
+-   `Mininet 2.2.1` 
+-   `openjdk-11-jdk
 
 
 ## Synchronize your working directory and navigate to the desired location
