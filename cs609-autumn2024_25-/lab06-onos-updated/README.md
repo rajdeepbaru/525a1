@@ -41,6 +41,7 @@ The ONOS platform includes:
 
 
 # Installing and running ONOS
+---
 
 ## Specifications we shall be using for this lab worksheet
 
