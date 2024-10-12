@@ -76,6 +76,8 @@ cd cs609-autumn2024_25-/lab06-onos-updated/
 
 ## Installing on a single machine
 
+### Install docker
+
 1.   Run the following command to download the required tools:
 ```shell
 bash script01-blackbox01of02.sh
@@ -84,6 +86,23 @@ followed by:
 bash script01-blackbox02of02.sh
 ```
 
+### Install Distrobox
+
+1. curl -O https://raw.githubusercontent.com/89luca89/distrobox/main/install
+
+2. sudo bash install
+
+3. distrobox-list --root
+
+4. distrobox-create --root --name ubuntuu18 --image ubuntu:18.04
+
+5.  distrobox enter --root ubuntuu18
+
+6. sudo apt install vim git curl -y
+
+7. cat /etc/lsb-release
+
+8. rm install
 
 
 ## Running ONOS as a service
