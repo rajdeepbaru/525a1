@@ -53,6 +53,10 @@ We shall use Ubuntu 16.04?? for this lab duration.
 > `DISTRIB_CODENAME=jammy`  
 > `DISTRIB_DESCRIPTION="Ubuntu 22.04.5 LTS"`  
 
+
+> [!CHECK] 
+> ;l;l;
+
 ## Installing on a single machine
 
 ## Running ONOS as a service
