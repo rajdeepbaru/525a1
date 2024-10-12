@@ -272,7 +272,9 @@ cat /etc/lsb-release
 
 
  Run the following commands in `Terminal 2` to access the CLI.
--   ``
+
+-  ...
+ 
 ```shell
 sudo /opt/onos/bin/onos -l karaf
 ```
