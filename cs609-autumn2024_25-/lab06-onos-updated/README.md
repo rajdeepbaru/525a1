@@ -239,7 +239,9 @@ sudo tar -xvf onos-2.6.0.tar.gz
 sudo mv onos-2.6.0 onos
 ```
 
-11. Verify that ONOS is working. To do it, run the following command:
+## Starting ONOS
+
+1. Verify that ONOS is working. To do it, run the following command:
 ```shell
 sudo /opt/onos/bin/onos-service start
 ```
@@ -254,10 +256,11 @@ The overall procedure may be seen as follows:
 <img src="../../.supporting-files/lab06-onos/vid02.gif" >
 
 
-12. Let us call this ongoing terminal as the `left-hand-side terminal` or `Terminal 1`.
+2. Let us call this ongoing terminal as the `left-hand-side terminal` or `Terminal 1`.
 
+## Starting Karaf
 
-13. Open another terminal. Let us call this new terminal as ``right-hand-side-terminal` or `Terminal 2`. Use SSH on `Terminal 2` to log in to your VM. Check the output of the following command in `terminal 2`:
+1. Open another terminal. Let us call this new terminal as ``right-hand-side-terminal` or `Terminal 2`. Use SSH on `Terminal 2` to log in to your VM. Check the output of the following command in `terminal 2`:
 ```shell
 cat /etc/lsb-release
 ```
@@ -270,12 +273,12 @@ cat /etc/lsb-release
 > `DISTRIB_DESCRIPTION="Ubuntu 22.04.5 LTS"`   
 
 
-14. Execute the following command in `terminal 2`:
+2. Execute the following command in `terminal 2`:
 ```shell
 distrobox-enter --root Ubuntu16
 ```
 
-15. Check the output of the following command in `terminal 2`:
+3. Check the output of the following command in `terminal 2`:
 ```shell
 cat /etc/lsb-release
 ```
@@ -288,7 +291,7 @@ cat /etc/lsb-release
 > `DISTRIB_DESCRIPTION="Ubuntu 16.04.7 LTS"`   
 
 
-16. At this point, your screen should look like following:
+4. At this point, your screen should look like following:
 
 <img src="../../.supporting-files/lab06-onos/img05.png" >
 
@@ -302,7 +305,7 @@ cat /etc/lsb-release
 sudo /opt/onos/bin/onos -l karaf
 ```
 
-17. Use the password `helloSdn` when prompted. You should exxperience a situation similar to follow:
+5. Use the password `helloSdn` when prompted. You should exxperience a situation similar to follow:
 
 <img src="../../.supporting-files/lab06-onos/img06.png" >
 
