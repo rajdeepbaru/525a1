@@ -523,57 +523,53 @@ You may type the following commands in the ONOS CLI and cross-check the outputs.
 
 <img src="../../.supporting-files/lab06-onos/img13.png" >
 
-
+6. **onos:ui-prefs** Lists all UI user preferences
 
 
 <img src="../../.supporting-files/lab06-onos/img14.png" >
 
-
+7. **metrics** Prints metrics in the system
 
 
 <img src="../../.supporting-files/lab06-onos/img15.png" >
 
-
+8. **bundle:info** Displays detailed information of a given bundles
 
 
 <img src="../../.supporting-files/lab06-onos/img16.png" >
 
-
+9. **system:name** and **system:version** Show Karaf instance name and version
 
 
 <img src="../../.supporting-files/lab06-onos/img17.png" >
 
 
-
+10. **bundle:classes** Displays a list of classes/resources contained in the bundle)config:property-append property-append.
 
 <img src="../../.supporting-files/lab06-onos/img18.png" >
 
 
-
+11. **feature-list** Lists all existing features available from the defined repositories
 
 <img src="../../.supporting-files/lab06-onos/img19.png" >
 
 
-
+12. **bundle:list** Lists all installed bundles
 
 <img src="../../.supporting-files/lab06-onos/img20.png" >
 
 
-
+13. **bundle:services** Lists OSGi services per Bundle
 
 <img src="../../.supporting-files/lab06-onos/img21.png" >
 
 
-
+14. **driver-providers** Lists device driver providers
 
 <img src="../../.supporting-files/lab06-onos/img22.png" >
 
 
 
-
-
-
-/opt/onos/bin/onos
 
 
 
