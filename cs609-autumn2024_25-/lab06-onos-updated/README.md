@@ -43,8 +43,8 @@
     -   3.2. [Running ONOS as a service](#2.7)
         -   3.2.1.  [Install the service files](#271)
         -   3.2.2.  [Steps for Systemd based systems](#272)
-    -   3.3. [Starting ONOS CLI in a new terminal](#28)
-    -   3.4. [Accessing the ONOS GUI](#29)
+    -   3.3. [Accessing the ONOS GUI](#29)
+    -   3.4. [Starting ONOS CLI in a new terminal](#28)
 
 
 ---
@@ -420,12 +420,8 @@ sudo systemctl enable onos
 
 
 
-## 3.3. Starting ONOS CLI in a new terminal  <a	name="28"></a>
 
-/opt/onos/bin/onos
-
-
-## 3.4. Accessing the ONOS GUI  <a	name="29"></a>
+## 3.3. Accessing the ONOS GUI  <a	name="29"></a>
 
 1.  Open any browser in your local machine. Type the following URL and press the *Enter* button:
 ```shell
@@ -441,6 +437,10 @@ where XX.YY.WW.ZZ is the IP address of your target machine, i.e., the IP given t
 You should see a GUI similar to the following:
 
 <img src="../../.supporting-files/lab06-onos/img08.png" >
+
+## 3.4. Starting ONOS CLI in a new terminal  <a	name="28"></a>
+
+/opt/onos/bin/onos
 
 
 
