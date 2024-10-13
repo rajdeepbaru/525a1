@@ -502,19 +502,23 @@ The full process is shown bellows:
 
 You may type the following commands in the ONOS CLI and cross-check the outputs.
 
--   
+1.  **onos:ui-views** Lists all registered UI views   
+
+2.  **onos:ui-prefs** Lists all UI user preferences
+
 
 <img src="../../.supporting-files/lab06-onos/img10.png" >
 
+3.  **maps** Lists information about consistent maps in the system
 
 <img src="../../.supporting-files/lab06-onos/img11.png" >
 
 
-
+4. **exports** Lists exported packages and the bundles that export them)device-interfaces   
 
 <img src="../../.supporting-files/lab06-onos/img12.png" >
 
-
+5. **info** Prints system information
 
 
 <img src="../../.supporting-files/lab06-onos/img13.png" >
