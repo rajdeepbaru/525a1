@@ -587,7 +587,7 @@ You may type the following commands in the ONOS CLI and cross-check the outputs.
 
 
 
-# 5.  [Mininet and ONOS]<a	name="5"></a>
+# 5.  Mininet and ONOS<a	name="5"></a>
 
 
 
