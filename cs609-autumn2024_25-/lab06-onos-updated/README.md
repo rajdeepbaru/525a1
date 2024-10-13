@@ -23,6 +23,8 @@
 ### Table of contents 
 1.	[Some understanding](#1)
     -   1.1.  [What is ONOS?](#1.1)
+    -   1.2.  [Features of ONOS](#1.2)
+
 2.  [Installing and running ONOS](#2)
     -   2.1. [Specifications we shall be using for this lab worksheet](#2.1)
     -   2.2. [Synchronize your working directory and navigate to the desired location](#2.2)
@@ -59,11 +61,16 @@ The ONOS platform includes:
 -   Simplified management, configuration and deployment of new software, hardware & services.
 -   A scale-out architecture to provide the resiliency and scalability required to meet the rigors of production carrier environments.
 
+## 1.2 Features of ONOS? <a	name="1.2"></a>
 
+According to [[4]](#ref4), the most important benefit of an operating system is that it provides a useful and usable platform for software programs designed for a particular application or use case. ONOS applications and use cases often consist of customized communication routing, management, or monitoring services for software-defined networks. Some examples of things which you can do with ONOS, and software written to run on ONOS, may be found in [Apps and Use Cases](https://wiki.onosproject.org/display/ONOS/Apps+and+Use+Cases).
+
+ONOS can run as a [distributed system](https://wiki.onosproject.org/display/ONOS/Distributed+Operation) across multiple servers, allowing it to use the CPU and memory resources of multiple servers while providing fault tolerance in the face of server failure and potentially supporting live/rolling upgrades of hardware and software without interrupting network traffic.
+
+The ONOS kernel and core services, as well as ONOS applications, are written in Java as bundles that are loaded into the Karaf OSGi container. OSGi is a component system for Java that allows modules to be installed and run dynamically in a single JVM. Since ONOS runs in the JVM, it can run on several underlying OS platforms.
 
 
 # 2. Installing and running ONOS <a	name="2"></a>
-
 
 ## 2.1. Specifications we shall be using for this lab worksheet <a	name="2.1"></a>
 
@@ -385,7 +392,7 @@ The overallall process is mentioned here:
 1.  [AI Assisted Automation Framework in ONOS](https://www.youtube.com/watch?v=vtnliDI4sFg)<a	name="ref1"></a>
 2.  [Open Network Operating System](https://opennetworking.org/onos/)<a	name="ref2"></a>
 3.  [ONOS Overview - ONF Bootcamp May 23, 2017](https://www.youtube.com/watch?v=XI3ckGAK84k&t=3s)<a	name="ref3"></a>
-4.  [Open Network Operating System (ONOS) Wiki](https://wiki.onosproject.org/)
-5.  [Administrator Guide](https://wiki.onosproject.org/display/ONOS/Administrator+Guide)
-6.  [ONOS Developer's Google group](https://groups.google.com/a/onosproject.org/g/onos-dev)
-7.  [ONOS GitHub repository](https://github.com/opennetworkinglab/onos)
+4.  [Open Network Operating System (ONOS) Wiki](https://wiki.onosproject.org/)<a	name="ref4"></a>
+5.  [Administrator Guide](https://wiki.onosproject.org/display/ONOS/Administrator+Guide)<a	name="ref5"></a>
+6.  [ONOS Developer's Google group](https://groups.google.com/a/onosproject.org/g/onos-dev)<a	name="ref6"></a>
+7.  [ONOS GitHub repository](https://github.com/opennetworkinglab/onos)<a	name="ref7"></a>
