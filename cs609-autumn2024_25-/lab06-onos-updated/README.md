@@ -467,7 +467,7 @@ sudo /opt/onos/bin/onos -l karaf
 ```
 
 Use
-    -   test1
+-   test1
 
 
     -   Use the following credentials:  
