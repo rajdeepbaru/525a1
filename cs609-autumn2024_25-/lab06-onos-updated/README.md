@@ -427,10 +427,20 @@ sudo systemctl enable onos
 
 ## 3.4. Accessing the ONOS GUI  <a	name="29"></a>
 
-Access to the ONOS GUI from a browser
+1.  Open any browser in your local machine. Type the following URL and press the *Enter* button:
+```shell
 http://XX.YY.WW.ZZ:8181/onos/ui/index.html
+```
+where XX.YY.WW.ZZ is the IP address of your target machine, i.e., the IP given to you to access the VM. You should see a GUI similar to the following:
 
-where XX.YY.WW.ZZ is the IP address of your target machine. The default username and password is onos / rocks.
+<img src="../../.supporting-files/lab06-onos/img07.png" >
+
+2.  Provide the following credential:
+    -   username is *onos*, and
+    -   password is *rocks*.
+You should see a GUI similar to the following:
+
+<img src="../../.supporting-files/lab06-onos/img08.png" >
 
 
 
