@@ -460,9 +460,11 @@ followed by
 ```shelll
 sudo /opt/onos/bin/onos -l karaf
 ```
+
 Use the following credentials:
-    -   username: karaf, and
-    -   password: karaf
+    -   username: karaf, and  
+    -   password: karaf  
+
 
 In the *Terminal 3*, type the following:
 ```shell
