@@ -442,6 +442,51 @@ You should see a GUI similar to the following:
 
 ## 3.4. Starting ONOS CLI in a new terminal  <a	name="28"></a>
 
+We need three terminals here. In all the three terminals, ssing SSH, log in to your VM. In the *Terminal 1*, type the following:
+```shell
+distrobox enter --root Ubuntu16
+```
+followed by
+
+```shelll
+sudo /opt/onos/bin/onos-service start
+```
+In the *Terminal 2*, type the following:
+```shell
+distrobox enter --root Ubuntu16
+```
+followed by
+
+```shelll
+sudo /opt/onos/bin/onos -l karaf
+```
+Use the following credentials:
+    -   username: karaf, and
+    -   password: karaf
+
+In the *Terminal 3*, type the following:
+```shell
+distrobox enter --root Ubuntu16
+```
+followed by
+
+```shelll
+sudo /opt/onos/bin/onos -l onos
+```
+Use the following credentials:
+    -   username: onos, and
+    -   password: rocks
+
+You should see the ONOS CLI and Karaf CLI in *Terminal 2*, and *Terminal 3*, respecctively. The situation is depicted follows:
+
+<img src="../../.supporting-files/lab06-onos/img09.png" >
+
+The full process is shown bellows:
+
+<img src="../../.supporting-files/lab06-onos/vid04.gif" >
+
+
+
 /opt/onos/bin/onos
 
 
