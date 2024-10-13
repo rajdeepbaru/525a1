@@ -390,11 +390,16 @@ The overallall process is mentioned here:
 <img src="../../.supporting-files/lab06-onos/vid03.gif" >
 
 ## 3.2. Running ONOS as a service  <a	name="2.7"></a>
-
+Sometimes it’s useful to run ONOS as a service, particularly in production environments. This is where things get more complicated and specialized, depending on the operating system you’re running. 
 
 
 ### 3.2.1.  Install the service files  <a	name="271"></a>
-
+Open another terminal. Let us call it *Terminal 3*. In *Terminal 3* execute the following command:
+```shell
+sudo cp /opt/onos/init/onos.initd /etc/init.d/onos
+```
+> [!NOTE]
+> According to [Welcome to the Essay Debating System](https://wiki.debian.org/Debate) and [Debate Init System To Use], the open question is **which *init* system *Debian* should choose as default**. A
 
 ### 3.2.2.  Steps for Systemd based systems  <a	name="272"></a>
 
