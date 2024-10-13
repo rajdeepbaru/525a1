@@ -25,7 +25,7 @@
     -   1.1.  [What is ONOS?](#1.1)
     -   1.2.  [Features of ONOS](#1.2)
 
-2.  [Installing and running ONOS](#2)
+2.  [Installation of ONOS and its verification](#2)
     -   2.1. [Specifications we shall be using for this lab worksheet](#2.1)
     -   2.2. [Synchronize your working directory and navigate to the desired location](#2.2)
     -   2.3. [Preparation of the ground for installation of ONOS](#2.3)
@@ -33,16 +33,18 @@
         -   2.3.2. [Working with Distrobox](#2.3.2)
     -   2.4 [Installing ONOS on a single machine](#2.4)
     -   2.5. [Cross-checking the installation process](#2.5)
-    -   2.6. [Starting Karaf](#2.6)
-        -   2.6.1. [What is Karaf?](#2.6.1)
-        -   2.6.2. [An example](#2.6.2)
-        -   2.6.3. [How is it related to ONOS?](#2.6.3)
-        -   2.6.4. [Starting Karaf CLI in a new terminal](#2.6.4)
-    -   2.7. [Running ONOS as a service](#2.7)
-        -   2.7.1.  [Install the service files](#271)
-        -   2.7.2.  [Steps for Systemd based systems](#272)
-    -   2.8. [Starting ONOS CLI in a new terminal](#28)
-    -   2.9. [Accessing the ONOS GUI](#29)
+
+3. [Starting the components of ONOS](#3)
+    -   3.1. [Starting Karaf](#2.6)
+        -   3.1.1. [What is Karaf?](#2.6.1)
+        -   3.1.2. [An example](#2.6.2)
+        -   3.1.3. [How is it related to ONOS?](#2.6.3)
+        -   3.1.4. [Starting Karaf CLI in a new terminal](#2.6.4)
+    -   3.2. [Running ONOS as a service](#2.7)
+        -   3.2.1.  [Install the service files](#271)
+        -   3.2.2.  [Steps for Systemd based systems](#272)
+    -   3.3. [Starting ONOS CLI in a new terminal](#28)
+    -   3.4. [Accessing the ONOS GUI](#29)
 
 
 ---
@@ -74,7 +76,7 @@ ONOS can run as a [distributed system](https://wiki.onosproject.org/display/ONOS
 The ONOS kernel and core services, as well as ONOS applications, are written in Java as bundles that are loaded into the Karaf OSGi container. OSGi is a component system for Java that allows modules to be installed and run dynamically in a single JVM. Since ONOS runs in the JVM, it can run on several underlying OS platforms.
 
 
-# 2. Installing and running ONOS <a	name="2"></a>
+# 2. Installation of ONOS and its verification <a	name="2"></a>
 
 ## 2.1. Specifications we shall be using for this lab worksheet <a	name="2.1"></a>
 
@@ -305,26 +307,31 @@ The overall procedure may be seen as follows:
 
 2. Let us call this ongoing terminal as the `left-hand-side terminal` or `Terminal 1`.
 
-## 2.6. Starting Karaf <a	name="2.6"></a>
+
+# 3. Starting the components of ONOS<a	name="3"></a>
 
 
-### 2.6.1. What is Karaf? <a	name="2.6.1"></a>
+
+## 3.1. Starting Karaf <a	name="2.6"></a>
+
+
+### 3.1.1. What is Karaf? <a	name="2.6.1"></a>
 
 
 Karaf is a lightweight, powerful, and enterprise ready modulith runtime. It provides all the ecosystem and bootstrapping options you need for your applications. It runs on premise or on cloud. This modulith runtime supports several frameworks and different kind of applications: REST/API, Web, Spring Boot, and much more.
 
-### 2.6.2. An example <a	name="2.6.2"></a>
+### 3.1.2. An example <a	name="2.6.2"></a>
 
 Used by bunch of distributions, used as runtime and support by frameworks. According to [Karaf stories](https://karaf.apache.org/stories), some softwares use Apache Karaf as runtime.
 
 **Netflix:** The Netflix media pipeline processes thousands of new shows and movies every day so that you can watch them on any device anywhere. We use a forward chaining rule engine to coordinate all of this work in multiple workflows. Hosting these workflows in a reliable, scalable and cost effective manner is a huge challenge at our scale. In this talk, we will introduce the design of Netflix’s next generation rule engine framework. The goal is to boost modularity, increase developer productivity and decrease operational overhead. The new system is a platform as a service that lets workflow developers focus on workflow data model, execution conditions, and remote function invocations without worrying about how to deploy, scale, and monitor it. The system uses the OSGI framework to build separation among workflows and leverages Apache Karaf as the runtime container. Other interesting topics such as workflow bundle management and a novel rule domain specific language will be covered in this talk. Keywords:nRule engine, OSGI, Apache Karaf, Serverless. You can find the [abstract here](https://www.apachecon.com/acna19/s/#/scheduledEvent/1209)
 
-### 2.6.3. How is it related to ONOS? <a	name="2.6.3"></a>
+### 3.1.3. How is it related to ONOS? <a	name="2.6.3"></a>
 
 
 According to the information by [Ayaka Koshibe](https://wiki.onosproject.org/display/ONOS/The%2BONOS%2BCLI), the ONOS CLI is an extension of Karaf's CLI. As a result, it is capable of leveraging features such as programmatic extensibility, the ability to load and unload bundles (among others), and SSH access.
 
-### 2.6.4. Starting Karaf in a new terminal  <a	name="2.6.4"></a>
+### 3.1.4. Starting Karaf in a new terminal  <a	name="2.6.4"></a>
 
 
 
@@ -382,20 +389,20 @@ The overallall process is mentioned here:
 
 <img src="../../.supporting-files/lab06-onos/vid03.gif" >
 
-## 2.7. Running ONOS as a service  <a	name="2.7"></a>
+## 3.2. Running ONOS as a service  <a	name="2.7"></a>
 
 
 
-### 2.7.1.  Install the service files  <a	name="271"></a>
+### 3.2.1.  Install the service files  <a	name="271"></a>
 
 
-### 2.7.2.  Steps for Systemd based systems  <a	name="272"></a>
+### 3.2.2.  Steps for Systemd based systems  <a	name="272"></a>
 
 
-## 2.8. Starting ONOS CLI in a new terminal  <a	name="28"></a>
+## 3.3. Starting ONOS CLI in a new terminal  <a	name="28"></a>
 
 
-## 2.9. Accessing the ONOS GUI  <a	name="29"></a>
+## 3.4. Accessing the ONOS GUI  <a	name="29"></a>
 
 
 
