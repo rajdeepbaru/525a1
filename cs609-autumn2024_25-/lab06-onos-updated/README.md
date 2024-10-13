@@ -422,10 +422,15 @@ sudo systemctl enable onos
 
 ## 3.3. Starting ONOS CLI in a new terminal  <a	name="28"></a>
 
+/opt/onos/bin/onos
+
 
 ## 3.4. Accessing the ONOS GUI  <a	name="29"></a>
 
+Access to the ONOS GUI from a browser
+http://XX.YY.WW.ZZ:8181/onos/ui/index.html
 
+where XX.YY.WW.ZZ is the IP address of your target machine. The default username and password is onos / rocks.
 
 
 
