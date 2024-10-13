@@ -434,6 +434,8 @@ where XX.YY.WW.ZZ is the IP address of your target machine, i.e., the IP given t
 2.  Provide the following credential:
     -   username is *onos*, and
     -   password is *rocks*.
+
+
 You should see a GUI similar to the following:
 
 <img src="../../.supporting-files/lab06-onos/img08.png" >
