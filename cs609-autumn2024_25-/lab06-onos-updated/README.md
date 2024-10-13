@@ -45,7 +45,7 @@
         -   3.2.2.  [Steps for Systemd based systems](#272)
     -   3.3. [Accessing the ONOS GUI](#29)
     -   3.4. [Starting ONOS CLI in a new terminal](#28)
-
+4.  [Working with some ONOS CLI using some commands](#4)
 
 ---
 
@@ -498,7 +498,7 @@ The full process is shown bellows:
 
 
 
-# 4.    Working with some ONOS CLI using some commands
+# 4.    Working with some ONOS CLI using some commands<a	name="4"></a>
 
 You may type the following commands in the ONOS CLI and cross-check the outputs.
 
