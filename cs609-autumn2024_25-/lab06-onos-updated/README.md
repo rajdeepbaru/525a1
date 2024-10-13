@@ -399,9 +399,25 @@ Open another terminal. Let us call it *Terminal 3*. In *Terminal 3* execute the 
 sudo cp /opt/onos/init/onos.initd /etc/init.d/onos
 ```
 > [!NOTE]
-> According to [Welcome to the Essay Debating System](https://wiki.debian.org/Debate) and [Debate Init System To Use], the open question is **which *init* system *Debian* should choose as default**. A
+> According to [Welcome to the Essay Debating System](https://wiki.debian.org/Debate) and [Debate Init System To Use](https://wiki.debian.org/Debate/initsystem), the open question is **which *init* system *Debian* should choose as default**. A comparison between [Upstart and systemd](https://wiki.ubuntu.com/SystemdForUpstartUsers) is also available. 
 
 ### 3.2.2.  Steps for Systemd based systems  <a	name="272"></a>
+
+When ONOS runs as a service, the OS will start it automatically as part of the boot process. On systemd and upstart-based systems, it should also automatically be restarted if it crashes. Once the service configuration files have been installed, you can typically start, stop, and check the status of ONOS using the service command.
+
+[As Ubuntu 16 is an systemd based system](https://wiki.ubuntu.com/systemd), we need the following commands:
+```shell
+sudo cp /opt/onos/init/onos.service /etc/systemd/system/
+```
+followed by
+```shell
+sudo systemctl daemon-reload
+```
+and also
+```shell
+sudo systemctl enable onos
+```
+
 
 
 ## 3.3. Starting ONOS CLI in a new terminal  <a	name="28"></a>
