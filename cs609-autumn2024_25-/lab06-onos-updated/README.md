@@ -480,9 +480,10 @@ followed by
 ```shelll
 sudo /opt/onos/bin/onos -l onos
 ```
+
 Use the following credentials:
-    -   The *username* is *onos*, and
-    -   The *password* is *rocks*.
+-   The *username* is *onos*, and
+-   The *password* is *rocks*.
 
 
 You should see the ONOS CLI and Karaf CLI in *Terminal 2*, and *Terminal 3*, respecctively. The situation is depicted follows:
