@@ -431,9 +431,9 @@ where XX.YY.WW.ZZ is the IP address of your target machine, i.e., the IP given t
 
 <img src="../../.supporting-files/lab06-onos/img07.png" >
 
-2.  Provide the following credential:
-    -   username is *onos*, and
-    -   password is *rocks*.
+2.  Provide the following credentials:
+    -   The *username* is *onos*, and
+    -   The *password* is *rocks*.
 
 
 You should see a GUI similar to the following:
@@ -462,8 +462,8 @@ sudo /opt/onos/bin/onos -l karaf
 ```
 
 Use the following credentials:  
-    - username: karaf, and  
-    - password: karaf  
+    -   The *username* is *karaf*, and  
+    -   The *password* is *karaf*.
 
 
 In the *Terminal 3*, type the following:
