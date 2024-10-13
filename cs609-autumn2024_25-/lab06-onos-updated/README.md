@@ -46,6 +46,20 @@
     -   3.3. [Accessing the ONOS GUI](#29)
     -   3.4. [Starting ONOS CLI in a new terminal](#28)
 4.  [Working with some ONOS CLI using some commands](#4)
+    -   onos:ui-views 
+    -   onos:ui-prefs
+    -   maps
+    -   exports
+    -   info
+    -   onos:ui-prefs 
+    -   metrics
+    -   bundle:info
+    -   system:name and system:version
+    -   bundle:classes
+    -   feature-list
+    -   bundle:list 
+    -   bundle:services
+    -   driver-providers
 
 ---
 
