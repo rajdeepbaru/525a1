@@ -496,6 +496,79 @@ The full process is shown bellows:
 
 
 
+
+
+# 4.    Working with some ONOS CLI using some commands
+
+You may type the following commands in the ONOS CLI and cross-check the outputs.
+
+-   
+
+<img src="../../.supporting-files/lab06-onos/img10.png" >
+
+
+<img src="../../.supporting-files/lab06-onos/img11.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img12.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img13.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img14.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img15.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img16.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img17.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img18.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img19.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img20.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img21.png" >
+
+
+
+
+<img src="../../.supporting-files/lab06-onos/img22.png" >
+
+
+
+
+
+
 /opt/onos/bin/onos
 
 
