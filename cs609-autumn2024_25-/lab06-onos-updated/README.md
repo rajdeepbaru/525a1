@@ -38,7 +38,11 @@
         -   2.6.2. [An example](#2.6.2)
         -   2.6.3. [How is it related to ONOS?](#2.6.3)
         -   2.6.4. [Starting Karaf CLI in a new terminal](#2.6.4)
-
+    -   2.7. [Running ONOS as a service](#2.7)
+        -   2.7.1.  [Install the service files](#271)
+        -   2.7.2.  [Steps for Systemd based systems](#272)
+    -   2.8. [Starting ONOS CLI in a new terminal](#28)
+    -   2.9. [Accessing the ONOS GUI](#29)
 
 
 ---
@@ -50,7 +54,7 @@
 # 1. Some understanding <a	name="1"></a>
 
 
-## 1.1 What is ONOS? <a	name="1.1"></a>
+## 1.1. What is ONOS? <a	name="1.1"></a>
 
 According to [[2]](#ref2), Open Network Operating System (ONOS) is the leading open source SDN controller for building next-generation SDN/NFV solutions.
 
@@ -61,7 +65,7 @@ The ONOS platform includes:
 -   Simplified management, configuration and deployment of new software, hardware & services.
 -   A scale-out architecture to provide the resiliency and scalability required to meet the rigors of production carrier environments.
 
-## 1.2 Features of ONOS? <a	name="1.2"></a>
+## 1.2. Features of ONOS? <a	name="1.2"></a>
 
 According to [[4]](#ref4), the most important benefit of an operating system is that it provides a useful and usable platform for software programs designed for a particular application or use case. ONOS applications and use cases often consist of customized communication routing, management, or monitoring services for software-defined networks. Some examples of things which you can do with ONOS, and software written to run on ONOS, may be found in [Apps and Use Cases](https://wiki.onosproject.org/display/ONOS/Apps+and+Use+Cases).
 
@@ -378,13 +382,21 @@ The overallall process is mentioned here:
 
 <img src="../../.supporting-files/lab06-onos/vid03.gif" >
 
-2.7. [Running ONOS as a service](#2.7)
-    -   2.7.1.  [Install the service files](#271)
-    -   2.7.2.  [Steps for Systemd based systems](#272)
+## 2.7. Running ONOS as a service  <a	name="2.7"></a>
 
-2.8. [Starting ONOS CLI in a new terminal](#28)
 
-2.9. [Accessing the ONOS GUI](#28)
+
+### 2.7.1.  Install the service files  <a	name="271"></a>
+
+
+### 2.7.2.  Steps for Systemd based systems  <a	name="272"></a>
+
+
+## 2.8. Starting ONOS CLI in a new terminal  <a	name="28"></a>
+
+
+## 2.9. Accessing the ONOS GUI  <a	name="29"></a>
+
 
 
 
