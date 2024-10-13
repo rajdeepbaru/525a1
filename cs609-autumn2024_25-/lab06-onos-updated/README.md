@@ -466,6 +466,10 @@ followed by
 sudo /opt/onos/bin/onos -l karaf
 ```
 
+Use
+    -   test1
+
+
     -   Use the following credentials:  
         -   The *username* is *karaf*, and  
         -   The *password* is *karaf*.
