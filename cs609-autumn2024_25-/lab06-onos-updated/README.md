@@ -60,6 +60,9 @@
     -   bundle:list 
     -   bundle:services
     -   driver-providers
+5.  [Mininet and ONOS](#5)
+6.  [References](#6)
+
 
 ---
 
@@ -584,12 +587,11 @@ You may type the following commands in the ONOS CLI and cross-check the outputs.
 
 
 
+# 5.  [Mininet and ONOS]<a	name="5"></a>
 
 
 
-## Forming a cluster
-
-# References <a	name="1"></a>
+# 6. References <a	name="6"></a>
 
 
 1.  [AI Assisted Automation Framework in ONOS](https://www.youtube.com/watch?v=vtnliDI4sFg)<a	name="ref1"></a>
