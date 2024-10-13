@@ -32,12 +32,12 @@
         -   2.3.1. [Working with docker](#2.3.1)
         -   2.3.2. [Working with Distrobox](#2.3.2)
     -   2.4 [Installing ONOS on a single machine](#2.4)
-    -   2.5. [Starting ONOS](#2.5)
+    -   2.5. [Cross-checking the installation process](#2.5)
     -   2.6. [Starting Karaf](#2.6)
         -   2.6.1. [What is Karaf?](#2.6.1)
         -   2.6.2. [An example](#2.6.2)
         -   2.6.3. [How is it related to ONOS?](#2.6.3)
-        -   2.6.4. [Starting Karaf in a new terminal](#2.6.4)
+        -   2.6.4. [Starting Karaf CLI in a new terminal](#2.6.4)
 
 
 
@@ -281,10 +281,10 @@ sudo tar -xvf onos-2.6.0.tar.gz
 sudo mv onos-2.6.0 onos
 ```
 
-## 2.5. Starting ONOS <a	name="2.5"></a>
+## 2.5. Cross-checking the installation process<a	name="2.5"></a>
 
 
-1. Verify that ONOS is working. To do it, run the following command:
+1. Verify that ONOS services are working or not. To do it, run the following command:
 ```shell
 sudo /opt/onos/bin/onos-service start
 ```
@@ -378,11 +378,16 @@ The overallall process is mentioned here:
 
 <img src="../../.supporting-files/lab06-onos/vid03.gif" >
 
+2.7. [Running ONOS as a service](#2.7)
+    -   2.7.1.  [Install the service files](#271)
+    -   2.7.2.  [Steps for Systemd based systems](#272)
+
+2.8. [Starting ONOS CLI in a new terminal](#28)
+
+2.9. [Accessing the ONOS GUI](#28)
 
 
-## Running ONOS as a service
 
-## Accessing the CLI and GUI
 
 ## Forming a cluster
 
