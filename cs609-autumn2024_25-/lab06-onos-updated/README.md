@@ -85,8 +85,13 @@ The ONOS platform includes:
 -   A scale-out architecture to provide the resiliency and scalability required to meet the rigors of production carrier environments.
 
 ## 1.2. Features of ONOS? <a	name="1.2"></a>
+According to [[4]](#ref4), **ONOS** stands for **O**pen **N**etwork **O**perating **S**ystem. ONOS provides the control plane for a software-defined network (SDN), managing network components, such as switches and links, and running software programs or modules to provide communication services to end hosts and neighboring networks.
+-   In server operating systems, we will find that ONOS provides some analogous types of functionality, including APIs and abstractions, resource allocation, and permissions, as well as user-facing software such as a CLI, a GUI, and system applications.
+-   In traditional _inside the box_ switch operating systems, we  find that ONOS manages your entire network rather than a single device, which can dramatically simplify management, configuration, and deployment of new software, hardware and services.
+-   In SDN controllers, the ONOS platform and applications act as an extensible, modular, distributed SDN controller.
 
-According to [[4]](#ref4), the most important benefit of an operating system is that it provides a useful and usable platform for software programs designed for a particular application or use case. ONOS applications and use cases often consist of customized communication routing, management, or monitoring services for software-defined networks. Some examples of things which you can do with ONOS, and software written to run on ONOS, may be found in [Apps and Use Cases](https://wiki.onosproject.org/display/ONOS/Apps+and+Use+Cases).
+
+The most important benefit of an operating system is that it provides a useful and usable platform for software programs designed for a particular application or use case. ONOS applications and use cases often consist of customized communication routing, management, or monitoring services for software-defined networks. Some examples of things which you can do with ONOS, and software written to run on ONOS, may be found in [Apps and Use Cases](https://wiki.onosproject.org/display/ONOS/Apps+and+Use+Cases).
 
 ONOS can run as a [distributed system](https://wiki.onosproject.org/display/ONOS/Distributed+Operation) across multiple servers, allowing it to use the CPU and memory resources of multiple servers while providing fault tolerance in the face of server failure and potentially supporting live/rolling upgrades of hardware and software without interrupting network traffic.
 
