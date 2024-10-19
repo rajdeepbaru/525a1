@@ -97,12 +97,13 @@ bash .supporting-files/lab06-openstack/installAll-for-lab06.sh
 </h2>
 
 
-.
-# 1. Network Time Protocol (NTP)
+
+
+# 1. Working with the Network Time Protocol (NTP)
 
 ## 1.1 Controller node
 
-### Install and configure components
+### 1.1.1. Install and configure components
 
 1. Install the packages:
 ```shell
@@ -111,15 +112,28 @@ sudo apt install chrony
 
 2. Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. In `/etc/chrony/chrony.conf`
 ```shell
-server NTP_SERVER iburst
+server ntp.iitdh.ac.in iburst
 ```
 
+3. To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
+```shell
+allow 10.0.0.0/24
+```
 
-## 1.2 Other nodes
+4. Restart the NTP service by using the following command:
+```shell
+service chrony restart
+```
 
-## 1.3 Verify operation
+### 1.1.2. Verify
 
+1. Please execute the following command and cross-verify the corresponding output:
+```shell
+chronyc sources
+```
 
+2. Later to do.
 
+# 2. Working with 
 
 
