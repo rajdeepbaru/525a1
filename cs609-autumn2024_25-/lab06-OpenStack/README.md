@@ -189,12 +189,12 @@ chronyc sources
 
 Sample Installation: 
 ```shell
-sudo apt install nova-compute
+sudo apt install nova-compute -y
 ```
 
 Client Installation
 ```shell
-apt install python3-openstackclient
+apt install python3-openstackclient -y
 ```
 
 
