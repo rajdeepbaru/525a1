@@ -75,7 +75,7 @@
 
 # 1. Cross-check and setup
 
-# 1.1. Specification used
+## 1.1. Specification used
 
 1.  **Operating system with version:** Ubuntu 20.04. Please cross-verify the system you are using before proceeding further. 
 <h2 align="center" >

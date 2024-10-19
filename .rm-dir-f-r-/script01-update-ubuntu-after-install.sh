@@ -28,21 +28,9 @@ sudo systemctl start ssh
 echo  -e "Done: ssh started"
 
 
-sudo apt-get install vim -y
+sudo apt-get install vim git curl -y
 
 echo  -e "Done: vim innstalled"
-
-
-sudo apt-get install git -y
-
-echo  -e "Done: git installed"
-
-
-sudo apt-get install curl -y
-
-echo  -e "Done: curl installed"
-
-
 
 echo  -e "Done: all done"
 
