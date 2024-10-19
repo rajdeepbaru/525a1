@@ -140,7 +140,7 @@ and the following for *other nodes*
 server controller iburst
 ```
 
-You may verify with the following situation:
+
 
 3. **Enable other nodes:** To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
 ```shell
