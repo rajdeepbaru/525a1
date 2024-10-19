@@ -83,11 +83,21 @@
 </h2>
 
 ## 1.2 Install all pakage requirements in one go for this lab hours
-
-Please execute the following command in your terminal
+1. Please clone the GitHub repository by using the following command in your terminal:
 ```shell
-bash .supporting-files/lab06-openstack/installAll-for-lab06.sh
+https://github.com/rajdeepbaru/525a1.git
 ```
+
+2. Please navigate to the desired directory for today's lab session by using the following command in your terminal:
+```shell
+cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
+```
+
+2. Please execute the following command in your terminal
+```shell
+bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
+```
+
 
 # 2. Synchronize Time with NTP in Your PC by configuring 
 
