@@ -134,7 +134,10 @@ and comment the following four lines by placing a hash symbol at the beginning o
 `pool 0.ubuntu.pool.ntp.org iburst maxsources 1`  
 `pool 1.ubuntu.pool.ntp.org iburst maxsources 1`  
 `pool 2.ubuntu.pool.ntp.org iburst maxsources 2` 
+
+
 You may verify with the following situation:
+
 <h2 align="center" >
 <img src="f0604.png" >
 </h2>
