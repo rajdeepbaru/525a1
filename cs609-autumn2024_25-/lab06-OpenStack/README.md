@@ -181,7 +181,7 @@ chronyc sources
 chronyc sources
 ```
 <h2 align="center" >
-<img src="f0607.png" >
+<img src="f0608.png" >
 </h2>
 
 
