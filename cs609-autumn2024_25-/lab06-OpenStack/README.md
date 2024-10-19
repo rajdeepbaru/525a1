@@ -73,14 +73,18 @@
 ---
 
 
-# 1. Specification used
+# 1. Cross-check and setup
+
+# 1.1. Specification used
 
 1.  **Operating system with version:** Ubuntu 20.04. Please cross-verify the system you are using before proceeding further. 
 <h2 align="center" >
 <img src="f0601.png" >
 </h2>
 
-## Install all pakage requirements in one go for this lab hours
+## 1.2 Install all pakage requirements in one go for this lab hours
+
+Please execute the following command in your terminal
 ```shell
 bash .supporting-files/lab06-openstack/installAll-for-lab06.sh
 ```
