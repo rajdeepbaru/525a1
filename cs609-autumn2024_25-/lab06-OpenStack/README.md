@@ -137,3 +137,8 @@ chronyc sources
 # 2. Working with 
 
 
+
+
+# References
+
+1. [OpenStack Installation Guide](https://docs.openstack.org/install-guide/)
