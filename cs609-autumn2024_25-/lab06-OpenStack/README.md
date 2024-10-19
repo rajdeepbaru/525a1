@@ -76,9 +76,9 @@
 # 1. Specification used
 
 1.  **Operating system with version:** Ubuntu 20.04. Please cross-verify the system you are using before proceeding further. 
-
+<h2 align="center" >
 <img src="f0601.png" >
-
+</h2>
 
 ## Install all pakage requirements in one go for this lab hours
 ```shell
