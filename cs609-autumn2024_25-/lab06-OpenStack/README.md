@@ -93,27 +93,30 @@ https://github.com/rajdeepbaru/525a1.git
 cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
 ```
 
-2. Please execute the following command in your terminal
+3. Please execute the following command in your terminal
 ```shell
 bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 ```
 
 
-# 2. Synchronize Time with NTP in Your PC by configuring 
+# 1.3. Synchronize Time with NTP in Your PC by configuring 
 
 1. Please follow the [NTP Synchronize steps mentioned at our intranet by our CCS team](https://intranet.iitdh.ac.in:444/CCS.php). You should get an output similar to the following:
 <h2 align="center" >
 <img src="f0602.png" >
 </h2>
+<h2 align="center" >
+<img src="f0603.png" >
+</h2>
 
 
 
 
-# 1. Working with the Network Time Protocol (NTP)
+# 2. Working with the Network Time Protocol (NTP)
 
-## 1.1 Controller node
+## 2.1 Controller node
 
-### 1.1.1. Install and configure components
+### 2.1.1. Install and configure components
 
 1. Install the packages:
 ```shell
@@ -135,7 +138,7 @@ allow 10.0.0.0/24
 service chrony restart
 ```
 
-### 1.1.2. Verify
+### 2.1.2. Verify
 
 1. Please execute the following command and cross-verify the corresponding output:
 ```shell
@@ -144,7 +147,7 @@ chronyc sources
 
 2. Later to do.
 
-# 2. Working with 
+# 3. Working with 
 
 
 
