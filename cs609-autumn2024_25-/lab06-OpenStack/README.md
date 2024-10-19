@@ -157,6 +157,12 @@ You may verify with the following situation:
 ```shell
 service chrony restart
 ```
+You may verify with the following situation:
+
+<h2 align="center" >
+<img src="f0606.png" >
+</h2>
+
 
 ### 2.1.2. Verify
 
@@ -164,6 +170,10 @@ service chrony restart
 ```shell
 chronyc sources
 ```
+<h2 align="center" >
+<img src="f0607.png" >
+</h2>
+
 
 2. Later to do.
 
