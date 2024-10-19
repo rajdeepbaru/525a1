@@ -205,6 +205,10 @@ sudo touch /etc/mysql/mariadb.conf.d/99-openstack.cnf
 ```
 
 2. Open using *vim* and add the follwoing:
+```shell
+sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
+```
+ and then add:
 
 `[mysqld]`  
 `bind-address = 10.0.0.11`  
