@@ -175,7 +175,15 @@ chronyc sources
 </h2>
 
 
-2. Later to do.
+2. Optionally you may verify as follows:
+
+```shell
+chronyc sources
+```
+<h2 align="center" >
+<img src="f0607.png" >
+</h2>
+
 
 # 3. Working with 
 
