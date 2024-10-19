@@ -16,7 +16,7 @@
 ## [Lab Worksheet 05: Tuesday morning session, 08th October 2024](cs609-autumn2024_25-/lab05-Ryu)
 
 
-## [Lab Worksheet 06 on OpenStack: Tuesday 11:10 am session, 22nd October 2024](cs609-autumn2024_25-/lab06-OpenStack/README.md)
+## [Lab Worksheet 06: Tuesday 11:10 am session, 22nd October 2024](cs609-autumn2024_25-/lab06-OpenStack/README.md)
  
 ## [Lab Worksheet 07: ](cs609-autumn2024_25-/lab07-OpenDayLight)
  
