@@ -116,24 +116,20 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 
 ## 2.1 Controller node
 
-### 2.1.1. Install and configure components
+### 2.1.1 Configure components
 
-1. Install the packages:
-```shell
-sudo apt install chrony
-```
 
-2. Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. In `/etc/chrony/chrony.conf`
+1. Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. In `/etc/chrony/chrony.conf`
 ```shell
 server ntp.iitdh.ac.in iburst
 ```
 
-3. To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
+2. To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
 ```shell
 allow 10.0.0.0/24
 ```
 
-4. Restart the NTP service by using the following command:
+3.. Restart the NTP service by using the following command:
 ```shell
 service chrony restart
 ```
