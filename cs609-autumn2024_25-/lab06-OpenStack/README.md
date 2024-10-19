@@ -119,10 +119,22 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 ### 2.1.1 Configure components
 
 
-1. Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. In `/etc/chrony/chrony.conf`
+1. Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. To do so, type the following in your terminal:
+```shell
+sudo vim /etc/chrony/chrony.conf
+```
+
+2. Please add the following line in the file.
 ```shell
 server ntp.iitdh.ac.in iburst
 ```
+
+and comment the following four lines by placing a hash symbol at the beginning of each of the four lines.
+`pool ntp.ubuntu.com        iburst maxsources 4`   
+`pool 0.ubuntu.pool.ntp.org iburst maxsources 1`  
+`pool 1.ubuntu.pool.ntp.org iburst maxsources 1`  
+`pool 2.ubuntu.pool.ntp.org iburst maxsources 2` 
+
 
 2. To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
 ```shell
