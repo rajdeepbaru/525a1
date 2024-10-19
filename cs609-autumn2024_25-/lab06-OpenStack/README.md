@@ -66,9 +66,23 @@
 
 ---
 
-**Lab objective:** <!--- The objective of performing an ONOS Lab (Open Network Operating System Lab) typically revolves around understanding and experimenting with the capabilities of ONOS, a software-defined networking (SDN) controller platform. The specific objectives for today's lab is to do some experimenting with *SDN Concepts using ONOS*. --->
+**Lab objective:** 
+<!--- The objective of performing an ONOS Lab (Open Network Operating System Lab) typically revolves around understanding and experimenting with the capabilities of ONOS, a software-defined networking (SDN) controller platform. The specific objectives for today's lab is to do some experimenting with *SDN Concepts using ONOS*. 
+--->
 
 ---
+
+
+# 1. Specification used
+
+1.  Ubuntu 20.04
+
+## Install all pakage requirements in one go for this lab hours
+```shell
+bash .supporting-files/lab06-openstack/installAll-for-lab06.sh
+```
+
+# 2. Synchronize Time with NTP in Your PC by configuring 
 
 
 # 1. Network Time Protocol (NTP)
