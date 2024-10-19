@@ -99,7 +99,7 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 ```
 
 
-# 1.3. Synchronize Time with NTP in Your PC by configuring 
+## 1.3. Synchronize Time with NTP in Your PC by configuring 
 
 1. Please follow the [NTP Synchronize steps mentioned at our intranet by our CCS team](https://intranet.iitdh.ac.in:444/CCS.php). You should get an output similar to the following:
 <h2 align="center" >
