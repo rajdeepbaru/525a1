@@ -185,8 +185,17 @@ chronyc sources
 </h2>
 
 
-# 3. Working with 
+# 3. Working with OpenStack packages
 
+Sample Installation: 
+```shell
+sudo apt install nova-compute
+```
+
+Client Installation
+```shell
+apt install python3-openstackclient
+```
 
 
 
