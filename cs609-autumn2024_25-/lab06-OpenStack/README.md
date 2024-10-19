@@ -135,10 +135,15 @@ and comment the following four lines by placing a hash symbol at the beginning o
 `pool 2.ubuntu.pool.ntp.org iburst maxsources 2` 
 
 
+and the following for *other nodes*
+```shell
+server controller iburst
+```
+
 You may verify with the following situation:
 
 <h2 align="center" >
-<img src="f0604.png" >
+<img src="f0604new.png" >
 </h2>
 
 3. **Enable other nodes:** To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
@@ -163,7 +168,15 @@ You may verify with the following situation:
 </h2>
 
 
-### 2.1.2. Verify
+### 2.2 Other nodes
+
+Please add the following line in the file.
+
+```shell
+server controller iburst
+```
+
+### 2.3. Verify
 
 1. Please execute the following command and cross-verify the corresponding output:
 ```shell
