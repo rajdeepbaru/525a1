@@ -219,6 +219,22 @@ sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
 `collation-server = utf8_general_ci`  
 `character-set-server = utf8`  
 
+3. Restart the database service
+```shell
+service mysql restart
+```
+<h2 align="center" >
+<img src="f0609.png" >
+</h2>
+
+4. You may or may not want to secure the database 
+```shell
+sudo mysql_secure_installation
+```
+<h2 align="center" >
+<img src="f0610.png" >
+</h2>
+
 
 # References
 
