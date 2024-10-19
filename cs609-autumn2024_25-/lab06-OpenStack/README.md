@@ -112,14 +112,13 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 
 
 
-# 2. Working with the Network Time Protocol (NTP)
+# 2. Environment 
 
-## 2.1 Controller node
+## Network Time Protocol (NTP)
 
-### 2.1.1 Configure components
+### 2.1 Controller node
 
-
-1. Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. To do so, type the following in your terminal:
+1. **Do edit:**  Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. To do so, type the following in your terminal:
 ```shell
 sudo vim /etc/chrony/chrony.conf
 ```
@@ -142,7 +141,7 @@ You may verify with the following situation:
 <img src="f0604.png" >
 </h2>
 
-2. To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
+3. **Enable other nodes:** To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
 ```shell
 allow 10.0.0.0/24
 ```
@@ -153,7 +152,7 @@ You may verify with the following situation:
 </h2>
 
 
-3.. Restart the NTP service by using the following command:
+4. **Do restart:** Restart the NTP service by using the following command:
 ```shell
 service chrony restart
 ```
@@ -234,6 +233,8 @@ sudo mysql_secure_installation
 <h2 align="center" >
 <img src="f0610.png" >
 </h2>
+
+
 
 
 # References
