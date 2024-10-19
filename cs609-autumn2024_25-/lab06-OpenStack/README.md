@@ -76,6 +76,7 @@
 # 1. Specification used
 
 1.  **Operating system with version:** Ubuntu 20.04. Please cross-verify the system you are using before proceeding further. 
+
 <img src="f0601.png" >
 
 
