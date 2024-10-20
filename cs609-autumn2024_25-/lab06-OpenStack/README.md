@@ -583,6 +583,34 @@ Your content should be as follows:
 </p>
 
 
+8. 
+
+```shell
+sudo /bin/sh -c "keystone-manage db_sync"
+```
+
+9. 
+
+```shell
+sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+```
+
+
+10.
+
+
+```shell
+sudo keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+```
+
+
+
+
+
+
+
+
+
 
 
 
