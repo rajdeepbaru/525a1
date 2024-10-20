@@ -561,7 +561,26 @@ and you should get an output similar to the following:
 
 
 
+7. Edit the `/etc/keystone/keystone.conf` file and complete the following actions:
+	-	In the `[database]` section, configure database access as follows:
+		-	`[database]`
+		-	`connection = mysql+pymysql://keystone:abc@controller/keystone`
+	-	In the `[token]` section, configure the Fernet token provider as follows:
+		-	`[token]`
+		-	`provider = fernet`
 
+Your content should be as follows:
+
+
+<p align="center" >
+<img src="database.png" >
+</p>
+
+
+
+<p align="center" >
+<img src="token.png" >
+</p>
 
 
 
