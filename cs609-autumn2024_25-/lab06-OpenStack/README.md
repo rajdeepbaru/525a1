@@ -407,6 +407,20 @@ You may take help from the following snapshot.
 
 
 
+> [!NOTE]
+> The above commands should be executed in the *root* privilege.
+
+To exit from the *root* shell, type `exit`.
+
+3. To enable the etcd service, execute the following:
+```shell
+systemctl enable etcd
+```
+
+You should get an output similar to the following:
+<h2 align="center" >
+<img src="i17.png" >
+</h2>
 
 
 
