@@ -230,16 +230,22 @@ sudo touch /etc/mysql/mariadb.conf.d/99-openstack.cnf
 ```shell
 sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
 ```
- and then add:
+ and then add the following lines:
 
 `[mysqld]`  
-`bind-address = 10.0.0.11`  
-` `  
+`bind-address = 10.0.0.154`  
+
 `default-storage-engine = innodb`  
 `innodb_file_per_table = on`  
 `max_connections = 4096`  
 `collation-server = utf8_general_ci`  
 `character-set-server = utf8`  
+
+You may take help from the following snapshot.
+<h2 align="center" >
+<img src="i09.png" >
+</h2>
+
 
 3. Restart the database service
 ```shell
