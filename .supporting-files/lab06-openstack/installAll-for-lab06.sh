@@ -29,3 +29,4 @@ sudo apt install  keystone -y
 #sudo add-apt-repository cloud-archive:wallaby
 #sudo add-apt-repository cloud-archive:victoria
 
+shutdown -r now
