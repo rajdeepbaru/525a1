@@ -325,8 +325,10 @@ service mysql restart
 
 4. Use the following steps  to secure the database. 
 
-> [!NOTE] Provide password `abc` when prompted `Enter current password for root (enter for none):`
->
+> [!NOTE] Provide password `abc` when prompted `Enter current password for root (enter for none):`   
+>   
+
+
 
  
 ```shell
