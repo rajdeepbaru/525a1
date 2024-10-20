@@ -164,12 +164,12 @@ server controller iburst
 
 3. **Enable other nodes:** To enable other nodes to connect to the chrony daemon on the controller node, add the following key to the  `chrony.conf` file mentioned above:
 ```shell
-allow 10.0.0.0/24
+allow 10.230.0.0/20
 ```
 You may verify with the following situation:
 
 <h2 align="center" >
-<img src="f0604new.png" >
+<img src="i08.png" >
 </h2>
 
 
@@ -182,15 +182,6 @@ You may verify with the following situation:
 <h2 align="center" >
 <img src="f0606.png" >
 </h2>
-
-
-### 1.1.3. Other nodes
-
-Please add the following line in the file.
-
-```shell
-server controller iburst
-```
 
 ### 1.1.4. Verify
 
