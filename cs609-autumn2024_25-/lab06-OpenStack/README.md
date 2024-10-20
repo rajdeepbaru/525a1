@@ -489,9 +489,9 @@ systemctl enable etcd
 ```
 
 You should get an output similar to the following:
-<h2 align="center" >
+<p align="center" >
 <img src="i17.png" >
-</h2>
+</p>
 
 4. Restart `etcd`  by the following command:
 ```shell
@@ -507,30 +507,65 @@ systemctl restart etcd
 
 ### 2.1.1 Install and configure
 
+1. 
+
 
 ```shell
 sudo mysql -u root 
 ```
 
 
-
+2. 
 ```shell
 CREATE DATABASE keystone;
 ```
 
-
+3. 
 ```shell
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY 'abc';
 ```
 
-
+4. 
 ```shell
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY 'abc';
 ```
 
+
+5. 
 ```shell
 exit
 ```
+
+
+
+You should get an output similar to the following:
+
+
+<p align="center" >
+<img src="ser01.png" >
+</p>
+
+
+6. Cross-verify that the file `keystone.conf` exists actually. Else debug. To check the existence of the file, type the following:
+```shell
+sudo ls /etc/keystone/keystone.conf
+```
+
+and you should get an output similar to the following:
+
+
+<p align="center" >
+<img src="ser02.png" >
+</p>
+
+
+
+
+
+
+
+
+
 
 
 ## 2.2. Image service – glance installation for 2024.2 (Dalmatian)
