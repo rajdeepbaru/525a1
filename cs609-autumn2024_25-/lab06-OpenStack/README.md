@@ -225,7 +225,7 @@ You may verify with the following situation:
 
 
 
-### 1.1.4. Verifying NTP synchronization
+### 1.1.3. Verifying NTP synchronization
 
 1. Please execute the following command and cross-verify the corresponding output:
 ```shell
@@ -266,7 +266,7 @@ chronyc sourcestats
 
 
 
-##  1.3.    SQL database
+##  1.2.    SQL database
 
 1. Create and edit the /etc/mysql/mariadb.conf.d/99-openstack.cnf 
 ```shell
@@ -357,7 +357,7 @@ sudo mysql_secure_installation
 
 
 
-##  1.4.    Message queue
+##  1.3.    Message queue
 
 1. To add the `openstack` user, use the following code:
 ```shell
@@ -382,7 +382,7 @@ You may take help from the following snapshot.
 
 
 
-##  1.5.    Memcached
+##  1.4.    Memcached
 
 1. Edit the `/etc/memcached.conf` file and configure the service to use the management IP address of the controller node. This is to enable access by other nodes via the management network. To do so, follow the steps:
 ```shell
@@ -407,7 +407,7 @@ You may take help from the following snapshot.
 
 
 
-##  1.6.    Etcd
+##  1.5.    Etcd
 
 1. Change user by `sudo su -`.
 
@@ -497,6 +497,38 @@ You should get an output similar to the following:
 ```shell
 systemctl restart etcd
 ```
+
+# 2. OpenStack services
+
+
+
+## 2.1. Identity service – keystone installation for 2024.2 (Dalmatian)
+
+
+### 2.1.1 Install and configure
+
+
+
+## 2.2. Image service – glance installation for 2024.2 (Dalmatian)
+
+
+
+
+## 2.3. Placement service – placement installation for 2024.2 (Dalmatian)
+
+
+
+
+## 2.4. Compute service – nova installation for 2024.2 (Dalmatian)
+
+
+
+
+## 2.5. Networking service – neutron installation for 2024.2 (Dalmatian)
+
+
+
+
 
 
 # References
