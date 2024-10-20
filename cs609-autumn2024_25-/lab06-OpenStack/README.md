@@ -133,7 +133,7 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 <img src="f0603.png" >
 </h2>
 
-
+3. You may check whether *ntp* is installed or not by using `sudo apt list --installed | grep ntp`.
 
 
 ### 1.1.2. Controller node
