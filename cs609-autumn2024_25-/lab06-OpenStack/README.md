@@ -94,9 +94,9 @@
 ## 0.1. Operating system used
 
 1.  **Operating system with version:** Ubuntu 20.04. Please cross-verify the system you are using before proceeding further. 
-<h2 align="center" >
+<p align="center" >
 <img src="f0601.png" >
-</h2>
+</p>
 
 2. All the following steps are done in a dektop kept at 525-A1. Note the details:
     -   the IP is `10.230.3.154` 
