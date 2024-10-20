@@ -619,6 +619,8 @@ sudo keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url ht
 
 > [!CAUTION]
 > There might be error. Dubug it by taking help from the provided *supplimentary materials*.
+>	-	material 1  
+>	-	material 2  
 > 
 
 ### 2.1.3. Configure the Apache HTTP server
