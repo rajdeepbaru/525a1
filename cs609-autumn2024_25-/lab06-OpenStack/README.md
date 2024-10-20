@@ -715,7 +715,7 @@ You should get an output similar to the following:
 </p>
 
 
-
+3. add new1 content: controler in /etc/hosts
 
 ## 2.2. Image service – glance installation for 2024.2 (Dalmatian)
 
