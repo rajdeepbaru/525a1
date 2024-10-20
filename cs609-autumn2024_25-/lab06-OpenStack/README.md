@@ -203,9 +203,9 @@ You may verify with the following situation:
 
 
 In that check the output of the following commands:
-    -   `systemctl status chrony.service`  
-    -   `systemctl unmask chrony.service`  
-    -   `service chrony restart`  
+    -   systemctl status chrony.service  
+    -   systemctl unmask chrony.service  
+    -   service chrony restart  
     
 
 
