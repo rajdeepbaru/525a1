@@ -218,18 +218,27 @@ You may verify with the following situation:
 
 
 
-chronyc sources
 
 
-### 1.1.4. Verify
+### 1.1.4. Verifying NTP synchronization
 
 1. Please execute the following command and cross-verify the corresponding output:
 ```shell
 chronyc sources
 ```
+You should get an output similar to following:
 <h2 align="center" >
 <img src="f0607.png" >
 </h2>
+
+> [!CAUTION]
+> In case you see an error saying `Command 'chronyc' not found, but can be installed with: sudo apt install chrony`, execute the following: 
+>   -   `sudo apt install chrony`
+>   -   `service chrony restart`
+>   -   `chronyc sources`
+>  
+> The error should be resolved, and you should get the above output.
+
 
 
 2. Optionally you may verify as follows:
