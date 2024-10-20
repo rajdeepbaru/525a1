@@ -98,6 +98,15 @@
 <img src="f0601.png" >
 </h2>
 
+2. All the following steps are done in a dektop kept at 525-A1. Note the details:
+    -   the IP is `10.230.3.154` 
+    -   the username is `rajdeep`
+    -   the password is `sdn`
+
+> [!NOTE] 
+> In case you are stuck, you may verify the corresponding step with the system with IP `10.230.3.154`
+
+
 ## 0.2 Installing packages
 Please clone the GitHub repository by using the following command in your terminal:
 ```shell
@@ -274,6 +283,11 @@ sudo mysql_secure_installation
 > `flush privileges;`  
 > `exit` 
 > and then try `sudo mysql_secure_installation` again.
+
+
+> [!NOTE]   
+> In the system 10.230.3.154, the *database password* is *abc*.
+> 
 
 
 
