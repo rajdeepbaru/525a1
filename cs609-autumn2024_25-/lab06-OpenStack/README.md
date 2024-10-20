@@ -108,7 +108,7 @@
 
 
 ## 0.2 Installing packages
-Please execute the following command in your terminal:
+1. Please execute the following command in your terminal:
 
 ```shell
 bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
