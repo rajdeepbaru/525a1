@@ -286,7 +286,7 @@ sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
 >	-	:
 >	-	w
 >	-	q
->	-	<Press the Enter button>
+>	-	\<Press the Enter button\>
 
 
 
