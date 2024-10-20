@@ -343,6 +343,71 @@ You may take help from the following snapshot.
 
 ##  1.6.    Etcd
 
+1. Change user by `sudo su -`.
+
+2. Type the following in your terminal:
+
+```shell
+echo "ETCD_NAME=\"controller\" " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_DATA_DIR=\"/var/lib/etcd\" " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_INITIAL_CLUSTER_STATE=\"new\"  " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_INITIAL_CLUSTER_TOKEN=\"etcd-cluster-01\" " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_INITIAL_CLUSTER=\"controller=http://10.230.3.154:2380\" " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_INITIAL_ADVERTISE_PEER_URLS=\"http://10.230.3.154:2380\" " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_ADVERTISE_CLIENT_URLS=\"http://10.230.3.154:2379\" " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_LISTEN_PEER_URLS=\"http://0.0.0.0:2380\" " >> /etc/default/etcd
+```
+
+followed by
+
+```shell
+echo "ETCD_LISTEN_CLIENT_URLS=\"http://10.230.3.154:2379\"  ">> /etc/default/etcd
+```
+
+You may take help from the following snapshot.
+
+<h2 align="center" >
+<img src="i35.png" >
+</h2>
+
+
+
+
 
 # 4. SQL database for Ubuntu
 
