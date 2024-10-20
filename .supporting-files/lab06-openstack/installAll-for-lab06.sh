@@ -11,16 +11,16 @@ sudo apt-get install  vim git curl  net-tools -y
 sudo apt install ntp -y
 
 sudo apt install chrony -y
-sudo apt install mariadb-server python3-pymysql
+sudo apt install mariadb-server python3-pymysql -y
 
-sudo apt install rabbitmq-server
+sudo apt install rabbitmq-server -y
 
-sudo apt install memcached python3-memcache
-sudo apt install  etcd
+sudo apt install memcached python3-memcache -y
+sudo apt install  etcd -y
 #sudo apt install  nova-compute python3-openstackclient      glance nova-api nova-conductor nova-novncproxy nova-scheduler nova-compute
-sudo apt install  keystone
-sudo apt install  
-sudo apt install  
+sudo apt install  keystone -y
+#sudo apt install  
+#sudo apt install  
 
 
 
