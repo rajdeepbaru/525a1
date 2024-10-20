@@ -200,10 +200,10 @@ You may verify with the following situation:
 > [!CAUTION]
 > You see an error saying `Failed to restart chrony.service: Unit chrony.service is masked.` as mentioned below:
 > <p align="center" > <img src="06error.png" >  </p>  
-> Check the output of the following commands:
+> Check the output of the following commands:   
 >   -   `systemctl status chrony.service`  
 >   -   `systemctl unmask chrony.service`  
->   -   `service chrony restart`
+>   -   `service chrony restart`  
 
 
 
