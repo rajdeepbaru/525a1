@@ -67,20 +67,28 @@
 ---
 ### Table of contents 
 
-0.  [Cross-checking the desktop environment](#0)
-    -   0.1.    [Operating system used](#0.1)
-    -   0.2.    [Installing packages](#0.2)
+0.	Cross-checking the desktop environment
+	-	0.1.    Operating system used
+	-	0.2.    Installing packages
 
-1.	[How to configure the environment](#1)
-    -   1.1.    [Network Time Protocol ](#1.1)
-    -   1.2.    [OpenStack packages](#1.2)
-    -   1.3.    [SQL database](#1.3)
-    -   1.4.    [Message queue](#1.4)
-    -   1.5.    [Memcached](#1.5)
-    -   1.6.    [Etcd](#1.6)
+1.	How to configure the environment
+	-	1.1.    Network Time Protocol 
+	-  	1.2.    OpenStack packages
+	-  	1.3.    SQL database
+	-  	1.4.    Message queue
+	-  	1.5.    Memcached
+	-  	1.6.    Etcd
 
-2.  [OpenStack services](#2)
-    -   2.1. [To do](#2.1)
+2.	OpenStack services
+	-	2.1.	Identity service – keystone installation for 2024.2 (Dalmatian)
+	-	2.2.	Image service – glance installation for 2024.2 (Dalmatian)
+	-	2.3	Placement service – placement installation for 2024.2 (Dalmatian)
+	-	2.4	Compute service – nova installation for 2024.2 (Dalmatian)
+	-	2.5	Networking service – neutron installation for 2024.2 (Dalmatian)
+
+3.	References
+
+
  
 **Lab objective:** 
 <!--- The objective of performing an ONOS Lab (Open Network Operating System Lab) typically revolves around understanding and experimenting with the capabilities of ONOS, a software-defined networking (SDN) controller platform. The specific objectives for today's lab is to do some experimenting with *SDN Concepts using ONOS*. 
