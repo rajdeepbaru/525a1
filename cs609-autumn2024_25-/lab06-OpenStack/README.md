@@ -261,10 +261,6 @@ chronyc sourcestats
 
 
 
-##  1.2.    OpenStack packages
-
-
-
 ##  1.3.    SQL database
 
 1. Create and edit the /etc/mysql/mariadb.conf.d/99-openstack.cnf 
@@ -280,6 +276,9 @@ sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
 
 `[mysqld]`  
 `bind-address = 10.0.0.154`  
+
+> [!NOTE]
+> Modify the address `10.0.0.154` according to your system.
 
 `default-storage-engine = innodb`  
 `innodb_file_per_table = on`  
@@ -305,7 +304,7 @@ service mysql restart
 
 
 
-4. You may or may not want to secure the database 
+4. Use the following steps  to secure the database 
 ```shell
 sudo mysql_secure_installation
 ```
