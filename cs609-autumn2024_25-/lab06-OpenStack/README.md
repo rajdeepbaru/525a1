@@ -327,7 +327,8 @@ service mysql restart
 
 
 
-> [!NOTE] Provide password `abc` when prompted `Enter current password for root (enter for none):`   
+> [!NOTE] 
+> Provide password `abc` when prompted `Enter current password for root (enter for none):`   
 >   
 
 
