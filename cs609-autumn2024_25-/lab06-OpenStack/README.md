@@ -206,7 +206,7 @@ chronyc sources
 2. Optionally you may verify as follows:
 
 ```shell
-chronyc sources
+chronyc sourcestats
 ```
 <h2 align="center" >
 <img src="f0608.png" >
