@@ -164,10 +164,6 @@ and comment the following four lines by placing a hash symbol at the beginning o
 `pool 2.ubuntu.pool.ntp.org iburst maxsources 2` 
 
 
-and the following for *other nodes*
-```shell
-server controller iburst
-```
 
 
 
