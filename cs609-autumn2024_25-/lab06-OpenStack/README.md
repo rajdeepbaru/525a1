@@ -206,6 +206,7 @@ You may verify with the following situation:
 >   -   `systemctl status chrony.service`,
 >   -    `systemctl unmask chrony.service`, and 
 >   -   `service chrony restart`.  
+>   
 > The error should be resolved.
 
 
