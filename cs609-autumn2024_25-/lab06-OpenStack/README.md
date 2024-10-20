@@ -273,6 +273,7 @@ sudo mysql_secure_installation
 > `use mysql;`   
 > `flush privileges;`  
 > `exit` 
+> and then try `sudo mysql_secure_installation` again.
 
 
 
