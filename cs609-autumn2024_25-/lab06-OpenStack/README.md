@@ -422,7 +422,10 @@ You should get an output similar to the following:
 <img src="i17.png" >
 </h2>
 
-
+4. Restart `etcd`  by the following command:
+```shell
+systemctl restart etcd
+```
 
 
 # References
