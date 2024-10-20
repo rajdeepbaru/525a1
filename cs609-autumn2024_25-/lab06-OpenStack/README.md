@@ -135,9 +135,9 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 
 
 2. After following all the steps mentioned there, you should get an output similar to the following when you will type `vim /etc/ntp.conf` in your terminal.
-<h2 align="center" >
+<p align="center" >
 <img src="f0602.png" >
-</h2>
+</p>
 <h2 align="center" >
 <img src="f0603.png" >
 </h2>
