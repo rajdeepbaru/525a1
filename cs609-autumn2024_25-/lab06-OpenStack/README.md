@@ -318,6 +318,27 @@ You may take help from the following snapshot.
 
 ##  1.5.    Memcached
 
+1. Edit the `/etc/memcached.conf` file and configure the service to use the management IP address of the controller node. This is to enable access by other nodes via the management network. To do so, follow the steps:
+```shell
+sudo vim /etc/memcached.conf 
+```
+
+2. Then find the line containing `-l 127.0.0.1` and make it `-l 10.230.3.154`. Do not forget to replace with the correct IP address.
+<h2 align="center" >
+<img src="i13.png" >
+</h2>
+
+3. Restart the Memcached service using the following command:
+```shell
+service memcached restart
+```
+You may take help from the following snapshot.
+
+<h2 align="center" >
+<img src="i14.png" >
+</h2>
+
+
 
 
 ##  1.6.    Etcd
