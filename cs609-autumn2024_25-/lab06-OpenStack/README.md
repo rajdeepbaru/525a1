@@ -65,7 +65,23 @@
 -->
 
 ---
+### Table of contents 
 
+0.  [Cross-checking the desktop](#0)
+    -   0.1.    [Operating system used](#0.1)
+    -   0.2.    [Installing packages](#0.2)
+
+1.	[How to configure the environment](#1)
+    -   1.1.    [Network Time Protocol ](#1.1)
+    -   1.2.    [OpenStack packages](#1.2)
+    -   1.3.    [SQL database](#1.3)
+    -   1.4.    [Message queue](#1.4)
+    -   1.5.    [Memcached](#1.5)
+    -   1.6.    [Etcd](#1.6)
+
+2.  [OpenStack services](#2)
+    -   2.1. [To do](#2.1)
+ 
 **Lab objective:** 
 <!--- The objective of performing an ONOS Lab (Open Network Operating System Lab) typically revolves around understanding and experimenting with the capabilities of ONOS, a software-defined networking (SDN) controller platform. The specific objectives for today's lab is to do some experimenting with *SDN Concepts using ONOS*. 
 --->
@@ -73,17 +89,17 @@
 ---
 
 
-# 1. Cross-check and setup
+# 0. Cross-checking the desktop
 
-## 1.1. Specification used
+## 0.1. Operating system used
 
 1.  **Operating system with version:** Ubuntu 20.04. Please cross-verify the system you are using before proceeding further. 
 <h2 align="center" >
 <img src="f0601.png" >
 </h2>
 
-## 1.2 Install all pakage requirements in one go for this lab hours
-1. Please clone the GitHub repository by using the following command in your terminal:
+## 0.2 Installing packages
+Please clone the GitHub repository by using the following command in your terminal:
 ```shell
 https://github.com/rajdeepbaru/525a1.git
 ```
@@ -98,8 +114,13 @@ cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
 bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 ```
 
+#   1.	How to configure the environment
 
-## 1.3. Synchronize Time with NTP in Your PC by configuring 
+
+
+##  1.1.    Network Time Protocol 
+
+### 1.1.1. Synchronize Time with NTP in Your PC by configuring 
 
 1. Please follow the [NTP Synchronize steps mentioned at our intranet by our CCS team](https://intranet.iitdh.ac.in:444/CCS.php). You should get an output similar to the following:
 <h2 align="center" >
@@ -112,11 +133,7 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 
 
 
-# 2. Environment 
-
-## Network Time Protocol (NTP)
-
-### 2.1 Controller node
+### 1.1.2. Controller node
 
 1. **Do edit:**  Edit the `chrony.conf` file and add, change, or remove the following keys as necessary for your environment. To do so, type the following in your terminal:
 ```shell
@@ -164,7 +181,7 @@ You may verify with the following situation:
 </h2>
 
 
-### 2.2 Other nodes
+### 1.1.3. Other nodes
 
 Please add the following line in the file.
 
@@ -172,7 +189,7 @@ Please add the following line in the file.
 server controller iburst
 ```
 
-### 2.3. Verify
+### 1.1.4. Verify
 
 1. Please execute the following command and cross-verify the corresponding output:
 ```shell
@@ -191,6 +208,28 @@ chronyc sources
 <h2 align="center" >
 <img src="f0608.png" >
 </h2>
+
+
+
+
+##  1.2.    OpenStack packages
+
+
+
+##  1.3.    SQL database
+
+
+
+##  1.4.    Message queue
+
+
+
+##  1.5.    Memcached
+
+
+
+##  1.6.    Etcd
+
 
 
 # 3. Working with OpenStack packages

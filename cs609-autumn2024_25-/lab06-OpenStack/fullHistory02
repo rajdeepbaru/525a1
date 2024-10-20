@@ -1,0 +1,282 @@
+    1  nano /home/rajdeep/Downloads/script01-update-ubuntu-after-install.sh 
+    2  bash /home/rajdeep/Downloads/script01-update-ubuntu-after-install.sh 
+    3  shutdown -h
+    4  exit
+    5  clear
+    6  git clone https://github.com/rajdeepbaru/525a1.git
+    7  ls
+    8  tar -xvzf 525a1
+    9  tar -xvzf 525a1/
+   10  unzip 525a1/
+   11  cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
+   12  clear
+   13  ifconfig
+   14  cd ../../
+   15  git pull
+   16  cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
+   17  cd
+   18  cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
+   19  clear
+   20  bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh 
+   21  shutdown -r now
+   22  ifconfig 
+   23  sudo vim /etc/hosts
+   24  exit
+   25  clear
+   26  vim /etc/chrony/chrony.conf 
+   27  sudo vim /etc/chrony/chrony.conf 
+   28  clear
+   29  sudo vim /etc/chrony/chrony.conf 
+   30  sudo systemctl restart ntp
+   31  systemctl status ntp.service
+   32  systemctl unmask ntp.service
+   33  systemctl status ntp.service
+   34  service ntp restart
+   35  sudo systemctl restart ntp
+   36  ntpq -p
+   37  sudo apt install ntp -y
+   38  sudo systemctl restart ntp
+   39  ntpq -p
+   40  service chrony restart
+   41  systemctl unmask chrony.service
+   42  service chrony restart
+   43* 
+   44  service chrony restart
+   45  chronyc sources
+   46  ls /etc/mysql/mariadb.conf.d/
+   47  cd 525a1/
+   48  cd
+   49  clear
+   50  sudo mkdir /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   51  sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   52  ls /etc/mysql/mariadb.conf.d/
+   53  sudo rm -dir /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   54  sudo touch /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   55  sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   56  sudo su -
+   57  sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   58  cat /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   59  service mysql restart
+   60  mysql_secure_installation
+   61  sudo mysql -u root
+   62  mysql_secure_installation
+   63  rabbitmqctl add_user openstack RABBIT_PASS
+   64  sudo rabbitmqctl add_user openstack RABBIT_PASS
+   65  sudo rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+   66  sudo vim /etc/memcached.conf 
+   67  service memcached restart
+   68  sudo su -
+   69  vim /etc/default/etcd
+   70  sudo su -
+   71  vim /etc/default/etcd
+   72  sudo vim /etc/default/etcd
+   73  sudo su -
+   74  sudo vim /etc/default/etcd
+   75  systemctl enable etcd
+   76  systemctl restart etcd
+   77  systemctl status etcd
+   78  systemctl restart etcd
+   79  systemctl status etcd.service
+   80  ls -ld /var/lib/etcd
+   81  sudo chown -R etcd:etcd /var/lib/etcd
+   82  sudo chmod 700 /var/lib/etcd
+   83  sudo systemctl restart etcd
+   84  ls -ld /var/lib/etcd
+   85  sudo systemctl status etcd
+   86  sudo systemctl restart etcd
+   87  clear
+   88  sudo systemctl restart etcd
+   89  systemctl status etcd.service
+   90  ls -ld /var/lib/etcd
+   91  sudo chown -R etcd:etcd /var/lib/etcd
+   92  sudo chmod 700 /var/lib/etcd
+   93  sudo systemctl restart etcd
+   94  ls /etc/etcd/etcd.conf
+   95  sudo mkdir -p /etc/etcd
+   96  sudo nano /etc/etcd/etcd.conf
+   97  EnvironmentFile=-/etc/etcd/etcd.conf
+   98  sudo systemctl daemon-reload
+   99  sudo systemctl restart etcd
+  100  sudo systemctl status etcd
+  101  journalctl -xeu etcd
+  102  clear
+  103  journalctl -xeu etcd
+  104  sudo vim /etc/default/etcd
+  105  clear
+  106  sudo su -
+  107  sudo vim /etc/default/etcd
+  108  sudo su
+  109  sudo vim /etc/default/etcd
+  110  echo "ETCD_NAME=\"controller\" " >> /etc/default/etcd
+  111  echo "ETCD_DATA_DIR=\"/var/lib/etcd\" " >> /etc/default/etcd
+  112  echo "ETCD_INITIAL_CLUSTER_STATE=\"new\"  " >> /etc/default/etcd
+  113  echo "ETCD_INITIAL_CLUSTER_TOKEN=\"etcd-cluster-01\" " >> /etc/default/etcd
+  114  echo "ETCD_INITIAL_CLUSTER=\"controller=http://10.230.3.154:2380\" " >> /etc/default/etcd
+  115  echo "ETCD_INITIAL_ADVERTISE_PEER_URLS=\"http://10.230.3.154:2380\" " >> /etc/default/etcd
+  116  echo "ETCD_ADVERTISE_CLIENT_URLS=\"http://10.230.3.154:2379\" " >> /etc/default/etcd
+  117  echo "ETCD_LISTEN_PEER_URLS=\"http://0.0.0.0:2380\" " >> /etc/default/etcd
+  118  echo "ETCD_LISTEN_CLIENT_URLS=\"http://10.230.3.154:2379\"  ">> /etc/default/etcd
+  119  sudo su -
+  120  sudo vim /etc/default/etcd
+  121  systemctl enable etcd
+  122  systemctl restart etcd
+  123  mysql
+  124  sudo mysql -u root
+  125  mysql -u root
+  126  mysql -u root -p
+  127  sudo apt install keystone
+  128  sudo ls /etc/keystone/keystone.conf 
+  129  sudo vim /etc/keystone/keystone.conf 
+  130  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  131  sudo /bin/sh -c "keystone-manage db_sync" keystone
+  132  sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  133  sudo keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+  134  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  135  sudo ls /etc/keystone/keystone.conf
+  136  echo $OS_CONFIG_FILE
+  137  sudo chown keystone:keystone /etc/keystone/keystone.conf
+  138  sudo chmod 640 /etc/keystone/keystone.conf
+  139  echo $OS_CONFIG_FILE
+  140  ls /etc/keystone/keystone.conf
+  141  sudo ls /etc/keystone/keystone.conf
+  142  sudo ls -l /etc/keystone/keystone.conf
+  143  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne
+  144  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne   --config-file /etc/keystone/keystone.conf
+  145  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne   --config-file /etc/keystone/keystone.conf
+  146  tail -f /var/log/keystone/keystone.log
+  147  sudo tail -f /var/log/keystone/keystone.log
+  148* sudo vim /etc/keystone/keystone.confkeystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  149  openssl rand -hex 10
+  150  sudo vim /etc/keystone/keystone.conf
+  151  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  152  keystone-manage bootstrap
+  153  sudo keystone-manage bootstrap
+  154  ls /var/log/ | grep keystone
+  155  sudo systemctl status keystone
+  156  sudo systemctl start keystone
+  157  dpkg -l | grep keystone
+  158  ls /etc/systemd/system/keystone.service
+  159  ls /lib/systemd/system/keystone.service
+  160  sudo ls /lib/systemd/system/keystone.service
+  161  sudo nano /etc/systemd/system/keystone.service
+  162  ls /usr/bin/
+  163  q
+  164  sudo systemctl daemon-reload
+  165  sudo systemctl start keystone
+  166  sudo systemctl enable keystone
+  167  sudo systemctl status keystone
+  168  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  169  Failed to start OpenStack Identity (Keystone) Service.
+  170  sudo systemctl status keystone
+  171  sudo vim /etc/keystone/keystone.conf
+  172  mysql -u keystone -p -h localhost -P 3306
+  173  mysql -u keystone -p -h root -P 3306
+  174  sudo chown keystone:keystone /etc/keystone/keystone.conf
+  175  sudo chmod 640 /etc/keystone/keystone.conf
+  176  sudo chown keystone:keystone /var/log/keystone
+  177  sudo chmod 755 /var/log/keystone
+  178  sudo apt install python3-keystone  # For Debian/Ubuntu
+  179  sudo yum install openstack-keystone  # For CentOS/RHEL
+  180  ExecStart=/usr/bin/keystone-server
+  181  sudo systemctl start keystone
+  182  journalctl -xeu keystone
+  183  sudo systemctl status keystone --no-pager
+  184  ls -l /usr/bin/keystone-server
+  185  sudo ls -l /usr/bin/keystone-server
+  186  which keystone-server
+  187  dpkg -l | grep keystone
+  188  find / -name "keystone-server" 2>/dev/null
+  189  sudo apt update
+  190  sudo apt install keystone
+  191  find / -name "keystone-server" 2>/dev/null
+  192  sudo apt update
+  193  sudo apt install keystone
+  194  find / -name "keystone-server" 2>/dev/null
+  195  sudo apt install python3-openstackclient python3-pymysql
+  196  pip install keystone
+  197  sudo apt install python3-pip
+  198  find / -name "keystone-server" 2>/dev/null
+  199  sudo find / -name "keystone-server" 2>/dev/null
+  200  sudo find / -iname "keystone-server" 2>/dev/null
+  201  sudo find / -iname "keystone-server"
+  202  sudo find / -iname "keystone-server" 2>/dev/null
+  203  find / -iname "keystone-server" 2>/dev/null
+  204  sudo apt update
+  205  sudo apt install software-properties-common
+  206  sudo add-apt-repository cloud-archive:train
+  207  sudo apt install python3 python3-pip
+  208  pip3 install keystone
+  209  find / -iname "keystone-server" 2>/dev/null
+  210  clear
+  211  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  212  sudo mkdir -p /etc/keystone/fernet-keys
+  213  sudo chown -R keystone:keystone /etc/keystone/fernet-keys
+  214  sudo chmod 700 /etc/keystone/fernet-keys
+  215  sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  216  ls -l /etc/keystone/fernet-keys/
+  217  sudo ls -l /etc/keystone/fernet-keys/
+  218  sudo vim /etc/keystone/keystone.conf
+  219  sudo systemctl restart keystone
+  220  sudo systemctl status keystone
+  221  systemctl status keystone
+  222  sudo systemctl status keystone
+  223  sudo vim /etc/keystone/keystone.conf
+  224  sudo keystone-manage --config-file /etc/keystone/keystone.conf config-list
+  225  sudo keystone-manage db_sync
+  226  sudo nano /etc/keystone/keystone.conf
+  227  sudo vim /etc/keystone/keystone.conf
+  228  /bin/sh -c "keystone-manage db_sync" keystone
+  229  sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  230  sudo keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+  231  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  232  sudo ls -l /etc/keystone/
+  233  sudo ls -l /etc/keystone/fernet-keys
+  234  sudo keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  235  sudo vim /etc/apache2/apache2.conf
+  236  sudo su -
+  237  sudo vim /etc/apache2/apache2.conf
+  238  service apache2 restart
+  239  export OS_USERNAME=admin
+  240  export OS_PASSWORD=abc
+  241  export OS_PROJECT_NAME=admin
+  242  export OS_USER_DOMAIN_NAME=Default
+  243  export OS_PROJECT_DOMAIN_NAME=Default
+  244  export OS_AUTH_URL=http://controller:5000/v3
+  245  export OS_IDENTITY_API_VERSION=3
+  246  sudo touch /home/rajdeep/.openrc.sh
+  247  ls -la
+  248  sudo vim /home/rajdeep/.openrc.sh
+  249  openstack domain create --description "An Example Domain" example
+  250  sudo openstack domain create --description "An Example Domain" example
+  251  sudo vim /home/rajdeep/.openrc.sh
+  252  sudo openstack domain create --description "An Example Domain" example
+  253  openstack domain create --description "An Example Domain" example
+  254  openstack domain list
+  255  openstack domain create --description "An Example Domain" eWxample
+  256  clear
+  257  openstack domain create --description "An Example Domain" example
+  258  clear
+  259  openstack domain create --description "An Example Domain" Example
+  260  clear
+  261  openstack domain create --description "An Example Domain" Example1
+  262  openstack domain list
+  263  openstack project create --domain default   --description "Service Project" service
+  264  openstack project create --domain default   --description "Service Project" service2
+  265  openstack project create --domain default  --description "Demo Project" myproject2
+  266  openstack user create --domain default --password-prompt myuser2
+  267  openstack role create myrole2
+  268  openstack role add --project myproject2 --user myuser2 myrole2
+  269  openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name admin --os-username admin token issue
+  270  openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject --os-username myuser token issue
+  271  openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject --os-username myuser2 token2 issue
+  272  openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject --os-username myuser token issue
+  273  sudo openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject --os-username myuser token issue
+  274  openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject --os-username myuser2 token issue
+  275  sudo openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject --os-username myuser2 token issue
+  276  openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject2 --os-username myuser2 token issue
+  277  sudo openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject2 --os-username myuser2 token issue
+  278  clear
+  279  sudo openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject2 --os-username myuser2 token issue
+  280  clear
+  281  sudo openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject2 --os-username myuser2 token issue
+  282  history 500 >> allHist
