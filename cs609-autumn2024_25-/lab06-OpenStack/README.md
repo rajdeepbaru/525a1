@@ -508,6 +508,30 @@ systemctl restart etcd
 ### 2.1.1 Install and configure
 
 
+```shell
+sudo mysql -u root 
+```
+
+
+
+```shell
+CREATE DATABASE keystone;
+```
+
+
+```shell
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY 'abc';
+```
+
+
+```shell
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY 'abc';
+```
+
+```shell
+exit
+```
+
 
 ## 2.2. Image service – glance installation for 2024.2 (Dalmatian)
 
