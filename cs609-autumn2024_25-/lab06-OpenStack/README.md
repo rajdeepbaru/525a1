@@ -232,7 +232,11 @@ You should get an output similar to following:
 </h2>
 
 > [!CAUTION]
-> In case you see an error saying `Command 'chronyc' not found, but can be installed with: sudo apt install chrony`, execute the following: 
+> In case you see an error saying `Command 'chronyc' not found, but can be installed with: sudo apt install chrony`. 
+>  
+> <p align="center" > <img src="ec.png" >  </p> 
+> 
+> In that case, execute the following: 
 >   -   `sudo apt install chrony`
 >   -   `service chrony restart`
 >   -   `chronyc sources`
