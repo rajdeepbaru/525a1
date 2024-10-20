@@ -236,15 +236,16 @@ You should get an output similar to following:
 >  
 > <p align="center" > <img src="ec.png" >  </p> 
 > 
-> <p align="center" > <img src="cr.png" >  </p> 
->
+> 
 >  
 > In that case, execute the following: 
 >   -   `sudo apt install chrony`
 >   -   `service chrony restart`
 >   -   `chronyc sources`
 >  
-> The error should be resolved, and you should get the above output.
+>  <p align="center" > <img src="cr.png" >  </p> 
+>  
+> The error should be resolved.
 
 
 
