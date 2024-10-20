@@ -1,0 +1,18 @@
+sudo su -
+
+echo "# controller" >> /etc/hosts
+echo "10.230.3.154       controller" >> /etc/hosts
+
+echo "# compute1" >> /etc/hosts
+echo "10.0.0.31       compute1" >> /etc/hosts
+
+echo "# block1" >> /etc/hosts
+echo "10.0.0.41       block1" >> /etc/hosts
+
+echo "# object1" >> /etc/hosts
+echo "10.0.0.51       object1" >> /etc/hosts
+
+echo "# object2" >> /etc/hosts
+echo "10.0.0.52       object2" >> /etc/hosts
+
+exit
