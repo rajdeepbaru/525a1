@@ -283,6 +283,7 @@ sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
 
 > [!NOTE] 
 > To *start writing* or *adding characters* in *vim*, press the `i` button and then you may proceed for entering characters. To *save and exit* from *vim*, press the following sequence:
+>	-	\<Press the *Esc* button once\>
 >	-	:
 >	-	w
 >	-	q
@@ -360,16 +361,16 @@ sudo mysql_secure_installation
 
 1. To add the `openstack` user, use the following code:
 ```shell
-rabbitmqctl add_user openstack def
+sudo rabbitmqctl add_user openstack def
 ```
 
 > [!NOTE] 
-> `def` is the password for the user
+> Here `def` is the password for the user
 
 
 2. Permit configuration, write, and read access for the openstack user:
 ```shell
-rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+sudo rabbitmqctl set_permissions openstack ".*" ".*" ".*"
 ``` 
 You may take help from the following snapshot.
 
@@ -388,7 +389,7 @@ You may take help from the following snapshot.
 sudo vim /etc/memcached.conf 
 ```
 
-2. Then find the line containing `-l 127.0.0.1` and make it `-l 10.230.3.154`. Do not forget to replace with the correct IP address.
+2. Then find the line containing `-l 127.0.0.1` and make it `-l 10.230.3.154`. Note that for *525-A1*, the IP *10.230.3.154* is correct. Do not forget to replace with the *correct IP* address.
 <h2 align="center" >
 <img src="i13.png" >
 </h2>
