@@ -549,7 +549,7 @@ You should get an output similar to the following:
 </p>
 
 
-### 2.1.1. Install and configure components
+### 2.1.2. Install and configure components
 
 
 6. Cross-verify that the file `keystone.conf` exists actually. Else debug. To check the existence of the file, type the following:
@@ -718,6 +718,8 @@ You should get an output similar to the following:
 3. add new1 content: controler in /etc/hosts
 
 
+
+### 2.1.5. Create a domain, projects, users, and roles
 
 
 <p align="center" >
