@@ -101,7 +101,7 @@
 2. All the following steps are done in a dektop kept at 525-A1. Note the details:
     -   the IP is `10.230.3.154` 
     -   the username is `rajdeep`
-    -   the password is `sdn@2024`
+    -   the password is `sdn`
 
 > [!NOTE] 
 > In case you are stuck, you may verify the corresponding step with the system with IP `10.230.3.154`
