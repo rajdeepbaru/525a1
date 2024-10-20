@@ -203,7 +203,8 @@ You may verify with the following situation:
 > <p align="center" > <img src="06error.png" >  </p> 
 > 
 > In that check the output of the following commands:   `systemctl status chrony.service`, `systemctl unmask chrony.service`, and `service chrony restart`. The error should be resolved.
->     
+>   -   j
+>   -   k     
 
 
 
