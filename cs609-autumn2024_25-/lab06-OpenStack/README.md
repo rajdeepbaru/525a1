@@ -267,7 +267,7 @@ sudo mysql_secure_installation
 <img src="f0610.png" >
 </h2>
 
-> [!ERROR]
+> [!WARNING]
 > In case of error, 
 
 
