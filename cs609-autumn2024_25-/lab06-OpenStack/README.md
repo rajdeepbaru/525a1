@@ -409,8 +409,6 @@ You may take help from the following snapshot.
 
 
 
-# 4. SQL database for Ubuntu
-
 
 
 # References
