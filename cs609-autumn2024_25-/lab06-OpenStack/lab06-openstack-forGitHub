@@ -1,0 +1,301 @@
+https://github.com/rajdeepbaru/525a1.git
+
+cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
+
+bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
+
+shutdown -r now
+
+ifconfig
+
+sudo vim /etc/hosts
+
+ping -c 4 docs.openstack.org
+
+
+
+============================ controller node
+sudo vim /etc/chrony/chrony.conf
+sudo su -
+echo "server ntp.iitdh.ac.in iburst" >> /etc/chrony/chrony.conf
+echo "allow 10.230.0.0/20" >> /etc/chrony/chrony.conf
+exit
+sudo vim /etc/chrony/chrony.conf
+
+comments the four:
+pool ntp.ubuntu.com        iburst maxsources 4
+pool 0.ubuntu.pool.ntp.org iburst maxsources 1
+pool 1.ubuntu.pool.ntp.org iburst maxsources 1
+pool 2.ubuntu.pool.ntp.org iburst maxsources 2
+
+service chrony restart
+
+========================================== Verify operation
+chronyc sources
+sudo su -
+echo "server ntp.iitdh.ac.in iburst" >> /etc/ntp.conf
+exit
+
+sudo vim /etc/ntp.conf
+comments the four:
+#pool 0.ubuntu.pool.ntp.org iburst
+#pool 1.ubuntu.pool.ntp.org iburst
+#pool 2.ubuntu.pool.ntp.org iburst
+#pool 3.ubuntu.pool.ntp.org iburst
+
+comments the pool:
+#pool ntp.ubuntu.com
+
+sudo systemctl restart ntp
+ntpq -p
+
+WARNING/ERROR
+service chrony restart #status is masked
+systemctl status chrony.service
+systemctl unmask chrony.service
+service chrony restart
+chronyc sources
+
+========================== SQL database for Ubuntu
+cd
+sudo touch /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+
+sudo su -
+
+echo "[mysqld]" >> /etc/mysql/mariadb.conf.d/99-openstack.cnf
+echo "bind-address = 10.230.3.154" >> /etc/mysql/mariadb.conf.d/99-openstack.cnf
+
+echo "default-storage-engine = innodb" >> /etc/mysql/mariadb.conf.d/99-openstack.cnf
+echo "innodb_file_per_table = on" >> /etc/mysql/mariadb.conf.d/99-openstack.cnf
+echo "max_connections = 4096" >> /etc/mysql/mariadb.conf.d/99-openstack.cnf
+echo "collation-server = utf8_general_ci" >> /etc/mysql/mariadb.conf.d/99-openstack.cnf
+echo "character-set-server = utf8" >> /etc/mysql/mariadb.conf.d/99-openstack.cnf
+exit
+
+cat /etc/mysql/mariadb.conf.d/99-openstack.cnf
+service mysql restart
+mysql_secure_installation
+
+Enter current password for root (enter for none): abc
+WARNING/ERROR
+ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+
+sudo mysql -u root
+use mysql;
+flush privileges;
+exit
+
+ERROR GONE?YES
+Enter current password for root (enter for none): <ONLY PRESS ENTER>
+Set root password? [Y/n] y
+New password: abc
+Re-enter new password: abc
+Remove anonymous users? [Y/n] Y
+ ... Success!
+Disallow root login remotely? [Y/n] n
+ ... skipping.
+Remove test database and access to it? [Y/n] y
+ - Dropping test database...
+ ... Success!
+ - Removing privileges on test database...
+ ... Success!
+Reload privilege tables now? [Y/n] Y
+ ... Success!
+
+
+========================================== Message queue for Ubuntu
+sudo rabbitmqctl add_user openstack RABBIT_PASS
+
+sudo rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+
+
+
+======================================Memcached for Ubuntu
+sudo vim /etc/memcached.conf 
+-l 10.230.3.154
+service memcached restart
+
+
+
+=========================Etcd for Ubuntu
+
+sudo su -
+
+echo "ETCD_NAME=\"controller\" " >> /etc/default/etcd
+echo "ETCD_DATA_DIR=\"/var/lib/etcd\" " >> /etc/default/etcd
+echo "ETCD_INITIAL_CLUSTER_STATE=\"new\"  " >> /etc/default/etcd
+echo "ETCD_INITIAL_CLUSTER_TOKEN=\"etcd-cluster-01\" " >> /etc/default/etcd
+echo "ETCD_INITIAL_CLUSTER=\"controller=http://10.230.3.154:2380\" " >> /etc/default/etcd
+echo "ETCD_INITIAL_ADVERTISE_PEER_URLS=\"http://10.230.3.154:2380\" " >> /etc/default/etcd
+echo "ETCD_ADVERTISE_CLIENT_URLS=\"http://10.230.3.154:2379\" " >> /etc/default/etcd
+echo "ETCD_LISTEN_PEER_URLS=\"http://0.0.0.0:2380\" " >> /etc/default/etcd
+echo "ETCD_LISTEN_CLIENT_URLS=\"http://10.230.3.154:2379\"  ">> /etc/default/etcd
+exit
+
+
+systemctl enable etcd
+
+systemctl restart etcd
+ERROR:
+systemctl status etcd
+NOERROR. it was my mistake
+
+
+===============  Install OpenStack services
+
+Minimal deployment for 2024.2 (Dalmatian)
+
+At a minimum, you need to install the following services. Install the services in the order specified below:
+
+1    Identity service – keystone installation for 2024.2 (Dalmatian) Keystone, the OpenStack Identity Service
+
+
+--Keystone Installation Tutorial
+
+--Install and configure
+
+mysql #not working
+mysql -u root -p #wokrking. Next time not working
+sudo mysql -u root #working
+
+
+CREATE DATABASE keystone;
+
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY 'abc';
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY 'abc';
+
+exit
+
+sudo ls /etc/keystone/keystone.conf 
+sudo vim /etc/keystone/keystone.conf 
+
+[database] #line 558
+# ...
+connection = mysql+pymysql://keystone:abc@controller/keystone
+
+[token] #line 2449
+# ...
+provider = fernet
+
+su -s /bin/sh -c "keystone-manage db_sync" keystone #not working
+sudo /bin/sh -c "keystone-manage db_sync" keystone # woeking
+
+sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+sudo keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+
+
+sudo keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+
+ERROR/WARNING1
+Config file not found, using default configs.
+
+:: openssl rand -hex 10
+17cf37f13c51794f7b3a
+:: admin_token = 17cf37f13c51794f7b3a
+
+::ls /var/log/ | grep keystone
+keystone
+
+::sudo systemctl status keystone
+Unit keystone.service could not be found.
+
+ERRO/WARNING2
+/etc/keystone/fernet-keys/ does not exist
+sudo mkdir -p /etc/keystone/fernet-keys
+sudo chown -R keystone:keystone /etc/keystone/fernet-keys
+sudo chmod 700 /etc/keystone/fernet-keys
+sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+sudo ls -l /etc/keystone/fernet-keys/
+update /etc/keystone/keystone.conf file:
+[token]
+provider = fernet
+sudo systemctl restart keystone
+
+
+sudo su -
+echo "ServerName controller " >> /etc/apache2/apache2.conf
+exit
+
+service apache2 restart
+
+export OS_USERNAME=admin
+export OS_PASSWORD=abc
+export OS_PROJECT_NAME=admin
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_AUTH_URL=http://controller:5000/v3
+export OS_IDENTITY_API_VERSION=3
+
+
+sudo touch /home/rajdeep/.openrc.sh
+sudo vim /home/rajdeep/.openrc.sh
+
+
+=====================Create a domain, projects, users, and roles
+openstack domain create --description "An Example Domain" example
+
+openstack domain create --description "An Example Domain" Example1
+
+openstack domain list
+
+openstack project create --domain default   --description "Service Project" service2
+
+openstack project create --domain default  --description "Demo Project" myproject2
+
+	openstack user create --domain default --password-prompt myuser2
+	openstack role create myrole2
+	openstack role add --project myproject2 --user myuser2 myrole2
+
+============ Verify operation
+
+openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name admin --os-username admin token issue
+
+
+sudo openstack --os-auth-url http://controller:5000/v3 --os-project-domain-name Default --os-user-domain-name Default --os-project-name myproject2 --os-username myuser2 token issue
+
+
+
+
+
+
+
+
+
+
+2    Image service – glance installation for 2024.2 (Dalmatian)
+
+ 3   Placement service – placement installation for 2024.2 (Dalmatian)
+
+  4  Compute service – nova installation for 2024.2 (Dalmatian)
+
+   5 Networking service – neutron installation for 2024.2 (Dalmatian)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
