@@ -236,6 +236,9 @@ You should get an output similar to following:
 >  
 > <p align="center" > <img src="ec.png" >  </p> 
 > 
+> <p align="center" > <img src="cr.png" >  </p> 
+>
+>  
 > In that case, execute the following: 
 >   -   `sudo apt install chrony`
 >   -   `service chrony restart`
