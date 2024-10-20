@@ -293,6 +293,27 @@ sudo mysql_secure_installation
 
 ##  1.4.    Message queue
 
+1. To add the `openstack` user, use the following code:
+```shell
+rabbitmqctl add_user openstack def
+```
+
+> [!NOTE] 
+> `def` is the password for the user
+
+
+2. Permit configuration, write, and read access for the openstack user:
+```shell
+rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+``` 
+You may take help from the following snapshot.
+
+<h2 align="center" >
+<img src="i12.png" >
+</h2>
+
+
+
 
 
 ##  1.5.    Memcached
