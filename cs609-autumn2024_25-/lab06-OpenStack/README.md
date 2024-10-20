@@ -210,7 +210,7 @@ You may verify with the following situation:
 > The error should be resolved.
 
 <p align="center" >
-<img src="f0606.png" >
+<img src="crkk.png" >
 </p>
 
 
