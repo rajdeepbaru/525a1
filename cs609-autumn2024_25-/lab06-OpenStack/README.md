@@ -108,19 +108,21 @@
 
 
 ## 0.2 Installing packages
-Please clone the GitHub repository by using the following command in your terminal:
+Please execute the following command in your terminal:
+
+```shell
+bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
+```
+
+2. Please clone the GitHub repository by using the following command in your terminal:
 ```shell
 git clone https://github.com/rajdeepbaru/525a1.git
 ```
 
-2. Please navigate to the desired directory for today's lab session by using the following command in your terminal:
+3. Please navigate to the desired directory for today's lab session by using the following command in your terminal:
 ```shell
 cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
-```
 
-3. Please execute the following command in your terminal
-```shell
-bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 ```
 
 #   1.	How to configure the environment
