@@ -465,7 +465,12 @@ followed by
 echo "ETCD_LISTEN_CLIENT_URLS=\"http://10.230.3.154:2379\"  ">> /etc/default/etcd
 ```
 
-You may take help from the following snapshot when typed `cat /etc/default/etcd`  or `vim /etc/default/etcd` and reach to the end of the file.
+You may take help from the following snapshot when typed `cat /etc/default/etcd`  or `sudo vim /etc/default/etcd` and reach to the end of the file.
+
+
+> [!NOTE]
+> Do not forget to replace the IP `10.230.3.154` with the correct IP for *512-A1*.
+
 
 <h2 align="center" >
 <img src="i35.png" >
