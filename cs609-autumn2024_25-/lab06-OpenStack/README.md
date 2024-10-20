@@ -623,11 +623,88 @@ sudo keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url ht
 >	-	material 2  
 > 
 
+
+
 ### 2.1.3. Configure the Apache HTTP server
 
+1.
+
+```shell
+sudo su -
+```
+
+2.
+
+```shell
+echo "ServerName controller " >> /etc/apache2/apache2.conf
+```
+
+3.
+
+```shell
+exit 
+```
+
+4. verify 
+```shell
+tail /etc/apache2/apache2.conf
+```
+
+You should get an output similar to the following:
+
+
+<p align="center" >
+<img src="apache.png" >
+</p>
+
+
+### 2.1.4. Finalize the installation
+
 1. 
+```shell
+service apache2 restart
+```
+You should get an output similar to the following:
 
 
+<p align="center" >
+<img src="apache2.png" >
+</p>
+
+2. 
+```shell
+export OS_USERNAME=admin
+```
+
+
+```shell
+export OS_PASSWORD=abc
+```
+
+
+```shell
+export OS_PROJECT_NAME=admin
+```
+
+
+```shell
+export OS_USER_DOMAIN_NAME=Default
+```
+
+
+```shell
+export OS_PROJECT_DOMAIN_NAME=Default
+```
+
+
+```shell
+export OS_AUTH_URL=http://controller:5000/v3
+```
+
+
+```shell
+export OS_IDENTITY_API_VERSION=3
+``` 
 
 
 
