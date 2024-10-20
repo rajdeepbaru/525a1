@@ -169,8 +169,13 @@ allow 10.230.0.0/20
 You may verify with the following situation:
 
 <h2 align="center" >
+<img src="i34.png" >
+</h2>
+
+<h2 align="center" >
 <img src="i08.png" >
 </h2>
+
 
 
 4. **Do restart:** Restart the NTP service by using the following command:
