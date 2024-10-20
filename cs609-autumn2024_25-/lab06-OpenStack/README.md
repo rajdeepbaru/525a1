@@ -138,9 +138,9 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 <p align="center" >
 <img src="f0602.png" >
 </p>
-<h2 align="center" >
+<p align="center" >
 <img src="f0603.png" >
-</h2>
+</p>
 
 3. You may check whether *ntp* is installed or not by using `sudo apt list --installed | grep ntp`.
 
