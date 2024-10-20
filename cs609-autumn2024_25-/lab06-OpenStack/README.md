@@ -277,13 +277,27 @@ sudo touch /etc/mysql/mariadb.conf.d/99-openstack.cnf
 ```shell
 sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
 ```
- and then add the following lines:
+ and then add the following lines.
+
+
+
+> [!NOTE] 
+> To *start writing* or *adding characters* in *vim*, press the `i` button and then you may proceed for entering characters. To *save and exit* from *vim*, press the following sequence:
+>	-	:
+>	-	w
+>	-	q
+>	-	<Press the Enter button>
+
+
 
 `[mysqld]`  
 `bind-address = 10.0.0.154`  
 
 > [!NOTE]
 > Modify the address `10.0.0.154` according to your system. Note that the value `10.0.0.154` is correct for *525-A1*. For *512-A1*, calculate the value seeing the output of *ifconfig*. It should be `10.0.0.T` where `T` is the *last octate of your IP*. Please cross-verify.
+
+
+After the cross-verification, add the following in the same file.
 
 `default-storage-engine = innodb`  
 `innodb_file_per_table = on`  
