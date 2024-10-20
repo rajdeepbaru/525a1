@@ -221,34 +221,6 @@ chronyc sourcestats
 
 ##  1.3.    SQL database
 
-
-
-##  1.4.    Message queue
-
-
-
-##  1.5.    Memcached
-
-
-
-##  1.6.    Etcd
-
-
-
-# 3. Working with OpenStack packages
-
-Sample Installation: 
-```shell
-sudo apt install nova-compute -y
-```
-
-Client Installation
-```shell
-apt install python3-openstackclient -y
-```
-
-# 4. SQL database for Ubuntu
-
 1. Create and edit the /etc/mysql/mariadb.conf.d/99-openstack.cnf 
 ```shell
 sudo touch /etc/mysql/mariadb.conf.d/99-openstack.cnf
@@ -285,6 +257,22 @@ sudo mysql_secure_installation
 <img src="f0610.png" >
 </h2>
 
+
+
+
+
+##  1.4.    Message queue
+
+
+
+##  1.5.    Memcached
+
+
+
+##  1.6.    Etcd
+
+
+# 4. SQL database for Ubuntu
 
 
 
