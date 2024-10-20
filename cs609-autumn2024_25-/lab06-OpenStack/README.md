@@ -104,7 +104,7 @@
     -   the password is `sdn`
 
 > [!NOTE] 
-> In case you are stuck, you may verify the corresponding step with the system with IP `10.230.3.154`
+> In case you are stuck, you may verify the corresponding step with the system with IP `10.230.3.154` using SSH.
 
 
 ## 0.2 Installing packages
