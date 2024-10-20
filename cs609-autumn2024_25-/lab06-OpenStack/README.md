@@ -267,8 +267,12 @@ sudo mysql_secure_installation
 <img src="f0610.png" >
 </h2>
 
-> [!WARNING]
-> In case of error, 
+> [!WARNING]   
+> If you see an error like `ERROR 1698 (28000): Access denied for user 'root'@'localhost'`, try the following steps:  
+> `sudo mysql -u root`  
+> `use mysql;`   
+> `flush privileges;`  
+> `exit` 
 
 
 
