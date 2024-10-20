@@ -1,0 +1,578 @@
+    1  ssh user@10.230.3.157
+    2  sudo apt-get update 
+    3  sudo apt-get upgrade 
+    4  ping -c 4 docs.openstack.org
+    5  sudo vim /etc/hosts
+    6  sudo vim /etc/network/interfaces 
+    7  shutdown -h
+    8  exit
+    9  bash /home/rajdeep/Downloads/script01-update-ubuntu-after-install.sh 
+   10  exit
+   11  ssh user@10.230.3.154
+   12  bash /home/rajdeep/Documents/OpenStack01-installAll.sh 
+   13  clear
+   14  history 100
+   15  sudo apt-get install ntp
+   16  sudo apt-get install ntp -y
+   17  sudo vim /etc/ntp.conf
+   18  sudo systemctl restart ntp
+   19  ntpq -p
+   20  sudo vim /etc/ntp.conf
+   21  ntpq -p
+   22  shutdown -r now
+   23  ntpq -p
+   24  sudo vim /etc/ntp.conf
+   25  sudo vim /etc/chrony.conf
+   26  sudo vim /etc/chrony/chrony.conf 
+   27  service chrony restart
+   28  sudo service chrony restart
+   29  systemctl unmask chrony.service 
+   30  sudo service chrony restart
+   31  chronyc sources
+   32  apt install chrony
+   33  sudo apt install chrony
+   34  sudo apt-get install chrony
+   35  sudo apt-get install chrony -y
+   36  chronyc sources
+   37  ntpq -p
+   38  sudo apt install ntp     # version 1:4.2.8p12+dfsg-3ubuntu4.20.04.1, or
+   39  sudo apt install ntp    -y # version 1:4.2.8p12+dfsg-3ubuntu4.20.04.1, or
+   40  ntpq -p
+   41  sudo vim /etc/ntp.conf
+   42  ntpq -p
+   43  chronyc sources
+   44  shutdown -r now
+   45  ntpq -p
+   46  chronyc sources
+   47  sudo apt install chrony
+   48  chronyc sources
+   49  ntpq -p
+   50  chronyc sources
+   51  add-apt-repository cloud-archive:yoga
+   52  sudo add-apt-repository cloud-archive:yoga
+   53  sudo add-apt-repository cloud-archive:xena
+   54  sudo add-apt-repository cloud-archive:wallaby
+   55  sudo add-apt-repository cloud-archive:victoria
+   56  sudo apt install nova-compute
+   57  apt install python3-openstackclient
+   58  sudo apt install python3-openstackclient
+   59  sudo apt install mariadb-server python3-pymysql
+   60  sudo apt install mariadb-server python3-pymysql -y
+   61  ls -l /etc/mysql/mariadb.conf.d/
+   62  sudo mkdir /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   63  ls -l /etc/mysql/mariadb.conf.d/
+   64  sudo rm -dir /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   65  ls -l /etc/mysql/mariadb.conf.d/
+   66  sudo touch /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   67  ls -l /etc/mysql/mariadb.conf.d/
+   68  sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf 
+   69  service mysql restart
+   70  mysql_secure_installation
+   71  sudo mysql -u root # I had to use "sudo" since it was a new installation
+   72  sudo mysql -u root
+   73  sudo mysql -u root # I had to use "sudo" since it was a new installation
+   74  sudo mysql -u root -p
+   75  mysql -u $(whoami)
+   76  sudo mysql -u $(whoami)
+   77  sudo mysql -u root
+   78  service mysql restart
+   79  mysql_secure_installation
+   80  sudo apt install rabbitmq-server
+   81  sudo rabbitmqctl add_user openstack RABBIT_PASS
+   82  sudo rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+   83  sudo apt install memcached python-memcache
+   84  sudo apt install memcached python3-memcache
+   85  sudo vim /etc/memcached.conf 
+   86  service memcached restart
+   87  sudo apt install etcd
+   88  sudo vim /etc/default/etcd 
+   89  systemctl enable etcd
+   90  systemctl restart etcd
+   91  mysql
+   92  sudo 'mysql 
+   93  sudo mysql
+   94  mysql -u root
+   95  mysql -u root abc
+   96  mysql -u root -p
+   97  sudo apt install keystone
+   98  ls -l /etc/keystone/
+   99  sudo ls -l /etc/keystone/
+  100  sudo ls -l /etc/keystone/keystone.conf
+  101  sudo vim /etc/keystone/keystone.conf
+  102  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  103  su -s /bin/sh -c "keystone-manage db_sync" keystone7
+  104  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  105  sudo vim /etc/keystone/keystone.conf
+  106  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  107  sudo vim /etc/keystone/keystone.conf
+  108  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  109  mysql -u root -p
+  110  openssl rand -hex 10
+  111  sudo apt-get install openstack-keystone apache2-mod_wsgi
+  112  sudo vim /etc/keystone/keystone.conf
+  113  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  114  keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  115  sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  116  sudo keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+  117  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ 
+  118  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne
+  119  sudo vim /etc/apache2/apache2.conf 
+  120  service apache2 restart
+  121  echo $OS_USERNAME
+  122  eystone-manage bootstrap 
+  123  export OS_USERNAME=admin
+  124  echo $OS_USERNAME
+  125  export OS_PASSWORD=abc
+  126  export OS_PROJECT_NAME=admin
+  127  export OS_USER_DOMAIN_NAME=Default
+  128  export OS_PROJECT_DOMAIN_NAME=Default
+  129  export OS_AUTH_URL=http://controller:5000/v3
+  130  export OS_IDENTITY_API_VERSION=3
+  131  openstack domain create --description "An Example Domain" example
+  132  sudo openstack domain create --description "An Example Domain" example
+  133  openstack domain create --description "An Example Domain" example
+  134  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url 127.0.0.1:5000/v3/   --bootstrap-internal-url 127.0.0.1:5000/v3/   --bootstrap-public-url 127.0.0.1:5000/v3/   --bootstrap-region-id RegionOne
+  135  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url 127.0.0.1:5000/v3/   --bootstrap-internal-url 127.0.0.1:5000/v3/   --bootstrap-public-url 127.0.0.1:5000/v3/ \
+  136  service apache2 restart
+  137  openstack domain create --description "An Example Domain" example
+  138  echo $OS_AUTH_URL
+  139  export OS_AUTH_URL=127.0.0.1:5000/v3
+  140  echo $OS_AUTH_URL
+  141  openstack domain create --description "An Example Domain" example
+  142  sudo ping controller
+  143  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url 10.230.3.153:5000/v3/ --bootstrap-internal-url 10.230.3.153:5000/v3/ --bootstrap-public-url 10.230.3.153:5000/v3/ --bootstrap-region-id RegionOne
+  144  sudo vim /etc/apache2/apache2.conf 
+  145  service apache2 restart
+  146  export OS_AUTH_URL=10.230.3.153:5000/v3
+  147  openstack domain create --description "An Example Domain" example
+  148  curl http://10.230.3.153:5000/
+  149  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://10.230.3.153:5000/v3/ --bootstrap-internal-url http://10.230.3.153:5000/v3/ --bootstrap-public-url http://10.230.3.153:5000/v3/ --bootstrap-region-id RegionOne
+  150  sudo vim /etc/apache2/apache2.conf 
+  151  service apache2 restart
+  152  export OS_AUTH_URL=http://10.230.3.153:5000/v3
+  153  openstack domain create --description "An Example Domain" example
+  154  openstack project create --domain default   --description "Service Project" service
+  155  openstack domain create example
+  156  chown -R keystone:keystone /etc/keystone
+  157  sudo chown -R keystone:keystone /etc/keystone
+  158  systemctl restart openstack-keystone
+  159  sudo systemctl restart openstack-keystone
+  160  openstack project create --domain default   
+  161  openstack --os-auth-url http://controller:35357/v3   --os-project-domain-name default --os-user-domain-name default   --os-project-name admin --os-username admin token issue
+  162  keystone-manage bootstrap --bootstrap-password s3cr3t
+  163  sudo mkdir -p /etc/keystone/fernet-keys/
+  164  sudo chown keystone:keystone /etc/keystone/fernet-keys/
+  165  sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  166  sudo ls /etc/keystone/
+  167  sudo vim /etc/keystone/keystone.conf
+  168  sudo systemctl restart apache2  # or the relevant service managing Keystone
+  169  openstack domain create --description "An Example Domain" example
+  170  keystone-manage bootstrap --bootstrap-password s3cr3t
+  171  ls /etc/keystone/
+  172  sudo ls /etc/keystone/
+  173  sudo ls /etc/keystone/fernet-keys
+  174  sudo cat /etc/keystone/fernet-keys
+  175  sudo cat /etc/keystone/fernet-keys/0
+  176  sudo cat /etc/keystone/fernet-keys/1
+  177  sudo keystone-manage bootstrap --bootstrap-password s3cr3t
+  178  sudo vim /etc/apache2/apache2.conf 
+  179  service apache2 restart
+  180  openstack domain create --description "An Example Domain" example
+  181  openstack user create --domain default --password-prompt swift
+  182  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  183  /bin/sh -c "keystone-manage db_sync" keystone
+  184  keystone-manage bootstrap --bootstrap-password s3cr3t
+  185  keystone-manage bootstrap     --bootstrap-password s3cr3t     --bootstrap-username admin     --bootstrap-project-name admin     --bootstrap-role-name admin     --bootstrap-service-name keystone     --bootstrap-region-id RegionOne     --bootstrap-admin-url http://localhost:35357     --bootstrap-public-url http://localhost:5000     --bootstrap-internal-url http://localhost:5000
+  186  openstack project list --os-username admin --os-project-name admin     --os-user-domain-id default --os-project-domain-id default     --os-identity-api-version 3 --os-auth-url http://localhost:5000     --os-password s3cr3t
+  187  openstack role list
+  188  sudo openstack role list
+  189  openstack --debug server list
+  190  openstack domain create --description "An Example Domain" example
+  191  openstack user create --domain default --password-prompt glance
+  192  clear
+  193  vim sudo /etc/keystone/keystone.conf
+  194  sudo vim /etc/keystone/keystone.conf
+  195  sudo /bin/sh -c "keystone-manage db_sync" keystone
+  196  keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  197  sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  198  sudo keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+  199  keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  200  sudo keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+  201  sudo vim /etc/apache2/apache2.conf
+  202  service apache2 restart
+  203  echo $OS_AUTH_URL
+  204  export OS_AUTH_URL=http://controller:5000/v3
+  205  echo $OS_AUTH_URL
+  206  sudo openstack domain create --description "An Example Domain" example
+  207  \openstack domain create --description "An Example Domain" example
+  208  openstack domain create --description "An Example Domain" example
+  209  sudo keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://10.230.3.153:5000/v3/   --bootstrap-internal-url http://10.230.3.153:5000/v3/   --bootstrap-public-url http://10.230.3.153:5000/v3/   --bootstrap-region-id RegionOne
+  210  service apache2 restart
+  211  echo $OS_AUTH_URL
+  212  openstack domain create --description "An Example Domain" example
+  213  sudo openstack domain create --description "An Example Domain" example
+  214  ping controller
+  215  sudo nano /etc/hosts
+  216  ping controller
+  217  openstack service list
+  218  sudo vim /var/log/keystone/keystone.log
+  219  sudo cat /var/log/keystone/keystone-manage.log 
+  220  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  221  groups
+  222  sudo keystone-manage db_sync
+  223  sudo su -
+  224  su -s /bin/sh -c "keystone-manage db_sync" keystone
+  225  $ openstack domain create --description "An Example Domain" example
+  226  openstack domain create --description "An Example Domain" example
+  227  sudo openstack domain create --description "An Example Domain" example
+  228  export OS_AUTH_URL=http://<controller-ip>:5000/v3
+  229  export OS_AUTH_URL=http://10.230.3.153:5000/v3
+  230  env | grep OS_
+  231  openstack service list
+  232  env | grep OS_
+  233  openstack user list
+  234  export OS_AUTH_URL=http:10.230.3.153:5000/v3
+  235  openstack user list
+  236  openstack service list
+  237  openstack endpoint list
+  238  export OS_USERNAME=admin
+  239  echo $OS_PASSWORD
+  240  echo $OS_PROJECT_NAME
+  241  echo $OS_USER_DOMAIN_NAME
+  242  echo $OS_AUTH_URL
+  243  echo $OS_IDENTITY_API_VERSION
+  244  openstack domain create --description "An Example Domain" example
+  245  openstack service list
+  246  sudo openstack service list
+  247  openstack role assignment list --user admin --project admin
+  248  openstack service list
+  249  ps aux | grep keystone
+  250  openstack endpoint list
+  251  sudo systemctl status keystone
+  252  dpkg -l | grep keystone
+  253  sudo apt update
+  254  sudo apt install keystone
+  255  /etc/keystone/keystone.conf
+  256  sudo /etc/keystone/keystone.conf
+  257  sudo ls /etc/keystone/keystone.conf
+  258  which keystone-manage
+  259  sudo keystone-manage db_sync
+  260  sudo systemctl daemon-reload
+  261  sudo systemctl start keystone
+  262  sudo systemctl enable keystone  # Optional: to enable on boot
+  263  systemctl enable keystone  # Optional: to enable on boot
+  264  sudo systemctl enable keystone 
+  265  dpkg -l | grep keystone
+  266  sudo apt install keystone
+  267  sudo vim /etc/keystone/keystone.conf
+  268  sudo keystone-manage upgrade --check
+  269  clear
+  270  sudo keystone-manage upgrade --check
+  271  sudo systemctl restart keystone
+  272  sudo ls /etc/systemd/system/
+  273  sudo touch /etc/systemd/system/keystone.service
+  274  sudo vim /etc/systemd/system/keystone.service
+  275  sudo systemctl daemon-reload
+  276  sudo systemctl start keystone
+  277  sudo cat /etc/systemd/system/keystone.service
+  278  sudo systemctl start keystone
+  279  sudo systemctl status keystone
+  280  sudo nano /etc/systemd/system/keystone.service
+  281  which keystone-wsgi-admin
+  282  which keystone-wsgi-public
+  283  ExecStart=/usr/bin/keystone-wsgi --config-file /etc/keystone/keystone.conf
+  284  sudo systemctl daemon-reload
+  285  sudo systemctl start keystone
+  286  sudo systemctl status keystone
+  287  keystone.service: Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services. Refusing.
+  288  sudo nano /etc/systemd/system/keystone.service
+  289  sudo systemctl status keystone
+  290  sudo nano /etc/systemd/system/keystone.service
+  291  sudo systemctl daemon-reload
+  292  sudo systemctl start keystone
+  293  sudo systemctl status keystone
+  294  sudo systemctl daemon-reload
+  295  sudo systemctl status keystone
+  296  cat /var/log/keystone/keystone.log
+  297  sudo vim /etc/keystone/keystone.conf 
+  298  sudo systemctl daemon-reload
+  299  sudo systemctl status keystone
+  300  sudo systemctl daemon-reload
+  301  sudo systemctl start keystone
+  302  sudo systemctl status keystone
+  303  sudo systemctl start keystone
+  304  sudo systemctl status keystone
+  305  $ openstack domain create --description "An Example Domain" example
+  306  openstack domain create --description "An Example Domain" example
+  307  openstack service list
+  308  udo systemctl status keystone
+  309  sudo systemctl status keystone
+  310  sudo systemctl daemon-reload
+  311  sudo systemctl status keystone
+  312  sudo systemctl enable keystone
+  313  sudo systemctl status keystone
+  314  sudo systemctl enable keystone
+  315  sudo systemctl start keystone
+  316  sudo systemctl status keystone
+  317  cat /var/log/keystone/keystone.log
+  318  openstack service list
+  319  sudo systemctl status keystone
+  320  sudo systemctl start keystone
+  321  sudo systemctl status keystone
+  322  systemctl start keystone
+  323  systemctl status keystone
+  324  systemctl start keystone
+  325  systemctl status keystone
+  326  sudo vim /etc/keystone/keystone.conf
+  327  sudo systemctl status mysql
+  328  cat /var/log/keystone/keystone.log
+  329  journalctl -u keystone
+  330  journalctl -xe -u keystone
+  331  cat /var/log/keystone/keystone.log
+  332  pip show keystone
+  333  sudo apt install python3-pip
+  334  pip show keystone
+  335  ls -l /var/log/keystone/
+  336  cat /etc/keystone/keystone.conf | grep log
+  337  sudo cat /etc/keystone/keystone.conf | grep log
+  338  sudo keystone-manage serve --config-file /etc/keystone/keystone.conf
+  339  sudo keystone-manage db_sync
+  340  sudo nano /etc/systemd/system/keystone.service
+  341  sudo ls /etc/keystone/keystone.conf
+  342  sudo nano /etc/systemd/system/keystone.service
+  343  sudo ls /usr/bin/keystone-wsgi-admin
+  344  sudo systemctl daemon-reload
+  345  sudo systemctl start keystone
+  346  ps aux | grep keystone
+  347  sudo ls /var/log/keystone/
+  348  sudo touch /var/log/keystone/keystone.log
+  349  cat /etc/keystone/keystone.conf | grep log
+  350  sudo cat /etc/keystone/keystone.conf | grep log
+  351  openstack service list
+  352  sudo openstack service list
+  353  echo $OS_AUTH_URL
+  354  export OS_AUTH_URL=http://10.230.3.153:5000/v3
+  355  echo $OS_AUTH_URL
+  356  sudo openstack service list
+  357  env | grep OS_
+  358  openstack service list
+  359  curl -s http://10.230.3.153:5000/v3
+  360  find / -iname "*openrc.sh*"
+  361  sudo find / -iname "*openrc.sh*"
+  362  sudo ls /etc/
+  363  sudo find / -iname "*openstack*"
+  364  sudo ls /usr/bin/openstack
+  365  sudo ls /usr/bin/openstack/
+  366  sudo find / -iname "*admin-openrc.sh*"
+  367  find ~ -name '*openrc*.sh'
+  368  openstack service list
+  369  env | grep OS_
+  370  sudo touch ~/.openrc
+  371  ls -la
+  372  sudo vim .openrc 
+  373  find ~ -name "*openrc*.sh"
+  374  find ~ -name "*openrc*"
+  375  source ~/.openrc 
+  376  openstack service list
+  377  source ~/.openrc.sh
+  378  ls
+  379  ls -la
+  380  mv .openrc .openrc.sh 
+  381  ls -la
+  382  source ~/.openrc.sh 
+  383  openstack service list
+  384  env | grep OS_
+  385  cat ~/.openrc.sh 
+  386  curl -i http://10.230.3.153:5000/v3
+  387  openstack service list
+  388  sudo openstack service list
+  389  echo $OS_AUTH_URL
+  390  source ~/.openrc.sh 
+  391  echo $OS_AUTH_URL
+  392  openstack service list
+  393  souce /home/rajdeep/.openrc.sh 
+  394  source /home/rajdeep/.openrc.sh 
+  395  openstack service list
+  396  The request you have made requires authentication.
+  397  openstack service list
+  398  env | grep OS_
+  399  cate /home/rajdeep/.openrc.sh 
+  400  cat /home/rajdeep/.openrc.sh 
+  401  export OS_PASSWORD=abc
+  402  cat /home/rajdeep/.openrc.sh 
+  403  sudo vim /home/rajdeep/.openrc.sh 
+  404  source /home/rajdeep/.openrc.sh 
+  405  cat /home/rajdeep/.openrc.sh 
+  406  env | grep OS_
+  407  openstack service list
+  408  service apache2 restart
+  409  openstack service list
+  410  curl -i -X POST -H "Content-Type: application/json" -d '{"auth": {"identity": {"methods": ["password"], "password": {"user": {"name": "your_username", "domain": {"name": "Default"}, "password": "your_password"}}}}}}' http://your_keystone_endpoint:5000/v3/auth/tokens
+  411  curl -i -X POST -H "Content-Type: application/json" -d '{"auth": {"identity": {"methods": ["password"], "password": {"user": {"name": "your_username", "domain": {"name": "Default"}, "password": "your_password"}}}}}}' http://your_keystone_endpoint:5000/v3/auth/tokens
+  412  curl -i http://10.230.3.153:5000/v3
+  413  /var/log/keystone/keystone.log
+  414  ls sudo /var/log/keystone/keystone.log
+  415  ls sudo /var/log/keystone/
+  416  sudo ls -l /var/log/keystone/
+  417  sudo ls -l /var/log/keystone/keystone.log 
+  418  sudo cat /var/log/keystone/keystone.log 
+  419  sudo cat /var/log/keystone/keystone-manage.log 
+  420  openstack domain create --description "An Example Domain" example
+  421  clear
+  422  source /home/rajdeep/.openrc.sh 
+  423  cat $OS_AUTH_URL
+  424  echo $OS_AUTH_URL
+  425  curl -i -X POST -H "Content-Type: application/json" -d '{"auth": {"identity": {"methods": ["password"], "password": {"user": {"name": "your_username", "domain": {"name": "Default"}, "password": "your_password"}}}}}}' http://your_keystone_endpoint:5000/v3/auth/tokens
+  426  curl -i -X POST -H "Content-Type: application/json" -d '{"auth": {"identity": {"methods": ["password"], "password": {"user": {"name": "your_username", "domain": {"name": "Default"}, "password": "your_password"}}}}}}' http://10.230.3.153:5000/v3/auth/tokens
+  427  curl -i -X POST -H "Content-Type: application/json" -d '{"auth": {"identity": {"methods": ["password"], "password": {"user": {"name": "admin", "domain": {"name": "Default"}, "password": "abc"}}}}}}' http://10.230.3.153:5000/v3/auth/tokens
+  428  curl -i -X POST -H "Content-Type: application/json" -d '{
+    "auth": {
+        "identity": {
+            "methods": ["password"],
+            "password": {
+                "user": {
+                    "name": "admin",
+                    "domain": {"name": "Default"},
+                    "password": "abc"
+                }
+            }
+        }
+    }
+}' http://10.230.3.153:5000/v3/auth/tokens
+  429  curl -i -X POST -H "Content-Type: application/json" -d '{
+    "auth": {
+        "identity": {
+            "methods": ["password"],
+            "password": {
+                "user": {
+                    "name": "admin",
+                    "domain": {"name": "Default"},
+                    "password": "abc"
+                }
+            }
+        }
+    }
+}' http://10.230.3.153:5000/v3/auth/tokens
+  430  curl -i -X POST -H "Content-Type: application/json" -d '{
+    "auth": {
+        "identity": {
+            "methods": ["password"],
+            "password": {
+                "user": {
+                    "name": "your_username",
+                    "password": "your_password"
+                }
+            }
+        }
+    }
+}' http://your_keystone_endpoint:5000/v3/auth/tokens
+  431  curl -i -X POST curl -i -X POST -d '{
+    "auth": {
+        "identity": {
+            "methods": ["password"],
+            "password": {
+                "user": {
+                    "name": "rajdeep",
+                    "password": "7",
+}
+}
+}
+}
+}' http://10.230.3.153:5000/v3/auth/tokens
+  432  openstack token issue
+  433  openstack domain create --description "An Example Domain" example
+  434  sudo openstack domain create --description "An Example Domain" example
+  435  mysql
+  436  mysqlsudo mysql -u root
+  437  sudo mysql -u root
+  438  mysql -u rajdeep -p
+  439  mysql -u root -p
+  440  service mysql restart
+  441  mysql_secure_installation
+  442  service memcached restart
+  443  sudo vim  /etc/default/etcd
+  444  systemctl enable etcd
+  445  systemctl restart etcd
+  446  systemctl status etcd.service
+  447  [Aip addr show
+  448  ip addr show
+  449  clear
+  450  ip addr show
+  451  sudo ip addr add 10.0.0.11/24 dev eth0
+  452  sudo ip addr add 10.0.0.11/24 dev virb0
+  453  sudo ip addr add 10.0.0.11/24 dev virbr0
+  454  systemctl status etcd.service
+  455  ip addr show
+  456  sudo ip addr add 10.0.0.11/24 dev enp2s0
+  457  systemctl status etcd.service
+  458  ip addr show
+  459  ip link show
+  460  sudo firewall-cmd --list-all
+  461  sudo systemctl restart networking
+  462  sudo systemctl restart NetworkManager
+  463  sudo netstat -tuln | grep 2379
+  464  sudo vim /etc/network/interfaces
+  465  sudo ls /etc/network
+  466  sudo ls -l /etc/network
+  467  sudo apt install ifupdown net-tools
+  468  sudo ls -l /etc/network
+  469  sudo ls -l /etc/network/interfaces
+  470  sudo vim /etc/network/interfaces
+  471  sudo cat /etc/network/interfaces
+  472  ping -c 4 docs.openstack.org
+  473  ping -c 4 compute1
+  474  sudo vim /etc/hosts
+  475  ping -c 4 docs.openstack.org
+  476  ping -c 4 compute1
+  477  sudo vim /etc/hosts
+  478  sudo vim /etc/my.cnf.d/openstack.cnf 
+  479  sudo vim /etc/mysql/mariadb.conf.d/99-openstack.cnf
+  480  service mysql restart
+  481  mysql_secure_installation
+  482  sudo vim /etc/memcached.conf 
+  483  service memcached restart
+  484  sudo vim /etc/default/etcd
+  485  sudo vim /etc/memcached.conf 
+  486  systemctl enable etcd
+  487  systemctl restart etcd
+  488  mysql -u root -p
+  489  sudo vim /etc/sysconfig/apache2 
+  490  sudo ls /etc/sysconfig
+  491  sudo ls /etc/
+  492  mysql
+  493  apt install keystone
+  494  sudo apt install keystone
+  495  sudo vim /apt install keystone
+  496  sudo vim /etc/keystone/keystone.conf 
+  497  sudo /bin/sh -c "keystone-manage db_sync" keystone
+  498  keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  499  sudo keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+  500  sudo keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+  501  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne
+  502  ls /etc/keystone/
+  503  sudo ls /etc/keystone/
+  504  sudo ls -l /etc/keystone/
+  505  sudo cp /usr/share/keystone/keystone.conf.sample /etc/keystone/keystone.conf
+  506  sudo cp /usr/share/keystone/keystone.conf /etc/keystone/keystone.conf
+  507  sudo ls -l /usr/share/keystone/
+  508  sudo nano /etc/keystone/keystone.conf
+  509  export OS_CONFIG_FILE=/etc/keystone/keystone.conf
+  510  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne
+  511  ls -l /etc/keystone/keystone.conf
+  512  sudo ls -l /etc/keystone/keystone.conf
+  513  keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne
+  514  sudo keystone-manage bootstrap --bootstrap-password abc   --bootstrap-admin-url http://controller:5000/v3/   --bootstrap-internal-url http://controller:5000/v3/   --bootstrap-public-url http://controller:5000/v3/   --bootstrap-region-id RegionOne
+  515  sudo vim /etc/apache2/apache2.conf 
+  516  service apache2 restart
+  517  echo $OS_AUTH_URL
+  518  export OS_AUTH_URL=http://controller:5000/v3
+  519  echo $OS_AUTH_URL
+  520  echo $OS_PASSWORD
+  521  openstack domain create --description "An Example Domain" example
+  522  openstack project create --domain default   --description "Service Project" service
+  523  openstack project create --domain default   --description "Demo Project" myproject
+  524  openstack user create --domain default   --password-prompt myuser
+  525  openstack --os-auth-url http://controller:5000/v3   --os-project-domain-name Default --os-user-domain-name Default   --os-project-name admin --os-username admin token issue
+  526  echo $OS_PASSWORD
+  527  history 200
+  528  history 600 >> allHistory.txt
