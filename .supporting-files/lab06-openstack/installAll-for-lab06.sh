@@ -22,7 +22,7 @@ sudo apt install  keystone -y
 #sudo apt install  
 #sudo apt install  
 
-sudo apt  install python3-openstackclient
+sudo apt  install python3-openstackclient -y
 
 #sudo add-apt-repository cloud-archive:yoga
 #sudo add-apt-repository cloud-archive:xena
