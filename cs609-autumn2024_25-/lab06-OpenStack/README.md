@@ -717,6 +717,79 @@ You should get an output similar to the following:
 
 3. add new1 content: controler in /etc/hosts
 
+
+
+
+<p align="center" >
+<img src="i26.png" >
+</p>
+
+
+
+
+
+
+<p align="center" >
+<img src="i27.png" >
+</p>
+
+
+
+
+
+
+<p align="center" >
+<img src="i28.png" >
+</p>
+
+
+
+
+
+
+<p align="center" >
+<img src="i29.png" >
+</p>
+
+
+
+
+
+
+<p align="center" >
+<img src="i30.png" >
+</p>
+
+
+
+
+
+
+<p align="center" >
+<img src="i31.png" >
+</p>
+
+
+
+
+
+
+<p align="center" >
+<img src="i32.png" >
+</p>
+
+
+
+
+
+
+<p align="center" >
+<img src="i33.png" >
+</p>
+
+
+
+
 ## 2.2. Image service – glance installation for 2024.2 (Dalmatian)
 
 
