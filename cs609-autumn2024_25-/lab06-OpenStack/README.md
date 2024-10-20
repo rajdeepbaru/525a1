@@ -67,7 +67,7 @@
 ---
 ### Table of contents 
 
-0.  [Cross-checking the desktop](#0)
+0.  [Cross-checking the desktop environment](#0)
     -   0.1.    [Operating system used](#0.1)
     -   0.2.    [Installing packages](#0.2)
 
@@ -89,7 +89,7 @@
 ---
 
 
-# 0. Cross-checking the desktop
+# 0. Cross-checking the desktop environment
 
 ## 0.1. Operating system used
 
