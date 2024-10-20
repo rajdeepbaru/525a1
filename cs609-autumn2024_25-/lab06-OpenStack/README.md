@@ -101,7 +101,7 @@
 ## 0.2 Installing packages
 Please clone the GitHub repository by using the following command in your terminal:
 ```shell
-https://github.com/rajdeepbaru/525a1.git
+git clone https://github.com/rajdeepbaru/525a1.git
 ```
 
 2. Please navigate to the desired directory for today's lab session by using the following command in your terminal:
@@ -122,7 +122,10 @@ bash ../../.supporting-files/lab06-openstack/installAll-for-lab06.sh
 
 ### 1.1.1. Synchronize Time with NTP in Your PC by configuring 
 
-1. Please follow the [NTP Synchronize steps mentioned at our intranet by our CCS team](https://intranet.iitdh.ac.in:444/CCS.php). You should get an output similar to the following:
+1. Please follow the [NTP Synchronize steps mentioned at our intranet by our CCS team](https://intranet.iitdh.ac.in:444/CCS.php).
+
+
+2. After following all the steps mentioned there, you should get an output similar to the following when you will type `vim /etc/ntp.conf` in your terminal.
 <h2 align="center" >
 <img src="f0602.png" >
 </h2>
