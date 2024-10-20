@@ -504,8 +504,11 @@ systemctl restart etcd
 
 ## 2.1. Identity service – keystone installation for 2024.2 (Dalmatian)
 
+To do
 
-### 2.1.1 Install and configure
+### 2.1.1. Prerequisites
+
+
 
 1. 
 
@@ -544,6 +547,9 @@ You should get an output similar to the following:
 <p align="center" >
 <img src="ser01.png" >
 </p>
+
+
+### 2.1.1. Install and configure components
 
 
 6. Cross-verify that the file `keystone.conf` exists actually. Else debug. To check the existence of the file, type the following:
@@ -604,11 +610,20 @@ sudo keystone-manage credential_setup --keystone-user keystone --keystone-group 
 ```
 
 
+11. 
+
+```shell
+sudo keystone-manage bootstrap --bootstrap-password abc --bootstrap-admin-url http://controller:5000/v3/ --bootstrap-internal-url http://controller:5000/v3/ --bootstrap-public-url http://controller:5000/v3/ --bootstrap-region-id RegionOne
+```
 
 
+> [!CAUTION]
+> There might be error. Dubug it by taking help from the provided *supplimentary materials*.
+> 
 
+### 2.1.3. Configure the Apache HTTP server
 
-
+1. 
 
 
 
