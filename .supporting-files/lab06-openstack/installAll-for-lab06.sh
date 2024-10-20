@@ -17,8 +17,8 @@ sudo apt install rabbitmq-server
 
 sudo apt install memcached python3-memcache
 sudo apt install  etcd
-sudo apt install  nova-compute python3-openstackclient     keystone glance nova-api nova-conductor nova-novncproxy nova-scheduler nova-compute
-sudo apt install  
+#sudo apt install  nova-compute python3-openstackclient      glance nova-api nova-conductor nova-novncproxy nova-scheduler nova-compute
+sudo apt install  keystone
 sudo apt install  
 sudo apt install  
 
