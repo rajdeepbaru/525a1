@@ -173,17 +173,17 @@ allow 10.230.0.0/20
 ```
 You may verify with the following situation:
 
-<h2 align="center" >
+<p align="center" >
 <img src="i34.png" >
-</h2>
+</p>
 
 > [!NOTE] 
 >  Please make sure to modify the value `10.230.0.0/20` accordingly.
 
 
-<h2 align="center" >
+<p align="center" >
 <img src="i08.png" >
-</h2>
+</p>
 
 
 
@@ -193,9 +193,22 @@ service chrony restart
 ```
 You may verify with the following situation:
 
-<h2 align="center" >
+<p align="center" >
 <img src="f0606.png" >
-</h2>
+</p>
+
+> [!CAUTION]
+> You see an error saying `Failed to restart chrony.service: Unit chrony.service is masked.` as mentioned below:
+> <p align="center" > <img src="06error.png" >  </p>  
+> Check the output of the following commands:
+>   -   `systemctl status chrony.service`  
+>   -   `systemctl unmask chrony.service`  
+>   -   `service chrony restart`
+
+
+
+chronyc sources
+
 
 ### 1.1.4. Verify
 
