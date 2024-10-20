@@ -664,6 +664,7 @@ You should get an output similar to the following:
 ```shell
 service apache2 restart
 ```
+
 You should get an output similar to the following:
 
 
@@ -705,6 +706,13 @@ export OS_AUTH_URL=http://controller:5000/v3
 ```shell
 export OS_IDENTITY_API_VERSION=3
 ``` 
+
+You should get an output similar to the following:
+
+
+<p align="center" >
+<img src="apache3.png" >
+</p>
 
 
 
