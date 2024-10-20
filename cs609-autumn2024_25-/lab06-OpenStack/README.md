@@ -154,7 +154,10 @@ cd 525a1/cs609-autumn2024_25-/lab06-OpenStack/
 sudo vim /etc/chrony/chrony.conf
 ```
 
-2. Please add the following line in the file.
+
+
+
+2. Then press `i` and add the following line in the file.
 ```shell
 server ntp.iitdh.ac.in iburst
 ```
@@ -180,7 +183,7 @@ You may verify with the following situation:
 </p>
 
 > [!NOTE] 
->  Please make sure to modify the value `10.230.0.0/20` accordingly.
+>  Please make sure to modify the value `10.230.0.0/20` accordingly. Note that the value is correct fro *525-A1 Lab*. For *512-A1 Lab*, the value should be identical, verify by yourself and then proceed.
 
 
 <p align="center" >
