@@ -43,7 +43,7 @@
 
 1. You may use the following link: https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/integration/distribution-karaf/0.6.3-Carbon
 
-2. Extract it using: `tar -xvzf karaf-0.21.0.tar.gz`
+2. Extract it using: `tar -xvzf karaf-version.tar.gz`
 
 3. Change to the directory `cd karaf-0.6.3/`
 
