@@ -89,7 +89,13 @@ After starting Mininet, you can test connectivity between the hosts:
 `mininet> pingall`
 
 
-# Example 2: Create a basic network topology, add devices (nodes), and configure them with flows using OpenDaylight’s REST APIs 
+# Example 2:  Configure a network topology wuth flows using OpenDaylight's REST API
+
+
+## Objective: 
+
+Create a basic network topology, add devices (nodes), and configure them with flows using OpenDaylight’s REST APIs
+
 
 1.  Make sure you have the required features installed: `feature:install odl-restconf odl-l2switch-switch odl-openflowplugin-flow-services`
 
@@ -99,4 +105,7 @@ After starting Mininet, you can test connectivity between the hosts:
     -   Switch 2 (s2) connects to Host 2 (h2).
     -   Switch 1 and Switch 2 are linked together.
 
+3. Add Flow Rules via OpenDaylight REST API. To ensure connectivity between Host 1 and Host 2 through the two switches, we’ll add flow rules to direct traffic between them.
+
+### Flow Rule 1: Forward Packets from Switch 1 to Switch 2
 
