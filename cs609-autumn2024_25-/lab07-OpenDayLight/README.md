@@ -15,12 +15,9 @@
 
 ### Table of contents 
 1.	Installation
-    -   1.1.  What is ONOS?
-    -   1.2.  Features of ONOS
-
-
-2. Install the Karaf features
-3. Listing available features
+    -   1.1.    Install OpenDaylight
+    -   1.2. Install the Karaf features
+    -   1.3. Listing available features
 4. Example 1: Create a network with a single switch and a host
     -   4.1 Objective
     -   4.2 Steps
@@ -39,7 +36,7 @@
 
 # Installation <a name="1"></a>
 
-
+## Install OpenDaylight
 
 
 1. You may use the following link: https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/integration/distribution-karaf/0.6.3-Carbon
@@ -56,7 +53,7 @@
 <img src="Screenshot from 2024-10-29 06-02-21.png" >
 
 
-# Install the Karaf features <a name"2"></a>
+## Install the Karaf features <a name"2"></a>
 
 To install a feature, use the following command, where feature1 is the feature name listed in the table below:
 
@@ -68,7 +65,7 @@ You can install multiple features using the following command:
 
 
 
-# Listing available features
+## Listing available features
 
 To find the complete list of Karaf features, run the following command:
 
