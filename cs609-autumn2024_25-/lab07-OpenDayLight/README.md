@@ -13,9 +13,20 @@
 </h2>
 
 
+### Table of contents 
+1.	[Installation](#1)
+    -   1.1.  [What is ONOS?](#1.1)
+    -   1.2.  [Features of ONOS](#1.2)
 
 
-# Installation
+2. [Install the Karaf features](#2)
+3. [Listing available features](#3)
+4. [Example 1: Create a network with a single switch and a host](#4)
+    -   4.1 [Objective]
+    -   4.2 [Steps]
+5. [Example 2:  Configure a network topology with flows using OpenDaylight's REST API]
+# Installation <a name="1"></a>
+
 
 
 
@@ -33,7 +44,7 @@
 <img src="Screenshot from 2024-10-29 06-02-21.png" >
 
 
-# Install the Karaf features
+# Install the Karaf features <a name"2"></a>
 
 To install a feature, use the following command, where feature1 is the feature name listed in the table below:
 
@@ -254,7 +265,11 @@ curl -X PUT -H "Content-Type: application/json" \
     }' \
 http://<OpenDaylight_IP>:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/h1-to-s2
 ```
+
+
     -   Create a flow on Switch 2 to forward packets from Switch 1 to Host 2.
+
+
 ```shell
 curl -X PUT -H "Content-Type: application/json" \
 -d '{
