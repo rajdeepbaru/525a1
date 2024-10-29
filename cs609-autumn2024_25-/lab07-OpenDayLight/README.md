@@ -87,3 +87,16 @@ We shall use Mininet and OpenDaylight to create a network with a single switch a
 After starting Mininet, you can test connectivity between the hosts:
 
 `mininet> pingall`
+
+
+# Example 2: Create a basic network topology, add devices (nodes), and configure them with flows using OpenDaylight’s REST APIs 
+
+1.  Make sure you have the required features installed: `feature:install odl-restconf odl-l2switch-switch odl-openflowplugin-flow-services`
+
+2. To Set Up Mininet with Multiple Switches, Start Mininet with two switches and two hosts, and configure it to use OpenDaylight as the controller. Use the following command: `sudo mn --controller=remote,ip=<OpenDaylight_IP>,port=6633 --topo linear,2`. Replace `OpenDaylight_IP` with the IP address of your OpenDaylight controller. This command creates a linear topology where:
+
+    -   Switch 1 (s1) connects to Host 1 (h1).
+    -   Switch 2 (s2) connects to Host 2 (h2).
+    -   Switch 1 and Switch 2 are linked together.
+
+
