@@ -31,6 +31,7 @@
     -   6.2.    Algorithm
     -   6.3. Steps  
 
+7. References
 
 
 
@@ -314,3 +315,8 @@ http://<OpenDaylight_IP>:8181/restconf/config/opendaylight-inventory:nodes/node/
 4. Verify Communication: you can verify that Host 1 can communicate with Host 2 by using the ping command in Mininet `mininet> h1 ping h2`
 
 5. Desired output: You should see successful ping responses indicating that Host 1 can communicate with Host 2 through the OpenDaylight-controlled switches.
+
+# References
+
+1.  [OpenDaylight Documentation](https://docs.opendaylight.org/en/latest/index.html)
+2.  [OpenDaylight Project](https://www.youtube.com/@OpendaylightOrg/videos)
