@@ -4,15 +4,14 @@
 # Installation
 
 
-curl -O https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.21.0/karaf-0.21.0.tar.gz
 
+1. You may use the following link: https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/integration/distribution-karaf/0.6.3-Carbon
 
-tar -xvzf karaf-0.21.0.tar.gz
+2. Extract it using: `tar -xvzf karaf-0.21.0.tar.gz`
 
-cd karaf-0.21.0/
+3. Change to the directory `cd karaf-0.6.3/`
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt install openjdk-17-jdk openjdk-17-jre -y
+4.  Make sure to install openjdk-8.
 
-./bin/karaf
+5. To run the karaf distribition, execute `./bin/karaf`
+
