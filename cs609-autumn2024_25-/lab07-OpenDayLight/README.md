@@ -77,6 +77,41 @@ To list the installed Karaf features, run the following command:
 `feature:list -i`
 
 
+## How to start OpenDaylight
+
+Starting OpenDaylight involves a few steps, including downloading the software, setting up the environment, and running the OpenDaylight controller. Here’s a step-by-step guide to help you get started:
+
+1. Download OpenDaylight
+    -   Visit the OpenDaylight website: Go to the OpenDaylight Downloads page.
+    -   Choose a distribution: Select the appropriate release (for example, the latest stable version) and download the ZIP or TAR.GZ file.
+    -   Extract the archive: After downloading, extract the contents to a directory of your choice.
+
+2.  Install Java
+
+OpenDaylight requires Java to run. Make sure you have Java 8 or higher installed on your machine.
+    -   Check Java installation: `java -version`
+    -   Install Java (if not installed):    
+        -   `sudo apt update`
+        -   `sudo apt install openjdk-8-jdk`
+
+3. Start OpenDaylight
+    -   Navigate to the OpenDaylight directory: Open a terminal and change the directory to where you extracted OpenDaylight. For example: `cd /path/to/opendaylight-<version>`
+    -   Run OpenDaylight: You can start OpenDaylight by running the following command: `./bin/karaf`
+    -   Access the Karaf console: After running the above command, you will see the Karaf console interface. Here, you can issue commands to manage OpenDaylight.
+
+4.  Install Necessary Features
+    -   Once the Karaf console is running, you may want to install the necessary features for your use case. For example, to enable REST APIs and OpenFlow features, you can use the following commands in the Karaf console: `feature:install odl-restconf`  
+
+`feature:install odl-openflowplugin-flow-services`
+
+`feature:install odl-l2switch-switch`
+
+5. Verify OpenDaylight is Running
+
+To verify that OpenDaylight is running correctly, you can access the REST API using a web browser or a tool like `curl`.
+    -   Check the REST API: Open a web browser and go to: `http://localhost:8181/restconf`. You should see a response indicating that the REST API is accessible.
+    -   Use curl to check the API: You can also use the following command: `curl -u admin:admin http://localhost:8181/restconf`
+
 
 
 # Example 1: Create a network with a single switch and a host 
