@@ -198,3 +198,95 @@ mininet> h1 ping h2
 ```
 
 You should see successful ping responses, indicating that OpenDaylight is managing the flow between the switches
+
+
+## Example 3: Create a simple network topology with multiple hosts and switches while using OpenFlow to control packet flows
+
+### Objective
+
+We will use a basic setup with two switches and two hosts, and we’ll add a flow to allow communication between the two hosts through the switches
+
+
+### Algorithm
+
+1.  Create a Mininet topology with two switches and two hosts.
+2.  Use OpenDaylight to manage the flow rules that allow traffic to pass between the hosts.
+3.  Verify communication between the hosts.
+
+
+
+### Steps
+
+1.  Set Up OpenDaylight: Make sure OpenDaylight is installed and running with the necessary features. Start the OpenDaylight Karaf console and install required features if you haven’t done so already: `feature:install odl-restconf odl-l2switch-switch odl-openflowplugin-flow-services`
+
+2. Set Up Mininet: Start Mininet with a custom topology containing two switches and two hosts. Use the OpenDaylight controller as the remote controller. Use the following code: `sudo mn --controller=remote,ip=<OpenDaylight_IP>,port=6633 --topo single,2 --switch ovsk`. Replace `OpenDaylight_IP`  with the actual IP address of your OpenDaylight controller.
+
+3. Add Flow Rule1 Using OpenDaylight REST API: It will allow Traffic from Host 1 to Host 2: This flow will allow traffic from Host 1 (h1) to Host 2 (h2) via Switch 1 (s1) to Switch 2 (s2).
+    -   Create a flow on Switch 1 to forward packets from Host 1
+```shell
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+      "flow": [
+          {
+              "id": "h1-to-s2",
+              "match": {
+                  "in-port": "1"
+              },
+              "instructions": {
+                  "instruction": [
+                      {
+                          "apply-actions": {
+                              "action": [
+                                  {
+                                      "output-action": {
+                                          "output-node-connector": "2"
+                                      }
+                                  }
+                              ]
+                          }
+                      }
+                  ]
+              },
+              "priority": "500",
+              "table_id": "0"
+          }
+      ]
+    }' \
+http://<OpenDaylight_IP>:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/h1-to-s2
+```
+    -   Create a flow on Switch 2 to forward packets from Switch 1 to Host 2.
+```shell
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+      "flow": [
+          {
+              "id": "s1-to-h2",
+              "match": {
+                  "in-port": "1"
+              },
+              "instructions": {
+                  "instruction": [
+                      {
+                          "apply-actions": {
+                              "action": [
+                                  {
+                                      "output-action": {
+                                          "output-node-connector": "2"
+                                      }
+                                  }
+                              ]
+                          }
+                      }
+                  ]
+              },
+              "priority": "500",
+              "table_id": "0"
+          }
+      ]
+    }' \
+http://<OpenDaylight_IP>:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:2/table/0/flow/s1-to-h2
+```
+
+4. Verify Communication: you can verify that Host 1 can communicate with Host 2 by using the ping command in Mininet `mininet> h1 ping h2`
+
+5. Desired output: You should see successful ping responses indicating that Host 1 can communicate with Host 2 through the OpenDaylight-controlled switches.
