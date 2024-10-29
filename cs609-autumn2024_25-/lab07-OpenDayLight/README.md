@@ -96,6 +96,12 @@ After starting Mininet, you can test connectivity between the hosts:
 
 Create a basic network topology, add devices (nodes), and configure them with flows using OpenDaylight’s REST APIs
 
+## Algorithm
+
+1.  Start OpenDaylight and install required features.
+2.  Start Mininet with a two-switch topology, pointing it to OpenDaylight.
+3.  Add flow rules using OpenDaylight’s REST API to forward packets between switches.
+4   Test connectivity with ping.
 
 ## Steps
 
@@ -111,3 +117,84 @@ Create a basic network topology, add devices (nodes), and configure them with fl
 
 ### Flow Rule 1: Forward Packets from Switch 1 to Switch 2
 
+
+The first flow rule will be added on Switch 1 to forward traffic coming in on port connected to Host 1 out to Switch 2.
+```shell
+`curl -X PUT -H "Content-Type: application/json" \
+-d '{
+      "flow": [
+          {
+              "id": "1",
+              "match": {
+                  "in-port": "1"
+              },
+              "instructions": {
+                  "instruction": [
+                      {
+                          "apply-actions": {
+                              "action": [
+                                  {
+                                      "output-action": {
+                                          "output-node-connector": "2"
+                                      }
+                                  }
+                              ]
+                          }
+                      }
+                  ]
+              },
+              "priority": "500",
+              "table_id": "0"
+          }
+      ]
+    }' \
+
+
+http://<OpenDaylight_IP>:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
+```
+
+
+### Flow Rule 2: Forward Packets from Switch 2 to Switch 1
+
+This second flow rule will be added on Switch 2 to forward packets back to Switch 1 when needed.
+
+```shell
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+      "flow": [
+          {
+              "id": "2",
+              "match": {
+                  "in-port": "1"
+              },
+              "instructions": {
+                  "instruction": [
+                      {
+                          "apply-actions": {
+                              "action": [
+                                  {
+                                      "output-action": {
+                                          "output-node-connector": "2"
+                                      }
+                                  }
+                              ]
+                          }
+                      }
+                  ]
+              },
+              "priority": "500",
+              "table_id": "0"
+          }
+      ]
+    }' \
+http://<OpenDaylight_IP>:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:2/table/0/flow/2
+```
+
+4. Test Connectivity
+
+In Mininet, use the following command to check if Host 1 can reach Host 2:
+```shell
+mininet> h1 ping h2
+```
+
+You should see successful ping responses, indicating that OpenDaylight is managing the flow between the switches
