@@ -32,3 +32,27 @@
 
 <img src="Screenshot from 2024-10-29 06-02-21.png" >
 
+
+# Install the Karaf features
+
+To install a feature, use the following command, where feature1 is the feature name listed in the table below:
+
+`feature:install <feature1>`
+
+You can install multiple features using the following command:
+
+`feature:install <feature1> <feature2> ... <featureN-name>`
+
+
+
+# Listing available features
+
+To find the complete list of Karaf features, run the following command:
+
+`feature:list`
+
+To list the installed Karaf features, run the following command:
+
+`feature:list -i`
+
+
