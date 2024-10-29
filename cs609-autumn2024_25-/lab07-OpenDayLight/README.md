@@ -30,5 +30,5 @@
 5. To run the karaf distribition, execute `./bin/karaf`
 
 
-<img src="../../.supporting-files/lab06-onos/Screenshot from 2024-10-29 06-02-21.png" >
+<img src="Screenshot from 2024-10-29 06-02-21.png" >
 
