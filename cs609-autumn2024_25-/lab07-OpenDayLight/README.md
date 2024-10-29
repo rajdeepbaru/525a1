@@ -20,17 +20,17 @@
     -   1.3. Listing available features
     -   1.4 How to start OpenDaylight
 4. Example 1: Create a network with a single switch and a host
-    -   4.1 Objective
-    -   4.2 Steps
+    -   2.1 Objective
+    -   2.2 Steps
 5. Example 2:  Configure a network topology with flows using OpenDaylight's REST API
-    -   5.1. Objective
-    -   5.2.    Algorithm
-    -   5.3. Steps
+    -   3.1. Objective
+    -   3.2.    Algorithm
+    -   3.3. Steps
 
 6.  Example 3: Create a simple network topology with multiple hosts and switches while using OpenFlow to control packet flows
-    -   6.1.  Objective
-    -   6.2.    Algorithm
-    -   6.3. Steps  
+    -   4.1.  Objective
+    -   4.2.    Algorithm
+    -   4.3. Steps  
 
 7. References
 
