@@ -357,5 +357,5 @@ http://<OpenDaylight_IP>:8181/restconf/config/opendaylight-inventory:nodes/node/
 1.  [OpenDaylight Documentation](https://docs.opendaylight.org/en/latest/index.html)
 2.  [OpenDaylight Project](https://www.youtube.com/@OpendaylightOrg/videos)
 3.  [Adding flows in OpenDaylight using Python and REST API](https://fredhsu.wordpress.com/2013/06/14/adding-flows-in-opendaylight-using-python-and-rest-api/)
-4.  [OpenDaylight User Guide](../../.supporting-files/bk-user-guide.pdf)
+4.  [OpenDaylight User Guide](../../../.supporting-files/bk-user-guide.pdf)
 5.  [QoS using OpenDaylight](https://www.talentica.com/blogs/qos-using-opendaylight/)
