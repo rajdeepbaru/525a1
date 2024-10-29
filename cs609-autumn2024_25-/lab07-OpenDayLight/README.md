@@ -56,3 +56,34 @@ To list the installed Karaf features, run the following command:
 `feature:list -i`
 
 
+
+
+# Example 1: Create a network with a single switch and a host 
+
+## Objective: 
+
+We shall use Mininet and OpenDaylight to create a network with a single switch and a host connected to it. Here OpenDaylight controller will manage the switch.
+
+
+## Steps
+
+###  In the OpenDayLight terminal
+
+1. Start OpenDaylight using `./bin/karaf`
+
+2. In the Karaf console, install the necessary OpenFlow features: `feature:install odl-restconf odl-l2switch-switch odl-openflowplugin-flow-services`
+
+
+
+### Set Up Mininet
+
+1. Install mininet.
+
+2. Start Mininet with an OpenFlow switch that connects to the OpenDaylight controller: `sudo mn --controller=remote,ip=<OpenDaylight_IP>,port=6633 --topo single,2 --switch ovsk`. Replace `OpenDaylight_IP` with the IP address of your OpenDaylight controller.
+
+
+### Testing Connectivity
+
+After starting Mininet, you can test connectivity between the hosts:
+
+`mininet> pingall`
