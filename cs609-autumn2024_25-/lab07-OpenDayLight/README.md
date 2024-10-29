@@ -14,17 +14,29 @@
 
 
 ### Table of contents 
-1.	[Installation](#1)
-    -   1.1.  [What is ONOS?](#1.1)
-    -   1.2.  [Features of ONOS](#1.2)
+1.	Installation
+    -   1.1.  What is ONOS?
+    -   1.2.  Features of ONOS
 
 
-2. [Install the Karaf features](#2)
-3. [Listing available features](#3)
-4. [Example 1: Create a network with a single switch and a host](#4)
-    -   4.1 [Objective]
-    -   4.2 [Steps]
-5. [Example 2:  Configure a network topology with flows using OpenDaylight's REST API]
+2. Install the Karaf features
+3. Listing available features
+4. Example 1: Create a network with a single switch and a host
+    -   4.1 Objective
+    -   4.2 Steps
+5. Example 2:  Configure a network topology with flows using OpenDaylight's REST API
+    -   5.1. Objective
+    -   5.2.    Algorithm
+    -   5.3. Steps
+
+6.  Example 3: Create a simple network topology with multiple hosts and switches while using OpenFlow to control packet flows
+    -   6.1.  Objective
+    -   6.2.    Algorithm
+    -   6.3. Steps  
+
+
+
+
 # Installation <a name="1"></a>
 
 
